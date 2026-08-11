@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://dx4turl2qfeem"]
+
+[ext_resource type="PackedScene" uid="uid://d1e6scty7bb0b" path="res://scenes/ui/bottom_bar/BottomButton.tscn" id="1_051ov"]
+[ext_resource type="Script" uid="uid://bsh5ugi07co1g" path="res://scripts/ui/bottom_bar/BottomBar.gd" id="1_s02sn"]
+[ext_resource type="Texture2D" uid="uid://cdpb1267yt2cr" path="res://assets/textures/ui_icons/destruction.png" id="3_lbpvt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_051ov"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.15686275, 0.16470589, 0.17254902, 1)
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 5
+
+[node name="BottomBar" type="MarginContainer" unique_id=156137687 node_paths=PackedStringArray("_button_damage_calculator", "_button_map")]
+propagate_maximum_size = false
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+script = ExtResource("1_s02sn")
+_button_damage_calculator = NodePath("MarginContainer/HBoxContainer/BottomCalculate")
+_button_map = NodePath("MarginContainer/HBoxContainer/ButtonMap")
+
+[node name="Panel" type="Panel" parent="." unique_id=792216587]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_051ov")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1625540253]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=450901776]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="BottomCalculate" parent="MarginContainer/HBoxContainer" unique_id=2026792888 instance=ExtResource("1_051ov")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" parent="MarginContainer/HBoxContainer/BottomCalculate/CenterContainer/MarginContainer/ContentParent" parent_id_path=PackedInt32Array(2026792888, 314807237) index="0" unique_id=466650162]
+texture = ExtResource("3_lbpvt")
+
+[node name="Label" parent="MarginContainer/HBoxContainer/BottomCalculate/CenterContainer/MarginContainer/ContentParent" parent_id_path=PackedInt32Array(2026792888, 314807237) index="1" unique_id=1420003725]
+text = "DMG"
+
+[node name="ButtonMap" parent="MarginContainer/HBoxContainer" unique_id=1931826157 instance=ExtResource("1_051ov")]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" parent="MarginContainer/HBoxContainer/ButtonMap/CenterContainer/MarginContainer/ContentParent" parent_id_path=PackedInt32Array(1931826157, 314807237) index="1" unique_id=1420003725]
+text = "MAP"
+
+[editable path="MarginContainer/HBoxContainer/BottomCalculate"]
+[editable path="MarginContainer/HBoxContainer/ButtonMap"]

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="AmmoEntity" format=3 uid="uid://dnfiuvc1bgqa8"]
+
+[ext_resource type="Script" uid="uid://bwd5e7quireo6" path="res://data_templaces/game_entities/AmmoEntity.gd" id="1_ljrvy"]
+[ext_resource type="Resource" uid="uid://dg2qm3cdky10j" path="res://data/categories/Ammunition.tres" id="1_p03or"]
+[ext_resource type="Texture2D" uid="uid://be13dy0gkrn4i" path="res://assets/textures/game_icons/ammunition/75mm.png" id="2_nrfdx"]
+
+[resource]
+script = ExtResource("1_ljrvy")
+_damage = 1750
+_damage_type = 50
+_category = ExtResource("1_p03or")
+_name = "75 mm"
+_icon = ExtResource("2_nrfdx")
+metadata/_custom_type_script = "uid://bwd5e7quireo6"

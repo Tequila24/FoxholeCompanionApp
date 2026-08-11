@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://chgllbe8hpmwg"]
+
+[ext_resource type="Script" uid="uid://cqgmhnm5bbo65" path="res://scripts/ui/EntityView.gd" id="1_ji1fv"]
+[ext_resource type="Texture2D" uid="uid://cd2vejn27lvvy" path="res://assets/textures/game_icons/HammerIcon.png" id="2_ji1fv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_va8n3"]
+bg_color = Color(0.2627451, 0.2627451, 0.2627451, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5890956, 0.58909565, 0.5890954, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="EntityView" type="MarginContainer" unique_id=427689557 node_paths=PackedStringArray("_button", "_icon", "_name_label")]
+custom_minimum_size = Vector2(64, 64)
+custom_maximum_size = Vector2(128, 128)
+offset_right = 128.0
+offset_bottom = 128.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_ji1fv")
+_button = NodePath("Button")
+_icon = NodePath("VBoxContainer/TextureRect")
+_name_label = NodePath("VBoxContainer/Label")
+
+[node name="Panel" type="Panel" parent="." unique_id=1499290949]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_va8n3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1684201778]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=275229511]
+layout_mode = 2
+text = "Entity"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+text_overrun_behavior = 5
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer" unique_id=957908133]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+texture = ExtResource("2_ji1fv")
+expand_mode = 3
+
+[node name="Button" type="Button" parent="." unique_id=2040943509]
+layout_mode = 2
+flat = true

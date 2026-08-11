@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cwb1sy67h7a03"]
+
+[ext_resource type="Script" uid="uid://s6sktusnfvvp" path="res://scripts/wrappers/DamageCalcWrapper.gd" id="1_76pfo"]
+
+[node name="DamageCalcWrapper" type="Node" unique_id=1398559760]
+script = ExtResource("1_76pfo")

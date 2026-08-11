@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DamageResistanceList" format=3 uid="uid://qcakal8llf40"]
+
+[ext_resource type="Script" uid="uid://b1vwhiqmx2noy" path="res://data_templaces/DamageResistanceList.gd" id="1_700th"]
+
+[resource]
+script = ExtResource("1_700th")
+_list = Dictionary[int, float]({
+10: 0.0,
+20: 0.85,
+30: 0.0,
+40: 0.7,
+50: 0.15,
+60: 0.7,
+70: 0.7,
+80: 0.99,
+90: 0.99,
+100: 0.99,
+110: 1.0
+})
+metadata/_custom_type_script = "uid://b1vwhiqmx2noy"

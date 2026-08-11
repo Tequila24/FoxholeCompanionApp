@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://dp42mj0oradte"]
+
+[ext_resource type="Script" uid="uid://dke33et1m6vid" path="res://scripts/ui/damage_calculator/DamageCalculatorStatLineView.gd" id="1_dyln0"]
+[ext_resource type="Texture2D" uid="uid://b01qslocb3e1" path="res://assets/textures/ui/dash_tiny.png" id="1_htmu2"]
+
+[node name="StatsLine" type="MarginContainer" unique_id=91342404 node_paths=PackedStringArray("value_label", "measurement_label")]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -14.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_right = 16
+script = ExtResource("1_dyln0")
+value_label = NodePath("VBoxContainer/MarginContainer/HBox/LabelValue")
+measurement_label = NodePath("VBoxContainer/MarginContainer/HBox/LabelMeasurement")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=986316151]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" unique_id=1324874328]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_right = 8
+
+[node name="HBox" type="HBoxContainer" parent="VBoxContainer/MarginContainer" unique_id=1188716374]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 0
+
+[node name="LabelName" type="Label" parent="VBoxContainer/MarginContainer/HBox" unique_id=1050690392]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 0.9411765, 1)
+text = "Name name"
+vertical_alignment = 1
+clip_text = true
+text_overrun_behavior = 3
+uppercase = true
+
+[node name="LabelValue" type="Label" parent="VBoxContainer/MarginContainer/HBox" unique_id=1431651246]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 0.9411765, 1)
+text = "Value value"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+text_overrun_behavior = 3
+uppercase = true
+
+[node name="LabelMeasurement" type="Label" parent="VBoxContainer/MarginContainer/HBox" unique_id=291576726]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+vertical_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer" unique_id=375188442]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/MarginContainer2" unique_id=886754652]
+modulate = Color(0.24313726, 0.28627452, 0.23137255, 1)
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("1_htmu2")
+stretch_mode = 1

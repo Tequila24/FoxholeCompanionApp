@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://cunf4p5eqv435"]
+
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="1_0bld1"]
+[ext_resource type="Resource" uid="uid://dvf5t0nl1f5c1" path="res://data/entities/ammunition/68mm.tres" id="1_nof10"]
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/Vehicle.tres" id="2_xprt6"]
+[ext_resource type="Texture2D" uid="uid://cq7j0n2tjugm4" path="res://assets/textures/game_icons/vehicles/warden/tanks/Silverhand.png" id="3_6tix2"]
+[ext_resource type="Resource" uid="uid://qcakal8llf40" path="res://data/resistances/HeavyArmor.tres" id="4_1s2rt"]
+
+[resource]
+script = ExtResource("1_0bld1")
+_ammunition = ExtResource("1_nof10")
+_reload_duration_s = 4.5
+_shot_duration_s = 2.0
+_resistances = ExtResource("4_1s2rt")
+_health_points = 3100
+_category = ExtResource("2_xprt6")
+_name = "Silverhand - Mk. IV"
+_icon = ExtResource("3_6tix2")
+metadata/_custom_type_script = "uid://djee5sv0ce06s"

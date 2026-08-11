@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bk4il0mp30gq3"]
+
+[ext_resource type="Script" uid="uid://cte6ydyy8nfy0" path="res://scripts/DataMaster.gd" id="1_82sau"]
+[ext_resource type="Script" uid="uid://d0e4gfjt55g17" path="res://data_templaces/game_entities/categories/Category.gd" id="2_nmtsp"]
+[ext_resource type="Resource" uid="uid://dg2qm3cdky10j" path="res://data/categories/Ammunition.tres" id="3_hqk24"]
+[ext_resource type="Resource" uid="uid://cntaal3u7cvon" path="res://data/categories/Structure.tres" id="4_21m3w"]
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/Vehicle.tres" id="5_6o2fi"]
+
+[node name="DataMaster" type="Node" unique_id=864800451]
+script = ExtResource("1_82sau")
+_entities_path = "res://data/entities/"
+_all_categories = Array[ExtResource("2_nmtsp")]([ExtResource("3_hqk24"), ExtResource("4_21m3w"), ExtResource("5_6o2fi")])

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="AmmoEntity" format=3 uid="uid://bkko7y5lbj08d"]
+
+[ext_resource type="Resource" uid="uid://dg2qm3cdky10j" path="res://data/categories/Ammunition.tres" id="1_377gi"]
+[ext_resource type="Script" uid="uid://bwd5e7quireo6" path="res://data_templaces/game_entities/AmmoEntity.gd" id="1_m5xdp"]
+[ext_resource type="Texture2D" uid="uid://csqooihiivqr4" path="res://assets/textures/game_icons/ammunition/94.5.png" id="2_d3ctj"]
+
+[resource]
+script = ExtResource("1_m5xdp")
+_damage = 1750
+_damage_type = 30
+_category = ExtResource("1_377gi")
+_name = "94.5 mm"
+_icon = ExtResource("2_d3ctj")
+metadata/_custom_type_script = "uid://bwd5e7quireo6"
