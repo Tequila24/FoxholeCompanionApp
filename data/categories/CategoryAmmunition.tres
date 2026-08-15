@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="CategoryAmmunition" format=3 uid="uid://dg2qm3cdky10j"]
+
+[ext_resource type="Script" uid="uid://chwruym5v47rd" path="res://data_templaces/game_entities/categories/CategoryAmmunition.gd" id="1_a3ee6"]
+
+[resource]
+script = ExtResource("1_a3ee6")
+_name = "Ammunition"
+metadata/_custom_type_script = "uid://d0e4gfjt55g17"

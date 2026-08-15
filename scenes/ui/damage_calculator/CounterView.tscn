@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bqelobowvj48a"]
+
+[ext_resource type="Script" uid="uid://cix3h5dg1c3j2" path="res://scripts/ui/damage_calculator/CounterView.gd" id="1_4uary"]
+[ext_resource type="Texture2D" uid="uid://bukbujf6tduek" path="res://assets/textures/game_icons/ammunition/40mm.png" id="1_smyhg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jcnjc"]
+bg_color = Color(0.2, 0.20784314, 0.21568628, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.5254902, 0.5647059, 0.5058824, 1)
+
+[node name="Counter" type="MarginContainer" unique_id=977337473 node_paths=PackedStringArray("icon_holder", "icon_view", "counter_label")]
+script = ExtResource("1_4uary")
+icon_holder = NodePath("HBoxContainer/IconView")
+icon_view = NodePath("HBoxContainer/IconView/AmmoTypeIcon")
+counter_label = NodePath("HBoxContainer/LabelCounter")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=984930705]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="IconView" type="MarginContainer" parent="HBoxContainer" unique_id=1418257226]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="HBoxContainer/IconView" unique_id=1229636239]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jcnjc")
+
+[node name="AmmoTypeIcon" type="TextureRect" parent="HBoxContainer/IconView" unique_id=606554163]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 32)
+custom_maximum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("1_smyhg")
+expand_mode = 4
+
+[node name="LabelCounter" type="Label" parent="HBoxContainer" unique_id=227087685]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 24
+text = "99999"

@@ -1,19 +1,31 @@
 [gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://ce0e8kiq635p6"]
 
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_8wkey"]
 [ext_resource type="Resource" uid="uid://cqtdglcdp6val" path="res://data/entities/ammunition/40mm.tres" id="1_51uy1"]
-[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/Vehicle.tres" id="2_u7dqc"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="3_8wkey"]
 [ext_resource type="Texture2D" uid="uid://boxxupsmo2u7s" path="res://assets/textures/game_icons/vehicles/warden/tanks/Outlaw.png" id="3_y55al"]
-[ext_resource type="Resource" uid="uid://qcakal8llf40" path="res://data/resistances/HeavyArmor.tres" id="4_8wkey"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="4_v5tw8"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="5_nrq2e"]
 [ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="5_v5tw8"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="5_y55al"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("4_v5tw8")
+_hp = 2950
+_armor = 11000
+metadata/_custom_type_script = "uid://c16qbt51iib2h"
+
+[sub_resource type="Resource" id="Resource_8wkey"]
+script = ExtResource("5_y55al")
+_ammo_type = ExtResource("1_51uy1")
+_reload_duration_s = 5.0
+_cooldown_duration_s = 2.0
+_damage_modifier = 1.2
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("5_v5tw8")
-_ammunition = ExtResource("1_51uy1")
-_damage_modifier = 1.2
-_reload_duration_s = 5.0
-_shot_duration_s = 2.0
-_resistances = ExtResource("4_8wkey")
-_health_points = 2950
-_category = ExtResource("2_u7dqc")
+_category = ExtResource("1_8wkey")
 _name = "Outlaw"
 _icon = ExtResource("3_y55al")
+_components = Array[ExtResource("3_8wkey")]([SubResource("Resource_ok5o1"), ExtResource("5_nrq2e"), SubResource("Resource_8wkey")])

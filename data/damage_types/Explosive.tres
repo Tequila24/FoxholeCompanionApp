@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="DamageType" format=3 uid="uid://crq5ahfo72y3y"]
+
+[ext_resource type="Script" uid="uid://bupfw8yvghm6c" path="res://data_templaces/DamageType.gd" id="1_713b0"]
+
+[resource]
+script = ExtResource("1_713b0")

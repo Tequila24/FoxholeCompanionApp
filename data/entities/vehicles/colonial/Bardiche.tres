@@ -1,28 +1,31 @@
 [gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://w2c5larffm40"]
 
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_15eho"]
 [ext_resource type="Resource" uid="uid://dvf5t0nl1f5c1" path="res://data/entities/ammunition/68mm.tres" id="1_l0bsu"]
-[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/Vehicle.tres" id="2_ea2os"]
 [ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="3_15eho"]
-[ext_resource type="Script" uid="uid://cja8tgxe6fg7t" path="res://data_templaces/game_entities/components/IntegrityComponent.gd" id="4_ea2os"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="4_ea2os"]
 [ext_resource type="Texture2D" uid="uid://dgawjjyaady1u" path="res://assets/textures/game_icons/vehicles/colonial/tanks/Bardiche.png" id="4_uoal1"]
-[ext_resource type="Resource" uid="uid://qcakal8llf40" path="res://data/resistances/HeavyArmor.tres" id="5_qplle"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="5_ea2os"]
 [ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="6_8mohl"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_15eho"]
 
-[sub_resource type="Resource" id="Resource_uoal1"]
+[sub_resource type="Resource" id="Resource_ok5o1"]
 script = ExtResource("4_ea2os")
 _hp = 4000
-metadata/_custom_type_script = "uid://cja8tgxe6fg7t"
+_armor = 15650
+
+[sub_resource type="Resource" id="Resource_uoal1"]
+script = ExtResource("6_15eho")
+_ammo_type = ExtResource("1_l0bsu")
+_magazine_size = 3
+_reload_duration_s = 4.5
+_cooldown_duration_s = 0.8
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("6_8mohl")
-_ammunition = ExtResource("1_l0bsu")
-_magazine_size = 3
-_reload_duration_s = 4.5
-_shot_duration_s = 0.8
-_resistances = ExtResource("5_qplle")
-_health_points = 4000
-_category = ExtResource("2_ea2os")
+_category = ExtResource("1_15eho")
 _name = "Bardiche"
 _icon = ExtResource("4_uoal1")
-_components = Array[ExtResource("3_15eho")]([SubResource("Resource_uoal1")])
+_components = Array[ExtResource("3_15eho")]([SubResource("Resource_ok5o1"), ExtResource("5_ea2os"), SubResource("Resource_uoal1")])
 metadata/_custom_type_script = "uid://djee5sv0ce06s"

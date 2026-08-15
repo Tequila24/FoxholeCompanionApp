@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="CategoryVehicle" format=3 uid="uid://b1hspeg52jw4w"]
+
+[ext_resource type="Script" uid="uid://bvccp65oc5drg" path="res://data_templaces/game_entities/categories/CategoryVehicle.gd" id="1_xnhcm"]
+
+[resource]
+script = ExtResource("1_xnhcm")
+_name = "Vehicles"
+metadata/_custom_type_script = "uid://d0e4gfjt55g17"

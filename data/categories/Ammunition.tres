@@ -1,7 +1,0 @@
-[gd_resource type="Resource" script_class="Category" format=3 uid="uid://dg2qm3cdky10j"]
-
-[ext_resource type="Script" uid="uid://d0e4gfjt55g17" path="res://data_templaces/game_entities/categories/Category.gd" id="1_4lth0"]
-
-[resource]
-script = ExtResource("1_4lth0")
-metadata/_custom_type_script = "uid://d0e4gfjt55g17"
