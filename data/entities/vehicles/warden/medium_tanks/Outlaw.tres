@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://ce0e8kiq635p6"]
 
 [ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_8wkey"]
-[ext_resource type="Resource" uid="uid://cqtdglcdp6val" path="res://data/entities/ammunition/40mm.tres" id="1_51uy1"]
+[ext_resource type="Resource" uid="uid://cqtdglcdp6val" path="res://data/entities/ammunition/shells/40mm.tres" id="1_51uy1"]
 [ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="3_8wkey"]
 [ext_resource type="Texture2D" uid="uid://boxxupsmo2u7s" path="res://assets/textures/game_icons/vehicles/warden/tanks/Outlaw.png" id="3_y55al"]
 [ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="4_v5tw8"]

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="AmmoEntity" format=3 uid="uid://rc3ojyu10u1x"]
+
+[ext_resource type="Script" uid="uid://chwruym5v47rd" path="res://data_templaces/game_entities/categories/CategoryAmmunition.gd" id="1_wtofu"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_8ycpd"]
+[ext_resource type="Resource" uid="uid://ceahjkfpe1bfg" path="res://data/damage_types/Shrapnel.tres" id="3_wtofu"]
+[ext_resource type="Texture2D" uid="uid://ctdxfssjw5ftx" path="res://assets/textures/game_icons/ammunition/MortarAmmoIconShrapnel.png" id="4_wtofu"]
+[ext_resource type="Script" uid="uid://bwd5e7quireo6" path="res://data_templaces/game_entities/AmmoEntity.gd" id="5_5es05"]
+
+[sub_resource type="Resource" id="Resource_crtjq"]
+script = ExtResource("1_wtofu")
+metadata/_custom_type_script = "uid://chwruym5v47rd"
+
+[resource]
+script = ExtResource("5_5es05")
+_damage = 125
+_damage_type = ExtResource("3_wtofu")
+_category = SubResource("Resource_crtjq")
+_name = "Mortar Shrapnel"
+_icon = ExtResource("4_wtofu")
+metadata/_custom_type_script = "uid://bwd5e7quireo6"

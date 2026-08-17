@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://u3b5wfwsii0e"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_toqpq"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_4m3d2"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_ilsj2"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_yunqd"]
+[ext_resource type="Resource" uid="uid://cc40gjhbk6jtd" path="res://data/entities/ammunition/shells/Absol.tres" id="5_toqpq"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_252yl"]
+[ext_resource type="Texture2D" uid="uid://d3v2h8ahhfg7" path="res://assets/textures/game_icons/vehicles/warden/tanks/Birdeater.png" id="7_toqpq"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_s5pke"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_ilsj2")
+_hp = 1950
+_armor = 14000
+metadata/_custom_type_script = "uid://c16qbt51iib2h"
+
+[sub_resource type="Resource" id="Resource_8wkey"]
+script = ExtResource("6_252yl")
+_ammo_type = ExtResource("5_toqpq")
+_magazine_size = 6
+_reload_duration_s = 1.0
+_cooldown_duration_s = 1.5
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
+
+[resource]
+script = ExtResource("8_s5pke")
+_category = ExtResource("1_toqpq")
+_name = "Birdeater"
+_icon = ExtResource("7_toqpq")
+_components = Array[ExtResource("2_4m3d2")]([SubResource("Resource_ok5o1"), ExtResource("4_yunqd"), SubResource("Resource_8wkey")])

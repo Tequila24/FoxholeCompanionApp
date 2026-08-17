@@ -28,7 +28,8 @@ border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.5254902, 0.5647059, 0.5058824, 1)
 
-[node name="DamageCalculator" type="MarginContainer" unique_id=1785491860 node_paths=PackedStringArray("_attacker_entity_view", "_target_entity_view", "_switch_button", "_invalid_icon", "_counters_views", "_line_base_damage", "_line_time_to_kill")]
+[node name="DamageCalculator" type="MarginContainer" unique_id=1785491860 node_paths=PackedStringArray("_attacker_entity_view", "_target_entity_view", "_switch_button", "_invalid_icon", "_counters_views", "_stats_holder")]
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
@@ -41,8 +42,7 @@ _target_entity_view = NodePath("VBoxContainer2/Entities/MarginContainer/VBoxCont
 _switch_button = NodePath("VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer2/Button")
 _invalid_icon = NodePath("VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Counters/InvalidMarker")
 _counters_views = [NodePath("VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Counters/VBoxContainer/Counter1"), NodePath("VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Counters/VBoxContainer/Counter2")]
-_line_base_damage = NodePath("VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineDamage")
-_line_time_to_kill = NodePath("VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineTTK")
+_stats_holder = NodePath("VBoxContainer2/StatsLines")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=371738475]
 layout_mode = 2
@@ -253,12 +253,14 @@ icon = ExtResource("6_ok5o1")
 flat = true
 icon_alignment = 1
 
-[node name="StatsLines" type="MarginContainer" parent="VBoxContainer2" unique_id=1849219604]
+[node name="StatsLines" type="MarginContainer" parent="VBoxContainer2" unique_id=1849219604 node_paths=PackedStringArray("_lines_holder")]
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_constants/margin_left = 8
 theme_override_constants/margin_right = 8
 script = ExtResource("8_iej7h")
+_line_prefab = ExtResource("5_44dyq")
+_lines_holder = NodePath("MarginContainer/VBoxContainer")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="VBoxContainer2/StatsLines" unique_id=310026111]
 modulate = Color(0.24313726, 0.28627452, 0.23137255, 1)
@@ -280,30 +282,3 @@ theme_override_constants/margin_bottom = 12
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/StatsLines/MarginContainer" unique_id=1417404561]
 layout_mode = 2
 theme_override_constants/separation = 12
-
-[node name="StatsLineDamage" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer" unique_id=91342404 instance=ExtResource("5_44dyq")]
-visible = false
-layout_mode = 2
-
-[node name="LabelName" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineDamage/VBoxContainer/MarginContainer/HBox" parent_id_path=PackedInt32Array(91342404, 1188716374) index="0" unique_id=1050690392]
-text = "BASE DAMAGE"
-
-[node name="LabelValue" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineDamage/VBoxContainer/MarginContainer/HBox" parent_id_path=PackedInt32Array(91342404, 1188716374) index="1" unique_id=23247789]
-text = "0"
-
-[node name="StatsLineTTK" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer" unique_id=616602934 instance=ExtResource("5_44dyq")]
-visible = false
-layout_mode = 2
-
-[node name="LabelName" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineTTK/VBoxContainer/MarginContainer/HBox" parent_id_path=PackedInt32Array(616602934, 1188716374) index="0" unique_id=1050690392]
-text = "EST. TIME TO KILL"
-
-[node name="LabelValue" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineTTK/VBoxContainer/MarginContainer/HBox" parent_id_path=PackedInt32Array(616602934, 1188716374) index="1" unique_id=23247789]
-text = "0"
-
-[node name="LabelMeasurement" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineTTK/VBoxContainer/MarginContainer/HBox" parent_id_path=PackedInt32Array(616602934, 1188716374) index="2" unique_id=291576726]
-visible = false
-text = " seconds"
-
-[editable path="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineDamage"]
-[editable path="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineTTK"]

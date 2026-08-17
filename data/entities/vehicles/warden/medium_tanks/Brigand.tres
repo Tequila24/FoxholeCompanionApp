@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://d3bfsl087f8xr"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_0xa4t"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_ih1dq"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_ds2ls"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_vxmss"]
+[ext_resource type="Resource" uid="uid://w3ejvhggf8js" path="res://data/entities/ammunition/shells/30mm.tres" id="5_0xa4t"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_i3opf"]
+[ext_resource type="Texture2D" uid="uid://biwhi48h7ochv" path="res://assets/textures/game_icons/vehicles/warden/tanks/Brigand.png" id="7_0xa4t"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_f54jt"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_ds2ls")
+_hp = 2950
+_armor = 11000
+metadata/_custom_type_script = "uid://c16qbt51iib2h"
+
+[sub_resource type="Resource" id="Resource_8wkey"]
+script = ExtResource("6_i3opf")
+_ammo_type = ExtResource("5_0xa4t")
+_magazine_size = 3
+_reload_duration_s = 2.5
+_cooldown_duration_s = 1.5
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
+
+[resource]
+script = ExtResource("8_f54jt")
+_category = ExtResource("1_0xa4t")
+_name = "Brigand"
+_icon = ExtResource("7_0xa4t")
+_components = Array[ExtResource("2_ih1dq")]([SubResource("Resource_ok5o1"), ExtResource("4_vxmss"), SubResource("Resource_8wkey")])

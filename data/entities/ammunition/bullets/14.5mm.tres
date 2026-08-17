@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AmmoEntity" format=3 uid="uid://lsbg3xe4hbvc"]
+
+[ext_resource type="Resource" uid="uid://dg2qm3cdky10j" path="res://data/categories/CategoryAmmunition.tres" id="1_nxf1p"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_jr177"]
+[ext_resource type="Resource" uid="uid://1byign81lbwi" path="res://data/damage_types/ATKinetic.tres" id="3_p6o1p"]
+[ext_resource type="Texture2D" uid="uid://cx3qdm5ydigvu" path="res://assets/textures/game_icons/ammunition/14.5mm.png" id="4_p6o1p"]
+[ext_resource type="Script" uid="uid://bwd5e7quireo6" path="res://data_templaces/game_entities/AmmoEntity.gd" id="5_esvkw"]
+
+[resource]
+script = ExtResource("5_esvkw")
+_damage = 187
+_damage_type = ExtResource("3_p6o1p")
+_category = ExtResource("1_nxf1p")
+_name = "14.5 mm"
+_icon = ExtResource("4_p6o1p")
+metadata/_custom_type_script = "uid://bwd5e7quireo6"

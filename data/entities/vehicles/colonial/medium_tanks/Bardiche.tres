@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://w2c5larffm40"]
 
 [ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_15eho"]
-[ext_resource type="Resource" uid="uid://dvf5t0nl1f5c1" path="res://data/entities/ammunition/68mm.tres" id="1_l0bsu"]
+[ext_resource type="Resource" uid="uid://dvf5t0nl1f5c1" path="res://data/entities/ammunition/shells/68mm.tres" id="1_l0bsu"]
 [ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="3_15eho"]
 [ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="4_ea2os"]
 [ext_resource type="Texture2D" uid="uid://dgawjjyaady1u" path="res://assets/textures/game_icons/vehicles/colonial/tanks/Bardiche.png" id="4_uoal1"]

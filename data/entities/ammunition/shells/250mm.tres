@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AmmoEntity" format=3 uid="uid://da5ba8ecqewjg"]
+
+[ext_resource type="Resource" uid="uid://dg2qm3cdky10j" path="res://data/categories/CategoryAmmunition.tres" id="1_74kw2"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_sewva"]
+[ext_resource type="Resource" uid="uid://b2seq8rxls5c1" path="res://data/damage_types/Demolition.tres" id="3_74kw2"]
+[ext_resource type="Texture2D" uid="uid://byg6pse4m465" path="res://assets/textures/game_icons/ammunition/250mm.png" id="4_74kw2"]
+[ext_resource type="Script" uid="uid://bwd5e7quireo6" path="res://data_templaces/game_entities/AmmoEntity.gd" id="5_3rcq2"]
+
+[resource]
+script = ExtResource("5_3rcq2")
+_damage = 787
+_damage_type = ExtResource("3_74kw2")
+_category = ExtResource("1_74kw2")
+_name = "Purity"
+_icon = ExtResource("4_74kw2")
+metadata/_custom_type_script = "uid://bwd5e7quireo6"

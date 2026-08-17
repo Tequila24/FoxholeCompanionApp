@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://6wy2bon75cwj"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_sxcbi"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_qjwm0"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_4q7j0"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_ybt0w"]
+[ext_resource type="Resource" uid="uid://cc40gjhbk6jtd" path="res://data/entities/ammunition/shells/Absol.tres" id="5_sxcbi"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_7d4fb"]
+[ext_resource type="Texture2D" uid="uid://dnbq0v4mw51jb" path="res://assets/textures/game_icons/vehicles/colonial/tanks/Sagaris.png" id="7_sxcbi"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_5e833"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_4q7j0")
+_hp = 1950
+_armor = 9100
+
+[sub_resource type="Resource" id="Resource_uoal1"]
+script = ExtResource("6_7d4fb")
+_ammo_type = ExtResource("5_sxcbi")
+_magazine_size = 6
+_reload_duration_s = 1.0
+_cooldown_duration_s = 1.5
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
+
+[resource]
+script = ExtResource("8_5e833")
+_category = ExtResource("1_sxcbi")
+_name = "Sagaris"
+_icon = ExtResource("7_sxcbi")
+_components = Array[ExtResource("2_qjwm0")]([SubResource("Resource_ok5o1"), ExtResource("4_ybt0w"), SubResource("Resource_uoal1")])
+metadata/_custom_type_script = "uid://djee5sv0ce06s"

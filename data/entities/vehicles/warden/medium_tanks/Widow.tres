@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://csvdixid8j5b8"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_a8wjb"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="1_kmbkb"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="2_qsf5y"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_l13us"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_j2g5s"]
+[ext_resource type="Resource" uid="uid://dvf5t0nl1f5c1" path="res://data/entities/ammunition/shells/68mm.tres" id="5_a8wjb"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_higes"]
+[ext_resource type="Texture2D" uid="uid://lkn8ocah3ie6" path="res://assets/textures/game_icons/vehicles/warden/tanks/Widow.png" id="7_a8wjb"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_l13us")
+_hp = 2200
+_armor = 17650
+metadata/_custom_type_script = "uid://c16qbt51iib2h"
+
+[sub_resource type="Resource" id="Resource_8wkey"]
+script = ExtResource("6_higes")
+_ammo_type = ExtResource("5_a8wjb")
+_reload_duration_s = 4.5
+_cooldown_duration_s = 2.0
+_damage_modifier = 1.75
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
+
+[resource]
+script = ExtResource("2_qsf5y")
+_category = ExtResource("1_a8wjb")
+_name = "Widow"
+_icon = ExtResource("7_a8wjb")
+_components = Array[ExtResource("1_kmbkb")]([SubResource("Resource_ok5o1"), ExtResource("4_j2g5s"), SubResource("Resource_8wkey")])

@@ -10,14 +10,16 @@ extends MarginContainer
 
 @export var _counters_views: Array[CounterView]
 
-@export var _line_base_damage: DamageCalculatorStatLineView
-@export var _line_target_health: DamageCalculatorStatLineView
-@export var _line_time_to_kill: DamageCalculatorStatLineView
+@export var _stats_holder: StatsLinesHolder
+
+# @export var _line_base_damage: DamageCalculatorStatLineView
+# @export var _line_target_health: DamageCalculatorStatLineView
+# @export var _line_time_to_kill: DamageCalculatorStatLineView
 
 
 
 func _ready() -> void:
-	DamageCalcWrapper.recalculated.connect(_update_visual)
+	DamageCalcWrapper.recalculated.connect(_on_new_calculation)
 	_switch_button.pressed.connect(_switch_entities)
 
 	_attacker_entity_view.pressed.connect(
@@ -42,7 +44,7 @@ func _ready() -> void:
 			)
 	)
 
-	_update_visual(DamageCalculationResult.new())
+	_on_new_calculation(DamageCalculationResult.new())
 
 
 func _switch_entities():
@@ -50,12 +52,18 @@ func _switch_entities():
 	DamageCalcWrapper.attacker_entity = DamageCalcWrapper.target_entity
 	DamageCalcWrapper.target_entity = temp_attacker_entity
 
+	_update_visual()
+
 	DamageCalcWrapper.recalculate()
 
 
-func _update_visual(result: DamageCalculationResult) -> void:
+func _update_visual():
+	_attacker_entity_view.set_visual(DamageCalcWrapper.attacker_entity)
+	_target_entity_view.set_visual(DamageCalcWrapper.target_entity)
+
+
+func _on_new_calculation(result: DamageCalculationResult) -> void:
 	
-	# var result = DamageCalcWrapper.current_result
 	if (not result.is_valid):
 		_invalid_icon.visible = true
 		for view in _counters_views:
@@ -82,7 +90,11 @@ func _update_visual(result: DamageCalculationResult) -> void:
 
 
 func _update_data_lines(result: DamageCalculationResult) -> void:
-	pass
+	_stats_holder.clear()
+
+	for pair in result.stats:
+		_stats_holder.add_line(pair.title, pair.value)
+
 	# var current_result = DamageCalcWrapper.current_result
 	# if (not current_result || not current_result.is_valid):
 	# 	_line_base_damage.clear()

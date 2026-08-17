@@ -35,8 +35,15 @@ func get_target_damage_type_resistance(target_entity: GameEntity, damage_type: D
 	if (resistance_component == null):
 		return 0
 
-	print(resistance_component.as_string())
 	return resistance_component.get_resistance_for(damage_type)
+
+
+func get_target_damage_type_resistance_as_string(target_entity: GameEntity, damage_type: DamageType) -> String:
+	var resistance_component: DamageResistanceComponent = target_entity.get_component(DamageResistanceComponent)
+	if (resistance_component == null):
+		return ""
+
+	return resistance_component.get_resistance_for_as_string(damage_type)
 
 
 func get_target_health_points(target_entity: GameEntity) -> int:
@@ -52,6 +59,9 @@ func simulate_attack(attacker_entity: GameEntity, target_entity: GameEntity) -> 
 	_simulation_data = SimulationData.new()
 
 	_all_attack_components.assign(attacker_entity.get_all_components(AttackComponent))
+	if (_all_attack_components.is_empty()):
+		result.is_valid = false
+		return result
 
 	var all_guns: Array[GunSimulationData]
 	for component: AttackComponent in _all_attack_components:
@@ -96,9 +106,16 @@ func simulate_attack(attacker_entity: GameEntity, target_entity: GameEntity) -> 
 
 	for gun_sim_data in _simulation_data.attacker_guns:
 		result.guns_counters.append(DamageCalculationResult.GunCalculationResult.new(gun_sim_data.ammo_type, gun_sim_data.shots_count))
-		
-	result.stats.append(DamageCalculationResult.StatStringPair.new("Time to kill", ("%.2f" % _simulation_data.time_to_kill)))
-	
+
+
+	result.add_stats_line("Target health", ("%d" % _simulation_data.target_health))	
+	var target_resistances_str: String = ""
+	for gun in _simulation_data.attacker_guns:
+		target_resistances_str += get_target_damage_type_resistance_as_string(target_entity, gun.ammo_type.damage_type)
+		target_resistances_str += " "
+	result.add_stats_line("Target resistances", target_resistances_str)
+	result.add_stats_line("Time to kill", ("%.2f seconds" % _simulation_data.time_to_kill))
+
 
 	return result
 

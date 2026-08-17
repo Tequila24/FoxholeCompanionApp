@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://cio2p05crxpkm"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_5k84b"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_itsb0"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_quixr"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_k116x"]
+[ext_resource type="Resource" uid="uid://cqtdglcdp6val" path="res://data/entities/ammunition/shells/40mm.tres" id="5_5k84b"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_o8gr5"]
+[ext_resource type="Texture2D" uid="uid://ydnqibjco6kg" path="res://assets/textures/game_icons/vehicles/colonial/tanks/Kranesca.png" id="7_5k84b"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_a8wwp"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_quixr")
+_hp = 2250
+_armor = 9100
+
+[sub_resource type="Resource" id="Resource_uoal1"]
+script = ExtResource("6_o8gr5")
+_ammo_type = ExtResource("5_5k84b")
+_reload_duration_s = 5.5
+_cooldown_duration_s = 2.0
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
+
+[resource]
+script = ExtResource("8_a8wwp")
+_category = ExtResource("1_5k84b")
+_name = "Kranesca"
+_icon = ExtResource("7_5k84b")
+_components = Array[ExtResource("2_itsb0")]([SubResource("Resource_ok5o1"), ExtResource("4_k116x"), SubResource("Resource_uoal1")])
+metadata/_custom_type_script = "uid://djee5sv0ce06s"

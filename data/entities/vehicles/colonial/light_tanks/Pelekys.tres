@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://bal6d13lhb1ar"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_w7f7a"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_usheh"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_7l07j"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_g5knd"]
+[ext_resource type="Resource" uid="uid://dvf5t0nl1f5c1" path="res://data/entities/ammunition/shells/68mm.tres" id="5_w7f7a"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_tr5b2"]
+[ext_resource type="Texture2D" uid="uid://dn5lahsj66y68" path="res://assets/textures/game_icons/vehicles/colonial/tanks/Pelekys.png" id="7_w7f7a"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_u361s"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_7l07j")
+_hp = 1750
+_armor = 7250
+
+[sub_resource type="Resource" id="Resource_uoal1"]
+script = ExtResource("6_tr5b2")
+_ammo_type = ExtResource("5_w7f7a")
+_reload_duration_s = 4.5
+_cooldown_duration_s = 2.0
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
+
+[resource]
+script = ExtResource("8_u361s")
+_category = ExtResource("1_w7f7a")
+_name = "Pelekys"
+_icon = ExtResource("7_w7f7a")
+_components = Array[ExtResource("2_usheh")]([SubResource("Resource_ok5o1"), ExtResource("4_g5knd"), SubResource("Resource_uoal1")])
+metadata/_custom_type_script = "uid://djee5sv0ce06s"

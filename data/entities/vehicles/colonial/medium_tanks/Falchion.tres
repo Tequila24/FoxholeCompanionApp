@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://c4gd6uxjq7mt0"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_8f3co"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_gra3w"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_6hcgn"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_1ojln"]
+[ext_resource type="Resource" uid="uid://cqtdglcdp6val" path="res://data/entities/ammunition/shells/40mm.tres" id="5_ha6nd"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_u6uqq"]
+[ext_resource type="Texture2D" uid="uid://btgyqkp68msuc" path="res://assets/textures/game_icons/vehicles/colonial/tanks/Falchion.png" id="7_8f3co"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_r2hjh"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_6hcgn")
+_hp = 3650
+_armor = 12725
+
+[sub_resource type="Resource" id="Resource_uoal1"]
+script = ExtResource("6_u6uqq")
+_ammo_type = ExtResource("5_ha6nd")
+_reload_duration_s = 5.5
+_cooldown_duration_s = 2.0
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
+
+[resource]
+script = ExtResource("8_r2hjh")
+_category = ExtResource("1_8f3co")
+_name = "Falchion"
+_icon = ExtResource("7_8f3co")
+_components = Array[ExtResource("2_gra3w")]([SubResource("Resource_ok5o1"), ExtResource("4_1ojln"), SubResource("Resource_uoal1")])
+metadata/_custom_type_script = "uid://djee5sv0ce06s"

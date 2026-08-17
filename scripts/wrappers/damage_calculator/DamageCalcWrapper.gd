@@ -67,9 +67,9 @@ func _ready() -> void:
 
 func recalculate():
 	if (_attacker_entity == null || _target_entity == null):
+		recalculated.emit(DamageCalculationResult.new())
 		return
 
 	if ((_attacker_entity.category is CategoryVehicle && _target_entity.category is CategoryVehicle)):
 		current_result = _vic_on_vic_calc.simulate_attack(attacker_entity, target_entity)
-
-	recalculated.emit(current_result)
+		recalculated.emit(current_result)
