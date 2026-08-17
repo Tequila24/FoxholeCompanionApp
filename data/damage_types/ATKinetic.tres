@@ -1,6 +1,8 @@
 [gd_resource type="Resource" script_class="DamageType" format=3 uid="uid://1byign81lbwi"]
 
+[ext_resource type="Texture2D" uid="uid://cvphig8vecsqy" path="res://assets/textures/game_icons/damage_types/ATKinetic.png" id="1_adme2"]
 [ext_resource type="Script" uid="uid://bupfw8yvghm6c" path="res://data_templaces/DamageType.gd" id="1_ut2pe"]
 
 [resource]
 script = ExtResource("1_ut2pe")
+icon = ExtResource("1_adme2")

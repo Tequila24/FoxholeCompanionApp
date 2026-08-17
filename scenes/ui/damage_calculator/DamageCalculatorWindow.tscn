@@ -4,10 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://bj4e1gi56xg1q" path="res://assets/textures/ui/FrameWithCorners.png" id="2_44dyq"]
 [ext_resource type="Script" uid="uid://cqgmhnm5bbo65" path="res://scripts/ui/EntityView.gd" id="2_k4nm8"]
 [ext_resource type="Texture2D" uid="uid://cd2vejn27lvvy" path="res://assets/textures/game_icons/HammerIcon.png" id="3_hjvyr"]
-[ext_resource type="PackedScene" uid="uid://dp42mj0oradte" path="res://scenes/ui/damage_calculator/StatsLine.tscn" id="5_44dyq"]
-[ext_resource type="PackedScene" uid="uid://bqelobowvj48a" path="res://scenes/ui/damage_calculator/CounterView.tscn" id="5_76uj2"]
+[ext_resource type="PackedScene" uid="uid://dp42mj0oradte" path="res://scenes/ui/damage_calculator/DamageCalculatorStatLineView.tscn" id="5_44dyq"]
+[ext_resource type="PackedScene" uid="uid://bqelobowvj48a" path="res://scenes/ui/damage_calculator/DamageCalculatorCounterView.tscn" id="5_76uj2"]
 [ext_resource type="Texture2D" uid="uid://dnpx53c1ijicq" path="res://assets/textures/ui_icons/cancel.png" id="5_shxm2"]
 [ext_resource type="Texture2D" uid="uid://j11s4n60lvgn" path="res://assets/textures/ui_icons/change.png" id="6_ok5o1"]
+[ext_resource type="Script" uid="uid://dey5g7ajp07b" path="res://scripts/ui/damage_calculator/StatsLinesHolder.gd" id="8_iej7h"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k4nm8"]
 content_margin_left = 0.0
@@ -27,8 +28,7 @@ border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.5254902, 0.5647059, 0.5058824, 1)
 
-[node name="DamageCalculator" type="MarginContainer" unique_id=1785491860 node_paths=PackedStringArray("_attacker_entity_view", "_target_entity_view", "_switch_button", "_invalid_icon", "_counters_views", "_line_base_damage", "_line_target_health", "_line_time_to_kill")]
-anchors_preset = 15
+[node name="DamageCalculator" type="MarginContainer" unique_id=1785491860 node_paths=PackedStringArray("_attacker_entity_view", "_target_entity_view", "_switch_button", "_invalid_icon", "_counters_views", "_line_base_damage", "_line_time_to_kill")]
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
@@ -42,7 +42,6 @@ _switch_button = NodePath("VBoxContainer2/Entities/MarginContainer/VBoxContainer
 _invalid_icon = NodePath("VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Counters/InvalidMarker")
 _counters_views = [NodePath("VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Counters/VBoxContainer/Counter1"), NodePath("VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Counters/VBoxContainer/Counter2")]
 _line_base_damage = NodePath("VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineDamage")
-_line_target_health = NodePath("VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineHealth")
 _line_time_to_kill = NodePath("VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineTTK")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=371738475]
@@ -97,14 +96,14 @@ theme_override_constants/margin_bottom = 12
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/Entities/MarginContainer" unique_id=1705641293]
 layout_mode = 2
-theme_override_constants/separation = 12
+theme_override_constants/separation = 24
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer" unique_id=1814462140]
 layout_mode = 2
 
 [node name="Attacker" type="MarginContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer" unique_id=356769718]
 custom_minimum_size = Vector2(100, 100)
-custom_maximum_size = Vector2(100, 100)
+custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
@@ -190,7 +189,7 @@ stretch_mode = 5
 
 [node name="Target" type="MarginContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer" unique_id=725783878]
 custom_minimum_size = Vector2(100, 100)
-custom_maximum_size = Vector2(100, 100)
+custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 4
@@ -259,6 +258,7 @@ layout_mode = 2
 size_flags_vertical = 0
 theme_override_constants/margin_left = 8
 theme_override_constants/margin_right = 8
+script = ExtResource("8_iej7h")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="VBoxContainer2/StatsLines" unique_id=310026111]
 modulate = Color(0.24313726, 0.28627452, 0.23137255, 1)
@@ -272,7 +272,9 @@ patch_margin_bottom = 32
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2/StatsLines" unique_id=1738251254]
 layout_mode = 2
+theme_override_constants/margin_left = 12
 theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
 theme_override_constants/margin_bottom = 12
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/StatsLines/MarginContainer" unique_id=1417404561]
@@ -280,30 +282,23 @@ layout_mode = 2
 theme_override_constants/separation = 12
 
 [node name="StatsLineDamage" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer" unique_id=91342404 instance=ExtResource("5_44dyq")]
+visible = false
 layout_mode = 2
 
 [node name="LabelName" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineDamage/VBoxContainer/MarginContainer/HBox" parent_id_path=PackedInt32Array(91342404, 1188716374) index="0" unique_id=1050690392]
 text = "BASE DAMAGE"
 
-[node name="LabelValue" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineDamage/VBoxContainer/MarginContainer/HBox" parent_id_path=PackedInt32Array(91342404, 1188716374) index="1" unique_id=1431651246]
-text = "0"
-
-[node name="StatsLineHealth" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer" unique_id=664592942 instance=ExtResource("5_44dyq")]
-layout_mode = 2
-
-[node name="LabelName" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineHealth/VBoxContainer/MarginContainer/HBox" parent_id_path=PackedInt32Array(664592942, 1188716374) index="0" unique_id=1050690392]
-text = "TARGET HEALTH"
-
-[node name="LabelValue" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineHealth/VBoxContainer/MarginContainer/HBox" parent_id_path=PackedInt32Array(664592942, 1188716374) index="1" unique_id=1431651246]
+[node name="LabelValue" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineDamage/VBoxContainer/MarginContainer/HBox" parent_id_path=PackedInt32Array(91342404, 1188716374) index="1" unique_id=23247789]
 text = "0"
 
 [node name="StatsLineTTK" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer" unique_id=616602934 instance=ExtResource("5_44dyq")]
+visible = false
 layout_mode = 2
 
 [node name="LabelName" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineTTK/VBoxContainer/MarginContainer/HBox" parent_id_path=PackedInt32Array(616602934, 1188716374) index="0" unique_id=1050690392]
 text = "EST. TIME TO KILL"
 
-[node name="LabelValue" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineTTK/VBoxContainer/MarginContainer/HBox" parent_id_path=PackedInt32Array(616602934, 1188716374) index="1" unique_id=1431651246]
+[node name="LabelValue" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineTTK/VBoxContainer/MarginContainer/HBox" parent_id_path=PackedInt32Array(616602934, 1188716374) index="1" unique_id=23247789]
 text = "0"
 
 [node name="LabelMeasurement" parent="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineTTK/VBoxContainer/MarginContainer/HBox" parent_id_path=PackedInt32Array(616602934, 1188716374) index="2" unique_id=291576726]
@@ -311,5 +306,4 @@ visible = false
 text = " seconds"
 
 [editable path="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineDamage"]
-[editable path="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineHealth"]
 [editable path="VBoxContainer2/StatsLines/MarginContainer/VBoxContainer/StatsLineTTK"]

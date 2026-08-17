@@ -1,6 +1,8 @@
 [gd_resource type="Resource" script_class="DamageType" format=3 uid="uid://buha71xdlerfn"]
 
 [ext_resource type="Script" uid="uid://bupfw8yvghm6c" path="res://data_templaces/DamageType.gd" id="1_50cw2"]
+[ext_resource type="Texture2D" uid="uid://bfyb5q5xorfi4" path="res://assets/textures/game_icons/damage_types/Fire.png" id="1_wlq3c"]
 
 [resource]
 script = ExtResource("1_50cw2")
+icon = ExtResource("1_wlq3c")

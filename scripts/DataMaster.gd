@@ -25,6 +25,6 @@ func _ready() -> void:
 func get_entities_in_category(category: Category) -> Array[GameEntity]:
 	return _all_entities.values().filter(
 		func(entity: GameEntity):
-			print("%s entity category, %s search category" % [entity.category.name, category.name])
+			# print("%s entity category, %s search category" % [entity.category.name, category.name])
 			return entity.category == category
 	)

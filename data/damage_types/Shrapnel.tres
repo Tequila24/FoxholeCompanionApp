@@ -1,6 +1,8 @@
 [gd_resource type="Resource" script_class="DamageType" format=3 uid="uid://ceahjkfpe1bfg"]
 
 [ext_resource type="Script" uid="uid://bupfw8yvghm6c" path="res://data_templaces/DamageType.gd" id="1_cikfq"]
+[ext_resource type="Texture2D" uid="uid://2yy05uqvqcvf" path="res://assets/textures/game_icons/damage_types/Shrapnel.png" id="1_mbj5w"]
 
 [resource]
 script = ExtResource("1_cikfq")
+icon = ExtResource("1_mbj5w")
