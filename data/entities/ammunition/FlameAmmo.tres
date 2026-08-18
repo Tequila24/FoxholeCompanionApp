@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AmmoEntity" format=3 uid="uid://deev8kx3uxx6t"]
+
+[ext_resource type="Resource" uid="uid://dg2qm3cdky10j" path="res://data/categories/CategoryAmmunition.tres" id="1_4jqw4"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_nbj4i"]
+[ext_resource type="Resource" uid="uid://buha71xdlerfn" path="res://data/damage_types/Fire.tres" id="3_nbbl7"]
+[ext_resource type="Texture2D" uid="uid://d17r6q5xqptbg" path="res://assets/textures/game_icons/ammunition/FlameAmmo.png" id="4_nbbl7"]
+[ext_resource type="Script" uid="uid://bwd5e7quireo6" path="res://data_templaces/game_entities/AmmoEntity.gd" id="5_jgxgh"]
+
+[resource]
+script = ExtResource("5_jgxgh")
+_damage = 25
+_damage_type = ExtResource("3_nbbl7")
+_category = ExtResource("1_4jqw4")
+_name = "Flame Ammo"
+_icon = ExtResource("4_nbbl7")
+metadata/_custom_type_script = "uid://bwd5e7quireo6"

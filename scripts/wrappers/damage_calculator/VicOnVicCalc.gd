@@ -4,7 +4,8 @@ extends RefCounted
 
 
 const INLINE_TEXT_FMT: String = "[img width=1em]%s[/img]"
-const TTK_SIMULATION_TIME_STEP: float = 0.1
+const TTK_SIMULATION_TIME_STEP: float = 0.05
+const TTK_TO_MINUTES_LIMIT: float = 120
 const DEBUG: bool = false
 
 
@@ -66,7 +67,11 @@ func simulate_attack(attacker_entity: GameEntity, target_entity: GameEntity) -> 
 	var all_guns: Array[GunSimulationData]
 	for component: AttackComponent in _all_attack_components:
 		all_guns.append(GunSimulationData.new())
-		all_guns.back().damage = component.ammo_type.damage * component.damage_modifier * (1.0 - get_target_damage_type_resistance(target_entity, component.ammo_type.damage_type))
+		var damage_resistance: float = (1.0 - get_target_damage_type_resistance(target_entity, component.ammo_type.damage_type))
+		all_guns.back().damage = component.ammo_type.damage * component.damage_modifier * damage_resistance
+		if (all_guns.back().damage == 0):
+			all_guns.pop_back()
+			continue
 		all_guns.back().state = GunSimulationData.GunState.READY
 		all_guns.back().state_timer = 0
 
@@ -74,13 +79,23 @@ func simulate_attack(attacker_entity: GameEntity, target_entity: GameEntity) -> 
 		_simulation_data.attacker_guns.back().ammo_type = component.ammo_type
 		_simulation_data.attacker_guns.back().damage = component.ammo_type.damage
 
+	if (_simulation_data.attacker_guns.is_empty()):
+		result.is_valid = false
+		return result
+
 
 	_accumulated_damage = 0
 	_accumulated_time_to_kill = 0
 
 	_simulation_data.target_health = get_target_health_points(target_entity)
 
+	var step: int = 0
 	while _accumulated_damage < _simulation_data.target_health:
+		if (step > 9999999):
+			print("Too many steps to count, stopping simulation")
+			return result
+
+
 		var gun_idx: int = 0
 		for gun in all_guns:
 			
@@ -99,6 +114,7 @@ func simulate_attack(attacker_entity: GameEntity, target_entity: GameEntity) -> 
 			break
 		
 		_accumulated_time_to_kill += TTK_SIMULATION_TIME_STEP
+		step += 1
 
 	_simulation_data.time_to_kill = _accumulated_time_to_kill
 
@@ -114,7 +130,10 @@ func simulate_attack(attacker_entity: GameEntity, target_entity: GameEntity) -> 
 		target_resistances_str += get_target_damage_type_resistance_as_string(target_entity, gun.ammo_type.damage_type)
 		target_resistances_str += " "
 	result.add_stats_line("Target resistances", target_resistances_str)
-	result.add_stats_line("Time to kill", ("%.2f seconds" % _simulation_data.time_to_kill))
+	if (_simulation_data.time_to_kill < TTK_TO_MINUTES_LIMIT):
+		result.add_stats_line("Time to kill", ("%.2f seconds" % _simulation_data.time_to_kill))
+	else:
+		result.add_stats_line("Time to kill", ("%.2f minutes" % (_simulation_data.time_to_kill / 60.0)))
 
 
 	return result

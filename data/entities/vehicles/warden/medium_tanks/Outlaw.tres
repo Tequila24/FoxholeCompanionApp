@@ -8,6 +8,7 @@
 [ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="5_nrq2e"]
 [ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="5_v5tw8"]
 [ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="5_y55al"]
+[ext_resource type="Resource" uid="uid://bhair0uuq0olu" path="res://data/factions/Warden.tres" id="7_fefxl"]
 
 [sub_resource type="Resource" id="Resource_ok5o1"]
 script = ExtResource("4_v5tw8")
@@ -26,6 +27,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 [resource]
 script = ExtResource("5_v5tw8")
 _category = ExtResource("1_8wkey")
+_faction = ExtResource("7_fefxl")
 _name = "Outlaw"
 _icon = ExtResource("3_y55al")
 _components = Array[ExtResource("3_8wkey")]([SubResource("Resource_ok5o1"), ExtResource("5_nrq2e"), SubResource("Resource_8wkey")])

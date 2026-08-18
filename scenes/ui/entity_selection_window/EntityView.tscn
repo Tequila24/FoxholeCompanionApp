@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://chgllbe8hpmwg"]
+
+[ext_resource type="Script" uid="uid://cqgmhnm5bbo65" path="res://scripts/ui/entity_selection_window/EntityView.gd" id="1_ji1fv"]
+[ext_resource type="Texture2D" uid="uid://cd2vejn27lvvy" path="res://assets/textures/game_icons/HammerIcon.png" id="2_ji1fv"]
+[ext_resource type="PackedScene" uid="uid://dsmpuolssvp5x" path="res://scenes/ui/common/AutoFitLabel.tscn" id="2_maouu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_va8n3"]
+bg_color = Color(0.2627451, 0.2627451, 0.2627451, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5890956, 0.58909565, 0.5890954, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="EntityView" type="AspectRatioContainer" unique_id=2105853609 node_paths=PackedStringArray("_button", "_icon", "_name_label")]
+custom_minimum_size = Vector2(64, 64)
+custom_maximum_size = Vector2(128, 128)
+offset_right = 93.0
+offset_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_ji1fv")
+_button = NodePath("Button")
+_icon = NodePath("VBoxContainer/AspectRatioContainer/MarginContainer/TextureRect")
+_name_label = NodePath("VBoxContainer/AutoFitLabel")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1684201778]
+layout_mode = 2
+
+[node name="AutoFitLabel" parent="VBoxContainer" unique_id=1446573899 instance=ExtResource("2_maouu")]
+custom_minimum_size = Vector2(0, 32)
+custom_maximum_size = Vector2(-1, 32)
+layout_mode = 2
+min_font_size = 4
+text = "test text "
+
+[node name="RichTextLabel" parent="VBoxContainer/AutoFitLabel" index="0" unique_id=853606492]
+theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/bold_font_size = 14
+theme_override_font_sizes/bold_italics_font_size = 14
+theme_override_font_sizes/italics_font_size = 14
+text = "test text "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="VBoxContainer" unique_id=368857852]
+custom_minimum_size = Vector2(0, 92)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/AspectRatioContainer" unique_id=1134823190]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="VBoxContainer/AspectRatioContainer/MarginContainer" unique_id=1499290949]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_va8n3")
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/AspectRatioContainer/MarginContainer" unique_id=957908133]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+texture = ExtResource("2_ji1fv")
+expand_mode = 3
+
+[node name="Button" type="Button" parent="." unique_id=2040943509]
+layout_mode = 2
+flat = true
+
+[editable path="VBoxContainer/AutoFitLabel"]

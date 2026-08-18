@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AmmoEntity" format=3 uid="uid://d3um1ddytyjh5"]
+
+[ext_resource type="Resource" uid="uid://dg2qm3cdky10j" path="res://data/categories/CategoryAmmunition.tres" id="1_3gvoq"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_p47qr"]
+[ext_resource type="Resource" uid="uid://1dekj3luodu" path="res://data/damage_types/ArmorPiercing.tres" id="3_3gvoq"]
+[ext_resource type="Texture2D" uid="uid://ca8ure40ubuwp" path="res://assets/textures/game_icons/ammunition/ARC-AT.png" id="4_3gvoq"]
+[ext_resource type="Script" uid="uid://bwd5e7quireo6" path="res://data_templaces/game_entities/AmmoEntity.gd" id="5_3lq67"]
+
+[resource]
+script = ExtResource("5_3lq67")
+_damage = 647
+_damage_type = ExtResource("3_3gvoq")
+_category = ExtResource("1_3gvoq")
+_name = "ARC/RPG"
+_icon = ExtResource("4_3gvoq")
+metadata/_custom_type_script = "uid://bwd5e7quireo6"

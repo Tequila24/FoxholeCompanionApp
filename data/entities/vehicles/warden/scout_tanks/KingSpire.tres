@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://c8tasfawqevoa"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_yhs76"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_u0jh7"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_c8fms"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_44nd8"]
+[ext_resource type="Resource" uid="uid://cgv68vw13hkwm" path="res://data/entities/ammunition/bullets/12.7mm.tres" id="5_byb4l"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_hfsuy"]
+[ext_resource type="Texture2D" uid="uid://vf4cod8r2t7j" path="res://assets/textures/game_icons/vehicles/warden/tanks/Spire.png" id="7_ksoev"]
+[ext_resource type="Resource" uid="uid://bhair0uuq0olu" path="res://data/factions/Warden.tres" id="7_u0jh7"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_whhb7"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_c8fms")
+_hp = 1350
+_armor = 8000
+metadata/_custom_type_script = "uid://c16qbt51iib2h"
+
+[sub_resource type="Resource" id="Resource_8wkey"]
+script = ExtResource("6_hfsuy")
+_ammo_type = ExtResource("5_byb4l")
+_magazine_size = 125
+_reload_duration_s = 3.5
+_cooldown_duration_s = 0.2
+_damage_modifier = 0.64
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
+
+[resource]
+script = ExtResource("8_whhb7")
+_category = ExtResource("1_yhs76")
+_faction = ExtResource("7_u0jh7")
+_name = "King Spire"
+_icon = ExtResource("7_ksoev")
+_components = Array[ExtResource("2_u0jh7")]([SubResource("Resource_ok5o1"), ExtResource("4_44nd8"), SubResource("Resource_8wkey")])

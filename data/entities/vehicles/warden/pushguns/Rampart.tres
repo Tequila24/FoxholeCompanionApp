@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://54rwprvxbn56"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_2gctr"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_p3dw5"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_apwn3"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_583tv"]
+[ext_resource type="Resource" uid="uid://dvf5t0nl1f5c1" path="res://data/entities/ammunition/shells/68mm.tres" id="5_2gctr"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_hidul"]
+[ext_resource type="Texture2D" uid="uid://c4rwdxseivsv4" path="res://assets/textures/game_icons/vehicles/warden/pushguns/Rampart.png" id="7_2gctr"]
+[ext_resource type="Resource" uid="uid://bhair0uuq0olu" path="res://data/factions/Warden.tres" id="7_p3dw5"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_r63ti"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_apwn3")
+_hp = 4000
+metadata/_custom_type_script = "uid://c16qbt51iib2h"
+
+[sub_resource type="Resource" id="Resource_8wkey"]
+script = ExtResource("6_hidul")
+_ammo_type = ExtResource("5_2gctr")
+_reload_duration_s = 3.0
+_cooldown_duration_s = 1.0
+_damage_modifier = 1.25
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
+
+[resource]
+script = ExtResource("8_r63ti")
+_category = ExtResource("1_2gctr")
+_faction = ExtResource("7_p3dw5")
+_name = "Rampart"
+_icon = ExtResource("7_2gctr")
+_components = Array[ExtResource("2_p3dw5")]([SubResource("Resource_ok5o1"), ExtResource("4_583tv"), SubResource("Resource_8wkey")])

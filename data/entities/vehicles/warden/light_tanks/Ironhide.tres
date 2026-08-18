@@ -6,6 +6,7 @@
 [ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_ntp2a"]
 [ext_resource type="Resource" uid="uid://cqtdglcdp6val" path="res://data/entities/ammunition/shells/40mm.tres" id="5_6x0ty"]
 [ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_mn3x6"]
+[ext_resource type="Resource" uid="uid://bhair0uuq0olu" path="res://data/factions/Warden.tres" id="7_5q408"]
 [ext_resource type="Texture2D" uid="uid://wskry1g63t1u" path="res://assets/textures/game_icons/vehicles/warden/tanks/Ironhide.png" id="7_usn8w"]
 [ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_5k76v"]
 
@@ -25,6 +26,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 [resource]
 script = ExtResource("8_5k76v")
 _category = ExtResource("1_amloh")
+_faction = ExtResource("7_5q408")
 _name = "Ironhide"
 _icon = ExtResource("7_usn8w")
 _components = Array[ExtResource("2_6vlkv")]([SubResource("Resource_ok5o1"), ExtResource("4_ntp2a"), SubResource("Resource_8wkey")])

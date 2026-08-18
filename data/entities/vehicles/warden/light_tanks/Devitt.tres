@@ -6,6 +6,7 @@
 [ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_dxlua"]
 [ext_resource type="Resource" uid="uid://cqtdglcdp6val" path="res://data/entities/ammunition/shells/40mm.tres" id="5_geeep"]
 [ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_gn5qa"]
+[ext_resource type="Resource" uid="uid://bhair0uuq0olu" path="res://data/factions/Warden.tres" id="7_f04ns"]
 [ext_resource type="Texture2D" uid="uid://bd3xw8p25mutp" path="res://assets/textures/game_icons/vehicles/warden/tanks/Devitt.png" id="7_ntp8d"]
 [ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_x53ny"]
 
@@ -25,6 +26,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 [resource]
 script = ExtResource("8_x53ny")
 _category = ExtResource("1_6y7ty")
+_faction = ExtResource("7_f04ns")
 _name = "Devitt"
 _icon = ExtResource("7_ntp8d")
 _components = Array[ExtResource("2_b2u7t")]([SubResource("Resource_ok5o1"), ExtResource("4_dxlua"), SubResource("Resource_8wkey")])

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://wt72t8ahf558"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_vp3hj"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_0tu0w"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_foxmf"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_iphaa"]
+[ext_resource type="Resource" uid="uid://w3ejvhggf8js" path="res://data/entities/ammunition/shells/30mm.tres" id="5_vp3hj"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_jf778"]
+[ext_resource type="Texture2D" uid="uid://ca0wum3u5sp2p" path="res://assets/textures/game_icons/vehicles/colonial/tanks/Ixion.png" id="7_vp3hj"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_ihd6u"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_foxmf")
+_hp = 1150
+_armor = 7200
+
+[sub_resource type="Resource" id="Resource_uoal1"]
+script = ExtResource("6_jf778")
+_ammo_type = ExtResource("5_vp3hj")
+_reload_duration_s = 4.5
+_cooldown_duration_s = 2.0
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
+
+[resource]
+script = ExtResource("8_ihd6u")
+_category = ExtResource("1_vp3hj")
+_name = "Ixion"
+_icon = ExtResource("7_vp3hj")
+_components = Array[ExtResource("2_0tu0w")]([SubResource("Resource_ok5o1"), ExtResource("4_iphaa"), SubResource("Resource_uoal1")])
+metadata/_custom_type_script = "uid://djee5sv0ce06s"

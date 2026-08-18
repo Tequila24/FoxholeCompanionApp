@@ -9,6 +9,7 @@
 [ext_resource type="Resource" uid="uid://cqtdglcdp6val" path="res://data/entities/ammunition/shells/40mm.tres" id="5_gkmgp"]
 [ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_qt4ug"]
 [ext_resource type="Texture2D" uid="uid://cq7j0n2tjugm4" path="res://assets/textures/game_icons/vehicles/warden/tanks/Silverhand.png" id="7_1s2rt"]
+[ext_resource type="Resource" uid="uid://bhair0uuq0olu" path="res://data/factions/Warden.tres" id="8_irjgy"]
 
 [sub_resource type="Resource" id="Resource_ok5o1"]
 script = ExtResource("3_savlw")
@@ -33,6 +34,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 [resource]
 script = ExtResource("1_0bld1")
 _category = ExtResource("1_savlw")
+_faction = ExtResource("8_irjgy")
 _name = "Silverhand"
 _icon = ExtResource("7_1s2rt")
 _components = Array[ExtResource("2_1s2rt")]([SubResource("Resource_ok5o1"), ExtResource("4_mxg4s"), SubResource("Resource_v5tw8"), SubResource("Resource_8wkey")])

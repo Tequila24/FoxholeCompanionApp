@@ -1,0 +1,7 @@
+[gd_resource type="FontVariation" format=3 uid="uid://bvm4qqvuxyy30"]
+
+[ext_resource type="FontFile" uid="uid://b4ofm014rgrf8" path="res://assets/fonts/SpaceGrotesk.ttf" id="1_d1wmu"]
+
+[resource]
+base_font = ExtResource("1_d1wmu")
+variation_embolden = 0.5

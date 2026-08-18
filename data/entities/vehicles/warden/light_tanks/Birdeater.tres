@@ -6,6 +6,7 @@
 [ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_yunqd"]
 [ext_resource type="Resource" uid="uid://cc40gjhbk6jtd" path="res://data/entities/ammunition/shells/Absol.tres" id="5_toqpq"]
 [ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_252yl"]
+[ext_resource type="Resource" uid="uid://bhair0uuq0olu" path="res://data/factions/Warden.tres" id="7_4m3d2"]
 [ext_resource type="Texture2D" uid="uid://d3v2h8ahhfg7" path="res://assets/textures/game_icons/vehicles/warden/tanks/Birdeater.png" id="7_toqpq"]
 [ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_s5pke"]
 
@@ -26,6 +27,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 [resource]
 script = ExtResource("8_s5pke")
 _category = ExtResource("1_toqpq")
+_faction = ExtResource("7_4m3d2")
 _name = "Birdeater"
 _icon = ExtResource("7_toqpq")
 _components = Array[ExtResource("2_4m3d2")]([SubResource("Resource_ok5o1"), ExtResource("4_yunqd"), SubResource("Resource_8wkey")])

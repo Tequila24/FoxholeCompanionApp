@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cmsppff0s2ha6"]
+
+[node name="ToggleButton" type="MarginContainer" unique_id=2116309343]
+
+[node name="Button" type="Button" parent="." unique_id=97892339]
+layout_mode = 2

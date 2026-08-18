@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://dsettxj140bke"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_j1os7"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_ow7vu"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_541wb"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_xel3e"]
+[ext_resource type="Resource" uid="uid://dnfiuvc1bgqa8" path="res://data/entities/ammunition/shells/75mm.tres" id="5_vvxht"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_ibo03"]
+[ext_resource type="Resource" uid="uid://bhair0uuq0olu" path="res://data/factions/Warden.tres" id="7_05ryh"]
+[ext_resource type="Texture2D" uid="uid://ds3ew67wffwjl" path="res://assets/textures/game_icons/vehicles/warden/pushguns/Stockade.png" id="7_vvxht"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_hiko2"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_541wb")
+_hp = 5000
+metadata/_custom_type_script = "uid://c16qbt51iib2h"
+
+[sub_resource type="Resource" id="Resource_8wkey"]
+script = ExtResource("6_ibo03")
+_ammo_type = ExtResource("5_vvxht")
+_reload_duration_s = 3.0
+_cooldown_duration_s = 1.0
+_damage_modifier = 1.35
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
+
+[resource]
+script = ExtResource("8_hiko2")
+_category = ExtResource("1_j1os7")
+_faction = ExtResource("7_05ryh")
+_name = "Stockade"
+_icon = ExtResource("7_vvxht")
+_components = Array[ExtResource("2_ow7vu")]([SubResource("Resource_ok5o1"), ExtResource("4_xel3e"), SubResource("Resource_8wkey")])

@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://bu3ltxq81clf4"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_nt3v0"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_itui0"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_ea7q5"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_s65ck"]
+[ext_resource type="Resource" uid="uid://cgv68vw13hkwm" path="res://data/entities/ammunition/bullets/12.7mm.tres" id="5_iinqt"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_vkood"]
+[ext_resource type="Texture2D" uid="uid://de2kljxdqba5a" path="res://assets/textures/game_icons/vehicles/colonial/tanks/Actaeon.png" id="7_iinqt"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_do48t"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_ea7q5")
+_hp = 1150
+_armor = 7200
+
+[sub_resource type="Resource" id="Resource_uoal1"]
+script = ExtResource("6_vkood")
+_ammo_type = ExtResource("5_iinqt")
+_magazine_size = 75
+_reload_duration_s = 3.5
+_cooldown_duration_s = 0.25
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
+
+[resource]
+script = ExtResource("8_do48t")
+_category = ExtResource("1_nt3v0")
+_name = "Actaeon"
+_icon = ExtResource("7_iinqt")
+_components = Array[ExtResource("2_itui0")]([SubResource("Resource_ok5o1"), ExtResource("4_s65ck"), SubResource("Resource_uoal1")])
+metadata/_custom_type_script = "uid://djee5sv0ce06s"

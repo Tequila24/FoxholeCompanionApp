@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://kbicv4fg3p17"]
+
+[ext_resource type="Script" uid="uid://c21vfx2vgxxhf" path="res://scripts/ui/entity_selection_window/EntityCategoryView.gd" id="1_p3mci"]
+[ext_resource type="PackedScene" uid="uid://chgllbe8hpmwg" path="res://scenes/ui/entity_selection_window/EntityView.tscn" id="2_v2cv8"]
+[ext_resource type="FontVariation" uid="uid://bvm4qqvuxyy30" path="res://scenes/ui/fonts_variatios/LilBoldGrotesk.tres" id="3_dhwd4"]
+
+[node name="EntityCategoryView" type="MarginContainer" unique_id=820480429 node_paths=PackedStringArray("_category_label", "_entities_views_holder")]
+anchor_right = 1.0
+offset_bottom = 78.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+script = ExtResource("1_p3mci")
+_category_label = NodePath("VBoxContainer/Header/Label")
+_entity_view_prefab = ExtResource("2_v2cv8")
+_entities_views_holder = NodePath("VBoxContainer/Content/grid")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1910003906]
+layout_mode = 2
+
+[node name="Header" type="MarginContainer" parent="VBoxContainer" unique_id=1598734223]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+
+[node name="Label" type="Label" parent="VBoxContainer/Header" unique_id=1613726916]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_dhwd4")
+text = "Category name"
+
+[node name="Content" type="MarginContainer" parent="VBoxContainer" unique_id=864166247]
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="grid" type="GridContainer" parent="VBoxContainer/Content" unique_id=176109324]
+layout_mode = 2
+columns = 4

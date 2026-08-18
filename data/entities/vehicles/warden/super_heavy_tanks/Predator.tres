@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://c47b106pqwlqc"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_15ycm"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_on8h0"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_n5owg"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_v3m1r"]
+[ext_resource type="Resource" uid="uid://bkko7y5lbj08d" path="res://data/entities/ammunition/shells/94.5mm.tres" id="5_1ek0h"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_r2rg4"]
+[ext_resource type="Texture2D" uid="uid://cv7j8pdeoi6c4" path="res://assets/textures/game_icons/vehicles/warden/tanks/Predator.png" id="7_1ek0h"]
+[ext_resource type="Resource" uid="uid://bhair0uuq0olu" path="res://data/factions/Warden.tres" id="7_miuiy"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_5qpyh"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_n5owg")
+_hp = 12000
+_armor = 17650
+metadata/_custom_type_script = "uid://c16qbt51iib2h"
+
+[sub_resource type="Resource" id="Resource_8wkey"]
+script = ExtResource("6_r2rg4")
+_ammo_type = ExtResource("5_1ek0h")
+_reload_duration_s = 6.0
+_damage_modifier = 1.25
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
+
+[resource]
+script = ExtResource("8_5qpyh")
+_category = ExtResource("1_15ycm")
+_faction = ExtResource("7_miuiy")
+_name = "Predator"
+_icon = ExtResource("7_1ek0h")
+_components = Array[ExtResource("2_on8h0")]([SubResource("Resource_ok5o1"), ExtResource("4_v3m1r"), SubResource("Resource_8wkey")])

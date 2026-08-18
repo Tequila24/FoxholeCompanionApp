@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://dbeay5ny1c8l7"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_ojplg"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_gr8w1"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_rn10f"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_50347"]
+[ext_resource type="Resource" uid="uid://dnbgpv4xcm42m" path="res://data/entities/ammunition/shells/RPG.tres" id="5_ojplg"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_8vrgy"]
+[ext_resource type="Resource" uid="uid://dy4qupv43gu2c" path="res://data/factions/Colonial.tres" id="7_gr8w1"]
+[ext_resource type="Texture2D" uid="uid://wvf1lf5v34wi" path="res://assets/textures/game_icons/vehicles/colonial/tanks/Ranseur.png" id="7_ojplg"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_l8muw"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_rn10f")
+_hp = 4000
+_armor = 15650
+
+[sub_resource type="Resource" id="Resource_uoal1"]
+script = ExtResource("6_8vrgy")
+_ammo_type = ExtResource("5_ojplg")
+_magazine_size = 4
+_reload_duration_s = 4.5
+_cooldown_duration_s = 0.5
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
+
+[resource]
+script = ExtResource("8_l8muw")
+_category = ExtResource("1_ojplg")
+_faction = ExtResource("7_gr8w1")
+_name = "Ranseur"
+_icon = ExtResource("7_ojplg")
+_components = Array[ExtResource("2_gr8w1")]([SubResource("Resource_ok5o1"), ExtResource("4_50347"), SubResource("Resource_uoal1")])
+metadata/_custom_type_script = "uid://djee5sv0ce06s"

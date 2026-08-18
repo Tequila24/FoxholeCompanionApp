@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dsmpuolssvp5x"]
+
+[ext_resource type="Script" uid="uid://by1c1pi35rn2n" path="res://scripts/ui/common/AutoFitLabel.gd" id="1_gfala"]
+
+[node name="AutoFitLabel" type="MarginContainer" unique_id=1446573899 node_paths=PackedStringArray("_label")]
+offset_right = 64.0
+offset_bottom = 64.0
+script = ExtResource("1_gfala")
+_label = NodePath("RichTextLabel")
+text = "test text"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=853606492]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 15
+theme_override_font_sizes/bold_font_size = 15
+theme_override_font_sizes/bold_italics_font_size = 15
+theme_override_font_sizes/italics_font_size = 15
+bbcode_enabled = true
+text = "test text"
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false

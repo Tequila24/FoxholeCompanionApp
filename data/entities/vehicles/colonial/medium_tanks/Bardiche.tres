@@ -8,6 +8,7 @@
 [ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="5_ea2os"]
 [ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="6_8mohl"]
 [ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_15eho"]
+[ext_resource type="Resource" uid="uid://dy4qupv43gu2c" path="res://data/factions/Colonial.tres" id="7_5f22t"]
 
 [sub_resource type="Resource" id="Resource_ok5o1"]
 script = ExtResource("4_ea2os")
@@ -25,6 +26,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 [resource]
 script = ExtResource("6_8mohl")
 _category = ExtResource("1_15eho")
+_faction = ExtResource("7_5f22t")
 _name = "Bardiche"
 _icon = ExtResource("4_uoal1")
 _components = Array[ExtResource("3_15eho")]([SubResource("Resource_ok5o1"), ExtResource("5_ea2os"), SubResource("Resource_uoal1")])

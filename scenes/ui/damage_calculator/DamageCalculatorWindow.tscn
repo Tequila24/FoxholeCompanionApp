@@ -2,8 +2,9 @@
 
 [ext_resource type="Script" uid="uid://cnn8dgwn270q" path="res://scripts/ui/damage_calculator/DamageCalculatorWindow.gd" id="1_nj582"]
 [ext_resource type="Texture2D" uid="uid://bj4e1gi56xg1q" path="res://assets/textures/ui/FrameWithCorners.png" id="2_44dyq"]
-[ext_resource type="Script" uid="uid://cqgmhnm5bbo65" path="res://scripts/ui/EntityView.gd" id="2_k4nm8"]
+[ext_resource type="Script" uid="uid://cqgmhnm5bbo65" path="res://scripts/ui/entity_selection_window/EntityView.gd" id="2_k4nm8"]
 [ext_resource type="Texture2D" uid="uid://cd2vejn27lvvy" path="res://assets/textures/game_icons/HammerIcon.png" id="3_hjvyr"]
+[ext_resource type="PackedScene" uid="uid://dsmpuolssvp5x" path="res://scenes/ui/common/AutoFitLabel.tscn" id="4_bvgr6"]
 [ext_resource type="PackedScene" uid="uid://dp42mj0oradte" path="res://scenes/ui/damage_calculator/DamageCalculatorStatLineView.tscn" id="5_44dyq"]
 [ext_resource type="PackedScene" uid="uid://bqelobowvj48a" path="res://scenes/ui/damage_calculator/DamageCalculatorCounterView.tscn" id="5_76uj2"]
 [ext_resource type="Texture2D" uid="uid://dnpx53c1ijicq" path="res://assets/textures/ui_icons/cancel.png" id="5_shxm2"]
@@ -29,7 +30,6 @@ border_width_bottom = 1
 border_color = Color(0.5254902, 0.5647059, 0.5058824, 1)
 
 [node name="DamageCalculator" type="MarginContainer" unique_id=1785491860 node_paths=PackedStringArray("_attacker_entity_view", "_target_entity_view", "_switch_button", "_invalid_icon", "_counters_views", "_stats_holder")]
-anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
@@ -116,7 +116,7 @@ size_flags_vertical = 3
 script = ExtResource("2_k4nm8")
 _button = NodePath("Button")
 _icon = NodePath("VBoxContainer/TextureRect")
-_name_label = NodePath("VBoxContainer/Label")
+_name_label = NodePath("VBoxContainer/AutoFitLabel")
 
 [node name="Panel" type="Panel" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Attacker/EntityView" unique_id=1499290949]
 layout_mode = 2
@@ -125,13 +125,21 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_jcnjc")
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Attacker/EntityView" unique_id=1684201778]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Attacker/EntityView/VBoxContainer" unique_id=275229511]
+[node name="AutoFitLabel" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Attacker/EntityView/VBoxContainer" unique_id=1446573899 instance=ExtResource("4_bvgr6")]
+custom_minimum_size = Vector2(0, 32)
+custom_maximum_size = Vector2(-1, 32)
 layout_mode = 2
-text = "Entity"
+min_font_size = 4
+text = "test text "
+
+[node name="RichTextLabel" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Attacker/EntityView/VBoxContainer/AutoFitLabel" index="0" unique_id=853606492]
+theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/bold_font_size = 14
+theme_override_font_sizes/bold_italics_font_size = 14
+theme_override_font_sizes/italics_font_size = 14
+text = "test text "
 horizontal_alignment = 1
 vertical_alignment = 1
-clip_text = true
-text_overrun_behavior = 5
 
 [node name="TextureRect" type="TextureRect" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Attacker/EntityView/VBoxContainer" unique_id=957908133]
 layout_mode = 2
@@ -202,7 +210,7 @@ size_flags_vertical = 3
 script = ExtResource("2_k4nm8")
 _button = NodePath("Button")
 _icon = NodePath("VBoxContainer/TextureRect")
-_name_label = NodePath("VBoxContainer/Label")
+_name_label = NodePath("VBoxContainer/AutoFitLabel")
 
 [node name="Panel" type="Panel" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView" unique_id=991555917]
 layout_mode = 2
@@ -211,13 +219,21 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_jcnjc")
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView" unique_id=1759992008]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView/VBoxContainer" unique_id=1320629074]
+[node name="AutoFitLabel" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView/VBoxContainer" unique_id=513190707 instance=ExtResource("4_bvgr6")]
+custom_minimum_size = Vector2(0, 32)
+custom_maximum_size = Vector2(-1, 32)
 layout_mode = 2
-text = "Entity"
+min_font_size = 4
+text = "test text "
+
+[node name="RichTextLabel" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView/VBoxContainer/AutoFitLabel" index="0" unique_id=853606492]
+theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/bold_font_size = 14
+theme_override_font_sizes/bold_italics_font_size = 14
+theme_override_font_sizes/italics_font_size = 14
+text = "test text "
 horizontal_alignment = 1
 vertical_alignment = 1
-clip_text = true
-text_overrun_behavior = 5
 
 [node name="TextureRect" type="TextureRect" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView/VBoxContainer" unique_id=710550166]
 layout_mode = 2
@@ -282,3 +298,6 @@ theme_override_constants/margin_bottom = 12
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/StatsLines/MarginContainer" unique_id=1417404561]
 layout_mode = 2
 theme_override_constants/separation = 12
+
+[editable path="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Attacker/EntityView/VBoxContainer/AutoFitLabel"]
+[editable path="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView/VBoxContainer/AutoFitLabel"]

@@ -1,0 +1,15 @@
+[gd_resource type="Theme" format=3 uid="uid://banvl88e6fu0f"]
+
+[ext_resource type="StyleBox" uid="uid://cqmge5aqccg8p" path="res://scenes/ui/styles/ButtonActive.tres" id="1_baxwq"]
+[ext_resource type="StyleBox" uid="uid://d3vm35gmu1tef" path="res://scenes/ui/styles/ButtonNormal.tres" id="1_i5ck3"]
+[ext_resource type="FontVariation" uid="uid://bvm4qqvuxyy30" path="res://scenes/ui/fonts_variatios/LilBoldGrotesk.tres" id="1_wyhkj"]
+
+[resource]
+Button/colors/font_color = Color(0.74509805, 0.7921569, 0.7254902, 1)
+Button/colors/font_pressed_color = Color(0, 0.22352941, 0.039215688, 1)
+Button/colors/icon_pressed_color = Color(2.0455569e-07, 0.22065371, 0.038251095, 1)
+Button/fonts/font = ExtResource("1_wyhkj")
+Button/styles/hover = ExtResource("1_i5ck3")
+Button/styles/hover_pressed = ExtResource("1_baxwq")
+Button/styles/normal = ExtResource("1_i5ck3")
+Button/styles/pressed = ExtResource("1_baxwq")

@@ -8,6 +8,7 @@
 [ext_resource type="Resource" uid="uid://dvf5t0nl1f5c1" path="res://data/entities/ammunition/shells/68mm.tres" id="5_a8wjb"]
 [ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_higes"]
 [ext_resource type="Texture2D" uid="uid://lkn8ocah3ie6" path="res://assets/textures/game_icons/vehicles/warden/tanks/Widow.png" id="7_a8wjb"]
+[ext_resource type="Resource" uid="uid://bhair0uuq0olu" path="res://data/factions/Warden.tres" id="7_l13us"]
 
 [sub_resource type="Resource" id="Resource_ok5o1"]
 script = ExtResource("3_l13us")
@@ -26,6 +27,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 [resource]
 script = ExtResource("2_qsf5y")
 _category = ExtResource("1_a8wjb")
+_faction = ExtResource("7_l13us")
 _name = "Widow"
 _icon = ExtResource("7_a8wjb")
 _components = Array[ExtResource("1_kmbkb")]([SubResource("Resource_ok5o1"), ExtResource("4_j2g5s"), SubResource("Resource_8wkey")])

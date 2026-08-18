@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://b27rks8ijtupb"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_ks3ur"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_x6k3w"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_ti2mx"]
+[ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_q2had"]
+[ext_resource type="Resource" uid="uid://bkko7y5lbj08d" path="res://data/entities/ammunition/shells/94.5mm.tres" id="5_aa6l6"]
+[ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_wpub3"]
+[ext_resource type="Resource" uid="uid://dy4qupv43gu2c" path="res://data/factions/Colonial.tres" id="7_ks3ur"]
+[ext_resource type="Texture2D" uid="uid://c8qpmwfyvdrx1" path="res://assets/textures/game_icons/vehicles/colonial/tanks/Hasta.png" id="8_ks3ur"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="9_yk5ks"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_ti2mx")
+_hp = 6250
+_armor = 15650
+
+[sub_resource type="Resource" id="Resource_uoal1"]
+script = ExtResource("6_wpub3")
+_ammo_type = ExtResource("5_aa6l6")
+_reload_duration_s = 6.0
+_cooldown_duration_s = 2.0
+metadata/_custom_type_script = "uid://crsbdyofwunxd"
+
+[resource]
+script = ExtResource("9_yk5ks")
+_category = ExtResource("1_ks3ur")
+_faction = ExtResource("7_ks3ur")
+_name = "Hasta"
+_icon = ExtResource("8_ks3ur")
+_components = Array[ExtResource("2_x6k3w")]([SubResource("Resource_ok5o1"), ExtResource("4_q2had"), SubResource("Resource_uoal1")])
+metadata/_custom_type_script = "uid://djee5sv0ce06s"
