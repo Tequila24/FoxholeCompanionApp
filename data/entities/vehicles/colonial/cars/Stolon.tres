@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://nwnwa3bshib1"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_gvqay"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_eiekp"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_5wipm"]
+[ext_resource type="Resource" uid="uid://y0pd33lsv36" path="res://data/resistances/Unarmored.tres" id="4_0yoys"]
+[ext_resource type="Resource" uid="uid://dy4qupv43gu2c" path="res://data/factions/Colonial.tres" id="5_hhdhq"]
+[ext_resource type="Texture2D" uid="uid://c7xwnvkw2ubbg" path="res://assets/textures/game_icons/vehicles/colonial/cars/Stolon.png" id="6_gvqay"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="7_ncuyx"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_5wipm")
+_hp = 1125
+
+[resource]
+script = ExtResource("7_ncuyx")
+_type = 3
+_category = ExtResource("1_gvqay")
+_faction = ExtResource("5_hhdhq")
+_name = "R-5 Atlas"
+_icon = ExtResource("6_gvqay")
+_components = Array[ExtResource("2_eiekp")]([SubResource("Resource_ok5o1"), ExtResource("4_0yoys")])
+metadata/_custom_type_script = "uid://djee5sv0ce06s"

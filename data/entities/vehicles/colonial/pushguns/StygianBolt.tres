@@ -25,6 +25,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("8_jiu1o")
+_type = 2
 _category = ExtResource("1_kpma6")
 _faction = ExtResource("7_ljaus")
 _name = "Stygian Bolt"

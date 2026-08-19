@@ -25,6 +25,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("9_h7cm0")
+_type = 1
 _category = ExtResource("1_jbmre")
 _faction = ExtResource("7_2vw0o")
 _name = "King Gallant"

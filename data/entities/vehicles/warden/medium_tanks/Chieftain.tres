@@ -25,6 +25,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("9_vwg50")
+_type = 1
 _category = ExtResource("1_eu4ri")
 _faction = ExtResource("7_eu4ri")
 _name = "Chieftain"

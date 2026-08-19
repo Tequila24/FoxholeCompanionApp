@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="GameEntity" format=3 uid="uid://c60hufkaw24vd"]
+
+[ext_resource type="Script" uid="uid://crfp6m75fd2wv" path="res://data_templaces/game_entities/categories/CategoryStructure.gd" id="1_p15os"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_n2njk"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_kvkrs"]
+[ext_resource type="Resource" uid="uid://cj25u0ids4452" path="res://data/resistances/Trench.tres" id="4_a4hnw"]
+[ext_resource type="Resource" uid="uid://hw4r0xhdp1mx" path="res://data/factions/Neutral.tres" id="5_l6iy3"]
+[ext_resource type="Texture2D" uid="uid://chbg3m41qa52" path="res://assets/textures/game_icons/structures/trench/TrenchT1Icon.png" id="6_4clk5"]
+[ext_resource type="Script" uid="uid://cqualf0ikt8sx" path="res://data_templaces/game_entities/GameEntity.gd" id="7_2bltc"]
+
+[sub_resource type="Resource" id="Resource_agmbi"]
+script = ExtResource("1_p15os")
+metadata/_custom_type_script = "uid://crfp6m75fd2wv"
+
+[sub_resource type="Resource" id="Resource_ofxwx"]
+script = ExtResource("3_kvkrs")
+_hp = 1500
+metadata/_custom_type_script = "uid://c16qbt51iib2h"
+
+[resource]
+script = ExtResource("7_2bltc")
+_category = SubResource("Resource_agmbi")
+_faction = ExtResource("5_l6iy3")
+_name = "Any Trench T1"
+_icon = ExtResource("6_4clk5")
+_components = Array[ExtResource("2_n2njk")]([SubResource("Resource_ofxwx"), ExtResource("4_a4hnw")])
+metadata/_custom_type_script = "uid://cqualf0ikt8sx"

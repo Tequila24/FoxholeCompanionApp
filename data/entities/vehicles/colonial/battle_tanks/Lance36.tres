@@ -33,6 +33,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("8_drbum")
+_type = 1
 _category = ExtResource("1_7gr3q")
 _faction = ExtResource("8_51cje")
 _name = "Lance-36"

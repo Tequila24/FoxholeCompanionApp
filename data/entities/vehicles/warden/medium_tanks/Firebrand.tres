@@ -26,6 +26,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("8_oa5hc")
+_type = 1
 _category = ExtResource("1_6t1kk")
 _faction = ExtResource("7_584b0")
 _name = "Firebrand"

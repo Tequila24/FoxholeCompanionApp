@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="AmmoEntity" format=3 uid="uid://boyqt8nfwbqak"]
+
+[ext_resource type="Resource" uid="uid://dg2qm3cdky10j" path="res://data/categories/CategoryAmmunition.tres" id="1_edi5f"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_sqwop"]
+[ext_resource type="Resource" uid="uid://ckk0hiot8yay" path="res://data/damage_types/KineticLight.tres" id="3_edi5f"]
+[ext_resource type="Texture2D" uid="uid://ddogw7524rb7y" path="res://assets/textures/game_icons/ammunition/7.92mm.png" id="4_edi5f"]
+[ext_resource type="Resource" uid="uid://hw4r0xhdp1mx" path="res://data/factions/Neutral.tres" id="4_sqwop"]
+[ext_resource type="Script" uid="uid://bwd5e7quireo6" path="res://data_templaces/game_entities/AmmoEntity.gd" id="5_erueo"]
+
+[resource]
+script = ExtResource("5_erueo")
+_damage = 43
+_damage_type = ExtResource("3_edi5f")
+_category = ExtResource("1_edi5f")
+_faction = ExtResource("4_sqwop")
+_name = "7.92"
+_icon = ExtResource("4_edi5f")
+metadata/_custom_type_script = "uid://bwd5e7quireo6"

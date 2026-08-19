@@ -32,9 +32,10 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("9_bcvk6")
+_type = 1
 _category = ExtResource("1_546vp")
 _faction = ExtResource("8_5md3s")
-_name = "Flood"
+_name = "Juggernaut"
 _icon = ExtResource("8_546vp")
 _components = Array[ExtResource("2_5md3s")]([SubResource("Resource_ok5o1"), ExtResource("4_v4fr4"), SubResource("Resource_uoal1"), SubResource("Resource_h33is")])
 metadata/_custom_type_script = "uid://djee5sv0ce06s"

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://ba4by2xhb10qj"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_nw5j6"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_j54ic"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_d02a5"]
+[ext_resource type="Resource" uid="uid://y0pd33lsv36" path="res://data/resistances/Unarmored.tres" id="4_agqkh"]
+[ext_resource type="Resource" uid="uid://bhair0uuq0olu" path="res://data/factions/Warden.tres" id="5_nw5j6"]
+[ext_resource type="Texture2D" uid="uid://cs5cc4cuvqtal" path="res://assets/textures/game_icons/vehicles/warden/cars/Loadlugger.png" id="6_qcdoi"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="7_h4jxw"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_d02a5")
+_hp = 1000
+
+[resource]
+script = ExtResource("7_h4jxw")
+_type = 3
+_category = ExtResource("1_nw5j6")
+_faction = ExtResource("5_nw5j6")
+_name = "Dunne"
+_icon = ExtResource("6_qcdoi")
+_components = Array[ExtResource("2_j54ic")]([SubResource("Resource_ok5o1"), ExtResource("4_agqkh")])
+metadata/_custom_type_script = "uid://djee5sv0ce06s"

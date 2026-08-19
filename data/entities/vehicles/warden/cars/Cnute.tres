@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://cl4jdobg04vwc"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_4b2ka"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_t8gfm"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_1nmqb"]
+[ext_resource type="Resource" uid="uid://bmpce282w57nq" path="res://data/resistances/ArmorLight.tres" id="4_4b2ka"]
+[ext_resource type="Resource" uid="uid://bhair0uuq0olu" path="res://data/factions/Warden.tres" id="5_4b2ka"]
+[ext_resource type="Texture2D" uid="uid://b2156l877aiuq" path="res://assets/textures/game_icons/vehicles/warden/cars/Cnute.png" id="6_wfsnh"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="7_rxehb"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_1nmqb")
+_hp = 1150
+_armor = 3000
+
+[resource]
+script = ExtResource("7_rxehb")
+_type = 3
+_category = ExtResource("1_4b2ka")
+_faction = ExtResource("5_4b2ka")
+_name = "Cnute Cliffwrest"
+_icon = ExtResource("6_wfsnh")
+_components = Array[ExtResource("2_t8gfm")]([SubResource("Resource_ok5o1"), ExtResource("4_4b2ka")])
+metadata/_custom_type_script = "uid://djee5sv0ce06s"

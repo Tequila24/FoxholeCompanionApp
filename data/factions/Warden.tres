@@ -1,7 +1,9 @@
 [gd_resource type="Resource" script_class="Faction" format=3 uid="uid://bhair0uuq0olu"]
 
+[ext_resource type="Texture2D" uid="uid://c8qjf7h8hhf54" path="res://assets/textures/game_icons/Warden.png" id="1_3ew51"]
 [ext_resource type="Script" uid="uid://iq3yf2pyh1v7" path="res://data_templaces/Faction.gd" id="1_7qk8u"]
 
 [resource]
 script = ExtResource("1_7qk8u")
+_icon = ExtResource("1_3ew51")
 metadata/_custom_type_script = "uid://iq3yf2pyh1v7"

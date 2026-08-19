@@ -25,6 +25,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("8_r63ti")
+_type = 2
 _category = ExtResource("1_2gctr")
 _faction = ExtResource("7_p3dw5")
 _name = "Rampart"

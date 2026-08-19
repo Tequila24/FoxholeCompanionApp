@@ -33,6 +33,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("8_siu2r")
+_type = 1
 _category = ExtResource("1_n1a5y")
 _faction = ExtResource("8_6o2s7")
 _name = "Flood"

@@ -25,6 +25,7 @@ func _ready() -> void:
 	_attacker_entity_view.pressed.connect(
 		func(): 
 			var window = EntitySelectionWindow.open_window()
+			window.set_visible_entity_type(GameEntity.COMPONENT_FILTER.ATTACKING)
 			window.entity_selected.connect(
 				func(new_entity: GameEntity):
 					_attacker_entity_view.set_visual(new_entity)
@@ -36,6 +37,7 @@ func _ready() -> void:
 	_target_entity_view.pressed.connect(
 		func(): 
 			var window = EntitySelectionWindow.open_window()
+			window.set_visible_entity_type(GameEntity.COMPONENT_FILTER.DAMAGEABLE)
 			window.entity_selected.connect(
 				func(new_entity: GameEntity):
 					_target_entity_view.set_visual(new_entity)

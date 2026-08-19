@@ -6,6 +6,7 @@
 [ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_s65ck"]
 [ext_resource type="Resource" uid="uid://cgv68vw13hkwm" path="res://data/entities/ammunition/bullets/12.7mm.tres" id="5_iinqt"]
 [ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_vkood"]
+[ext_resource type="Resource" uid="uid://dy4qupv43gu2c" path="res://data/factions/Colonial.tres" id="7_cj2xr"]
 [ext_resource type="Texture2D" uid="uid://de2kljxdqba5a" path="res://assets/textures/game_icons/vehicles/colonial/tanks/Actaeon.png" id="7_iinqt"]
 [ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_do48t"]
 
@@ -24,7 +25,9 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("8_do48t")
+_type = 1
 _category = ExtResource("1_nt3v0")
+_faction = ExtResource("7_cj2xr")
 _name = "Actaeon"
 _icon = ExtResource("7_iinqt")
 _components = Array[ExtResource("2_itui0")]([SubResource("Resource_ok5o1"), ExtResource("4_s65ck"), SubResource("Resource_uoal1")])

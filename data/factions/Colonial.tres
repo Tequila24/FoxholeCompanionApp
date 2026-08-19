@@ -1,7 +1,9 @@
 [gd_resource type="Resource" script_class="Faction" format=3 uid="uid://dy4qupv43gu2c"]
 
 [ext_resource type="Script" uid="uid://iq3yf2pyh1v7" path="res://data_templaces/Faction.gd" id="1_555b2"]
+[ext_resource type="Texture2D" uid="uid://da4nxcp843ngb" path="res://assets/textures/game_icons/Colonial.png" id="1_x20xx"]
 
 [resource]
 script = ExtResource("1_555b2")
+_icon = ExtResource("1_x20xx")
 metadata/_custom_type_script = "uid://iq3yf2pyh1v7"

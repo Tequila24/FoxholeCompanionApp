@@ -13,6 +13,21 @@ var all_categories: Array[Category]:
 		return _all_categories
 
 
+@export var _faction_warden: Faction
+var faction_warden: Faction:
+	get:
+		return _faction_warden
+
+@export var _faction_colonial: Faction
+var faction_colonial: Faction:
+	get:
+		return _faction_colonial
+
+@export var _faction_neutral: Faction
+var faction_neutral: Faction:
+	get:
+		return _faction_neutral
+
 
 func _ready() -> void:
 	_all_entities.assign(Utils.load_resources_to_dict_recursive(
@@ -28,3 +43,7 @@ func get_entities_in_category(category: Category) -> Array[GameEntity]:
 			# print("%s entity category, %s search category" % [entity.category.name, category.name])
 			return entity.category == category
 	)
+
+
+func get_entities_by_filter(filter: Callable) -> Array[GameEntity]:
+	return _all_entities.values().filter(filter)

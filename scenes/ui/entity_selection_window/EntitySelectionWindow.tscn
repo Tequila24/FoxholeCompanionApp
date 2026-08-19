@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cv7axrn6g30i5"]
 
 [ext_resource type="Script" uid="uid://b48lkv6p1t23a" path="res://scripts/ui/entity_selection_window/EntitySelectionWindow.gd" id="1_penve"]
-[ext_resource type="PackedScene" uid="uid://kbicv4fg3p17" path="res://scenes/ui/entity_selection_window/EntityCategoryView.tscn" id="2_penve"]
+[ext_resource type="PackedScene" uid="uid://chgllbe8hpmwg" path="res://scenes/ui/entity_selection_window/EntityView.tscn" id="2_p5cyp"]
 [ext_resource type="Theme" uid="uid://banvl88e6fu0f" path="res://scenes/ui/themes/ButtonFilter.tres" id="3_6u6da"]
 [ext_resource type="Texture2D" uid="uid://c8qjf7h8hhf54" path="res://assets/textures/game_icons/Warden.png" id="3_ddnja"]
 [ext_resource type="FontVariation" uid="uid://bvm4qqvuxyy30" path="res://scenes/ui/fonts_variatios/LilBoldGrotesk.tres" id="4_qv3ln"]
@@ -10,12 +10,12 @@
 [ext_resource type="StyleBox" uid="uid://d3vm35gmu1tef" path="res://scenes/ui/styles/ButtonNormal.tres" id="5_pt0ne"]
 [ext_resource type="StyleBox" uid="uid://cqmge5aqccg8p" path="res://scenes/ui/styles/ButtonActive.tres" id="6_lbn3i"]
 [ext_resource type="Texture2D" uid="uid://7vdwu2jnshfk" path="res://assets/textures/game_icons/vehicles/colonial/tanks/Spatha.png" id="6_rk0tl"]
-[ext_resource type="Texture2D" uid="uid://c0cbwoofagaiw" path="res://assets/textures/game_icons/structures/BunkerT2.png" id="7_echop"]
+[ext_resource type="Texture2D" uid="uid://k074cnqx2dsc" path="res://assets/textures/game_icons/structures/trench/TrenchT2Icon.png" id="11_p5cyp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qv3ln"]
 bg_color = Color(0.2, 0.20784314, 0.21568628, 1)
 
-[node name="EntitySelectionWindow" type="MarginContainer" unique_id=60665683 node_paths=PackedStringArray("_categories_holder", "_close_button")]
+[node name="EntitySelectionWindow" type="MarginContainer" unique_id=60665683 node_paths=PackedStringArray("_views_holder", "_close_button", "_filter_warden", "_filter_colonial", "_filter_tanks", "_filter_pushguns", "_filter_cars", "_filter_structures")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -24,9 +24,15 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_penve")
-_category_view = ExtResource("2_penve")
-_categories_holder = NodePath("MarginContainer/VBoxContainer/ScrollContainer/Categories")
+_entity_view_prefab = ExtResource("2_p5cyp")
+_views_holder = NodePath("MarginContainer/VBoxContainer/ScrollContainer/Grid")
 _close_button = NodePath("MarginContainer/VBoxContainer/Close/CloseButton")
+_filter_warden = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer/FilterWarden")
+_filter_colonial = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer/FilterColonial")
+_filter_tanks = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer2/FilterTanks")
+_filter_pushguns = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer2/FilterPushguns")
+_filter_cars = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3/FilterCars")
+_filter_structures = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3/FilterStructures")
 
 [node name="Panel" type="Panel" parent="." unique_id=1147524253]
 layout_mode = 2
@@ -42,9 +48,10 @@ layout_mode = 2
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Categories" type="VBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer" unique_id=1939161627]
+[node name="Grid" type="GridContainer" parent="MarginContainer/VBoxContainer/ScrollContainer" unique_id=1006525388]
 layout_mode = 2
 size_flags_horizontal = 3
+columns = 4
 
 [node name="Filters" type="FoldableContainer" parent="MarginContainer/VBoxContainer" unique_id=1635908670]
 layout_mode = 2
@@ -89,16 +96,6 @@ expand_icon = true
 [node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer" unique_id=38464295]
 layout_mode = 2
 
-[node name="FilterPushguns" type="Button" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer2" unique_id=898375298]
-layout_mode = 2
-size_flags_horizontal = 3
-theme = ExtResource("3_6u6da")
-toggle_mode = true
-button_pressed = true
-text = "Pushguns"
-icon = ExtResource("5_ea3co")
-expand_icon = true
-
 [node name="FilterTanks" type="Button" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer2" unique_id=1726689220]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -109,8 +106,28 @@ text = "Tanks"
 icon = ExtResource("6_rk0tl")
 expand_icon = true
 
+[node name="FilterPushguns" type="Button" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer2" unique_id=898375298]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("3_6u6da")
+toggle_mode = true
+button_pressed = true
+text = "Pushguns"
+icon = ExtResource("5_ea3co")
+expand_icon = true
+
 [node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer" unique_id=2057487550]
 layout_mode = 2
+
+[node name="FilterCars" type="Button" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3" unique_id=1066784246]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("3_6u6da")
+toggle_mode = true
+button_pressed = true
+text = "Vehicles"
+icon = ExtResource("5_ea3co")
+expand_icon = true
 
 [node name="FilterStructures" type="Button" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3" unique_id=114099951]
 layout_mode = 2
@@ -119,17 +136,7 @@ theme = ExtResource("3_6u6da")
 toggle_mode = true
 button_pressed = true
 text = "Structures"
-icon = ExtResource("7_echop")
-expand_icon = true
-
-[node name="FilterVehicles" type="Button" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3" unique_id=1066784246]
-layout_mode = 2
-size_flags_horizontal = 3
-theme = ExtResource("3_6u6da")
-toggle_mode = true
-button_pressed = true
-text = "Vehicles"
-icon = ExtResource("5_ea3co")
+icon = ExtResource("11_p5cyp")
 expand_icon = true
 
 [node name="Close" type="MarginContainer" parent="MarginContainer/VBoxContainer" unique_id=1347434934]

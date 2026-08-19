@@ -1,7 +1,9 @@
 [gd_resource type="Resource" script_class="Faction" format=3 uid="uid://hw4r0xhdp1mx"]
 
+[ext_resource type="Texture2D" uid="uid://dnpx53c1ijicq" path="res://assets/textures/ui_icons/cancel.png" id="1_fa7cc"]
 [ext_resource type="Script" uid="uid://iq3yf2pyh1v7" path="res://data_templaces/Faction.gd" id="1_rdjp5"]
 
 [resource]
 script = ExtResource("1_rdjp5")
+_icon = ExtResource("1_fa7cc")
 metadata/_custom_type_script = "uid://iq3yf2pyh1v7"

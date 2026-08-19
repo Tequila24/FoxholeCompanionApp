@@ -24,6 +24,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("8_jo5ys")
+_type = 1
 _category = ExtResource("1_fc5fm")
 _faction = ExtResource("7_7qgfv")
 _name = "Ballista"

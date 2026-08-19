@@ -12,7 +12,7 @@ signal updated()
 @export var _name_label: AutoFitLabel
 
 var _current_entity: GameEntity
-var current_entity: GameEntity:
+var attached_entity: GameEntity:
 	get:
 		return _current_entity
 

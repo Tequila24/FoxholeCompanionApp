@@ -23,6 +23,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("8_aemlv")
+_type = 1
 _category = ExtResource("1_1udrt")
 _faction = ExtResource("7_pjo8f")
 _name = "Talos"

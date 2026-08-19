@@ -6,6 +6,7 @@
 [ext_resource type="Resource" uid="uid://bdrrwicwqkesn" path="res://data/resistances/ArmorHeavy.tres" id="4_iphaa"]
 [ext_resource type="Resource" uid="uid://w3ejvhggf8js" path="res://data/entities/ammunition/shells/30mm.tres" id="5_vp3hj"]
 [ext_resource type="Script" uid="uid://crsbdyofwunxd" path="res://data_templaces/game_entities/components/AttackComponent.gd" id="6_jf778"]
+[ext_resource type="Resource" uid="uid://dy4qupv43gu2c" path="res://data/factions/Colonial.tres" id="7_0tu0w"]
 [ext_resource type="Texture2D" uid="uid://ca0wum3u5sp2p" path="res://assets/textures/game_icons/vehicles/colonial/tanks/Ixion.png" id="7_vp3hj"]
 [ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="8_ihd6u"]
 
@@ -23,7 +24,9 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("8_ihd6u")
+_type = 1
 _category = ExtResource("1_vp3hj")
+_faction = ExtResource("7_0tu0w")
 _name = "Ixion"
 _icon = ExtResource("7_vp3hj")
 _components = Array[ExtResource("2_0tu0w")]([SubResource("Resource_ok5o1"), ExtResource("4_iphaa"), SubResource("Resource_uoal1")])

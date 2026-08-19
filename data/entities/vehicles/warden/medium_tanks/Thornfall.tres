@@ -26,6 +26,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("8_76oiu")
+_type = 1
 _category = ExtResource("1_p424g")
 _faction = ExtResource("7_aaml4")
 _name = "Thornfall"

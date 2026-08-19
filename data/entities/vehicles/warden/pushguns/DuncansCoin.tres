@@ -26,6 +26,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("8_8aojh")
+_type = 2
 _category = ExtResource("1_fg855")
 _faction = ExtResource("7_elo70")
 _name = "Duncan's Coin"

@@ -24,6 +24,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("8_fdyjs")
+_type = 1
 _category = ExtResource("1_xc4ja")
 _faction = ExtResource("7_qejkf")
 _name = "Hatchet"

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://svqxsquu37mr"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_xyn4x"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_hmj83"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_q58rm"]
+[ext_resource type="Resource" uid="uid://bmpce282w57nq" path="res://data/resistances/ArmorLight.tres" id="4_faqoi"]
+[ext_resource type="Resource" uid="uid://dy4qupv43gu2c" path="res://data/factions/Colonial.tres" id="5_6kgra"]
+[ext_resource type="Texture2D" uid="uid://b83fhsvwjuyy6" path="res://assets/textures/game_icons/vehicles/colonial/cars/Taurine.png" id="6_6kgra"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="7_ho7ic"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_q58rm")
+_hp = 1150
+_armor = 3000
+
+[resource]
+script = ExtResource("7_ho7ic")
+_type = 3
+_category = ExtResource("1_xyn4x")
+_faction = ExtResource("5_6kgra")
+_name = "Taurine Rigger"
+_icon = ExtResource("6_6kgra")
+_components = Array[ExtResource("2_hmj83")]([SubResource("Resource_ok5o1"), ExtResource("4_faqoi")])
+metadata/_custom_type_script = "uid://djee5sv0ce06s"

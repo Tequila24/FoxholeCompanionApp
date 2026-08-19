@@ -24,6 +24,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("8_f1tvm")
+_type = 2
 _category = ExtResource("1_qkmo0")
 _faction = ExtResource("7_judmk")
 _name = "Battering Ram"

@@ -27,6 +27,7 @@ metadata/_custom_type_script = "uid://crsbdyofwunxd"
 
 [resource]
 script = ExtResource("8_whhb7")
+_type = 1
 _category = ExtResource("1_yhs76")
 _faction = ExtResource("7_u0jh7")
 _name = "King Spire"

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="VehicleEntity" format=3 uid="uid://doc6gy0g4a8hu"]
+
+[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="1_y2rod"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_o3wd3"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_g81ug"]
+[ext_resource type="Resource" uid="uid://y0pd33lsv36" path="res://data/resistances/Unarmored.tres" id="4_5cpkb"]
+[ext_resource type="Resource" uid="uid://dy4qupv43gu2c" path="res://data/factions/Colonial.tres" id="5_lbh0b"]
+[ext_resource type="Texture2D" uid="uid://c1ywe3n618jhb" path="res://assets/textures/game_icons/vehicles/colonial/cars/Sisyphus.png" id="6_y2rod"]
+[ext_resource type="Script" uid="uid://djee5sv0ce06s" path="res://data_templaces/game_entities/VehicleEntity.gd" id="7_cv57v"]
+
+[sub_resource type="Resource" id="Resource_ok5o1"]
+script = ExtResource("3_g81ug")
+_hp = 900
+
+[resource]
+script = ExtResource("7_cv57v")
+_type = 3
+_category = ExtResource("1_y2rod")
+_faction = ExtResource("5_lbh0b")
+_name = "R-5b Sisyphus"
+_icon = ExtResource("6_y2rod")
+_components = Array[ExtResource("2_o3wd3")]([SubResource("Resource_ok5o1"), ExtResource("4_5cpkb")])
+metadata/_custom_type_script = "uid://djee5sv0ce06s"
