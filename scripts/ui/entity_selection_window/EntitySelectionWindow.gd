@@ -50,6 +50,9 @@ func set_visible_entity_type(type: GameEntity.COMPONENT_FILTER):
 
 func _fill_entities():
 	var all_entities = DataMaster.get_entities_by_filter(func(_entity: GameEntity): return true)
+
+	all_entities.sort_custom(func(a: GameEntity, b: GameEntity): return a.name < b.name)
+
 	for entity in all_entities:
 		var new_view = _entity_view_prefab.instantiate() as EntityView
 		new_view.set_visual(entity)
@@ -92,6 +95,9 @@ func _entity_filter(entity: GameEntity) -> bool:
 
 		if ((vehicle_entity.type == VehicleEntity.VEHICLE_TYPE.CAR) && !_filter_cars.button_pressed):
 			result = false
+	
+	if ((entity is StructureEntity) && !_filter_structures.button_pressed):
+		result = false
 
 	return result
 

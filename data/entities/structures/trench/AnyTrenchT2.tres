@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="GameEntity" format=3 uid="uid://d3ynclxqusxdm"]
+[gd_resource type="Resource" script_class="StructureEntity" format=3 uid="uid://d3ynclxqusxdm"]
 
 [ext_resource type="Script" uid="uid://crfp6m75fd2wv" path="res://data_templaces/game_entities/categories/CategoryStructure.gd" id="1_d8ian"]
 [ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_ookfi"]
@@ -6,7 +6,7 @@
 [ext_resource type="Resource" uid="uid://cj25u0ids4452" path="res://data/resistances/Trench.tres" id="4_1hcm3"]
 [ext_resource type="Resource" uid="uid://hw4r0xhdp1mx" path="res://data/factions/Neutral.tres" id="5_lxtcr"]
 [ext_resource type="Texture2D" uid="uid://k074cnqx2dsc" path="res://assets/textures/game_icons/structures/trench/TrenchT2Icon.png" id="6_1sa4p"]
-[ext_resource type="Script" uid="uid://cqualf0ikt8sx" path="res://data_templaces/game_entities/GameEntity.gd" id="7_i7jr1"]
+[ext_resource type="Script" uid="uid://rxjmxbd4v8p0" path="res://data_templaces/game_entities/StructureEntity.gd" id="7_d8ian"]
 
 [sub_resource type="Resource" id="Resource_agmbi"]
 script = ExtResource("1_d8ian")
@@ -18,7 +18,7 @@ _hp = 1850
 metadata/_custom_type_script = "uid://c16qbt51iib2h"
 
 [resource]
-script = ExtResource("7_i7jr1")
+script = ExtResource("7_d8ian")
 _category = SubResource("Resource_agmbi")
 _faction = ExtResource("5_lxtcr")
 _name = "AnyTrench T2"

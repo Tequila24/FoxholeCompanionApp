@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="StructureEntity" format=3 uid="uid://cufr4skyqt364"]
+
+[ext_resource type="Resource" uid="uid://cntaal3u7cvon" path="res://data/categories/CategoryStructure.tres" id="1_1xj0s"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_twbk4"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_av7q2"]
+[ext_resource type="Resource" uid="uid://d01d4nu43ntr0" path="res://data/resistances/StructureT1.tres" id="4_qh1j4"]
+[ext_resource type="Resource" uid="uid://hw4r0xhdp1mx" path="res://data/factions/Neutral.tres" id="5_ou68l"]
+[ext_resource type="Texture2D" uid="uid://cbt0mp3vy3krn" path="res://assets/textures/game_icons/structures/bunker/FortT1ATGunAIIcon.png" id="6_1xj0s"]
+[ext_resource type="Script" uid="uid://rxjmxbd4v8p0" path="res://data_templaces/game_entities/StructureEntity.gd" id="7_1xj0s"]
+
+[sub_resource type="Resource" id="Resource_ofxwx"]
+script = ExtResource("3_av7q2")
+_hp = 650
+metadata/_custom_type_script = "uid://c16qbt51iib2h"
+
+[resource]
+script = ExtResource("7_1xj0s")
+_category = ExtResource("1_1xj0s")
+_faction = ExtResource("5_ou68l")
+_name = "AT Garrison T1"
+_icon = ExtResource("6_1xj0s")
+_components = Array[ExtResource("2_twbk4")]([SubResource("Resource_ofxwx"), ExtResource("4_qh1j4")])
+metadata/_custom_type_script = "uid://cqualf0ikt8sx"

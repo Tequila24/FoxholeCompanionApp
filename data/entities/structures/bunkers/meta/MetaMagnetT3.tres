@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="StructureEntity" format=3 uid="uid://i1f5bq55drj5"]
+
+[ext_resource type="Script" uid="uid://crfp6m75fd2wv" path="res://data_templaces/game_entities/categories/CategoryStructure.gd" id="1_ldb4s"]
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="2_avpkl"]
+[ext_resource type="Script" uid="uid://c16qbt51iib2h" path="res://data_templaces/game_entities/components/VitalsComponent.gd" id="3_hjjks"]
+[ext_resource type="Resource" uid="uid://bt551cddpvffg" path="res://data/resistances/StructureT3.tres" id="4_ldb4s"]
+[ext_resource type="Resource" uid="uid://hw4r0xhdp1mx" path="res://data/factions/Neutral.tres" id="5_i4gnh"]
+[ext_resource type="Texture2D" uid="uid://ejmgbv4bde1l" path="res://assets/textures/game_icons/structures/meta/MagnetT3.png" id="6_ldb4s"]
+[ext_resource type="Script" uid="uid://rxjmxbd4v8p0" path="res://data_templaces/game_entities/StructureEntity.gd" id="7_ldb4s"]
+
+[sub_resource type="Resource" id="Resource_agmbi"]
+script = ExtResource("1_ldb4s")
+metadata/_custom_type_script = "uid://crfp6m75fd2wv"
+
+[sub_resource type="Resource" id="Resource_ofxwx"]
+script = ExtResource("3_hjjks")
+_hp = 14278
+metadata/_custom_type_script = "uid://c16qbt51iib2h"
+
+[resource]
+script = ExtResource("7_ldb4s")
+_category = SubResource("Resource_agmbi")
+_faction = ExtResource("5_i4gnh")
+_name = "Meta Magnet T3"
+_icon = ExtResource("6_ldb4s")
+_components = Array[ExtResource("2_avpkl")]([SubResource("Resource_ofxwx"), ExtResource("4_ldb4s")])
+metadata/_custom_type_script = "uid://cqualf0ikt8sx"

@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="DamageResistanceComponent" format=3 uid="uid://eesfhuijpox3"]
+
+[ext_resource type="Script" uid="uid://bupfw8yvghm6c" path="res://data_templaces/DamageType.gd" id="1_f523d"]
+[ext_resource type="Resource" uid="uid://1dekj3luodu" path="res://data/damage_types/ArmorPiercing.tres" id="2_okm7c"]
+[ext_resource type="Resource" uid="uid://blgna6wdrxlp8" path="res://data/damage_types/ATExplosive.tres" id="3_8j5yn"]
+[ext_resource type="Resource" uid="uid://1byign81lbwi" path="res://data/damage_types/ATKinetic.tres" id="4_foxbh"]
+[ext_resource type="Resource" uid="uid://b2seq8rxls5c1" path="res://data/damage_types/Demolition.tres" id="5_q4emg"]
+[ext_resource type="Resource" uid="uid://crq5ahfo72y3y" path="res://data/damage_types/Explosive.tres" id="6_xc8tm"]
+[ext_resource type="Resource" uid="uid://buha71xdlerfn" path="res://data/damage_types/Fire.tres" id="7_g05pb"]
+[ext_resource type="Resource" uid="uid://c3pwudvr2lix3" path="res://data/damage_types/HighExplosive.tres" id="8_kv531"]
+[ext_resource type="Resource" uid="uid://bmwt8luxebe46" path="res://data/damage_types/IncendiaryExplosive.tres" id="9_rhtlp"]
+[ext_resource type="Resource" uid="uid://bmu7if7aja10" path="res://data/damage_types/KineticHeavy.tres" id="10_vjog3"]
+[ext_resource type="Resource" uid="uid://ckk0hiot8yay" path="res://data/damage_types/KineticLight.tres" id="11_36img"]
+[ext_resource type="Resource" uid="uid://ceahjkfpe1bfg" path="res://data/damage_types/Shrapnel.tres" id="12_jhxca"]
+[ext_resource type="Script" uid="uid://b1vwhiqmx2noy" path="res://data_templaces/game_entities/components/DamageResistanceComponent.gd" id="13_ma1ca"]
+
+[resource]
+script = ExtResource("13_ma1ca")
+_list = Dictionary[ExtResource("1_f523d"), float]({
+ExtResource("2_okm7c"): 0.0,
+ExtResource("3_8j5yn"): 0.0,
+ExtResource("4_foxbh"): 0.35,
+ExtResource("5_q4emg"): 0.7,
+ExtResource("6_xc8tm"): 0.15,
+ExtResource("7_g05pb"): 1.0,
+ExtResource("8_kv531"): 0.7,
+ExtResource("9_rhtlp"): 0.7,
+ExtResource("10_vjog3"): 0.85,
+ExtResource("11_36img"): 0.99,
+ExtResource("12_jhxca"): 0.85
+})
+metadata/_custom_type_script = "uid://b1vwhiqmx2noy"

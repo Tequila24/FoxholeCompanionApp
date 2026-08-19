@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="DamageResistanceComponent" format=3 uid="uid://biluvmrgaanc5"]
+
+[ext_resource type="Script" uid="uid://bupfw8yvghm6c" path="res://data_templaces/DamageType.gd" id="1_alalh"]
+[ext_resource type="Resource" uid="uid://1dekj3luodu" path="res://data/damage_types/ArmorPiercing.tres" id="2_nalda"]
+[ext_resource type="Resource" uid="uid://blgna6wdrxlp8" path="res://data/damage_types/ATExplosive.tres" id="3_muyhi"]
+[ext_resource type="Resource" uid="uid://1byign81lbwi" path="res://data/damage_types/ATKinetic.tres" id="4_rymsm"]
+[ext_resource type="Resource" uid="uid://b2seq8rxls5c1" path="res://data/damage_types/Demolition.tres" id="5_v28ps"]
+[ext_resource type="Resource" uid="uid://crq5ahfo72y3y" path="res://data/damage_types/Explosive.tres" id="6_mojld"]
+[ext_resource type="Resource" uid="uid://buha71xdlerfn" path="res://data/damage_types/Fire.tres" id="7_ks5e5"]
+[ext_resource type="Resource" uid="uid://c3pwudvr2lix3" path="res://data/damage_types/HighExplosive.tres" id="8_gkp5r"]
+[ext_resource type="Resource" uid="uid://bmwt8luxebe46" path="res://data/damage_types/IncendiaryExplosive.tres" id="9_efxlq"]
+[ext_resource type="Resource" uid="uid://bmu7if7aja10" path="res://data/damage_types/KineticHeavy.tres" id="10_husyb"]
+[ext_resource type="Resource" uid="uid://ckk0hiot8yay" path="res://data/damage_types/KineticLight.tres" id="11_j30v8"]
+[ext_resource type="Resource" uid="uid://ceahjkfpe1bfg" path="res://data/damage_types/Shrapnel.tres" id="12_j450b"]
+[ext_resource type="Script" uid="uid://b1vwhiqmx2noy" path="res://data_templaces/game_entities/components/DamageResistanceComponent.gd" id="13_bydwk"]
+
+[resource]
+script = ExtResource("13_bydwk")
+_list = Dictionary[ExtResource("1_alalh"), float]({
+ExtResource("2_nalda"): 0.95,
+ExtResource("3_muyhi"): 1.0,
+ExtResource("4_rymsm"): 1.0,
+ExtResource("5_v28ps"): 0.0,
+ExtResource("6_mojld"): 0.93,
+ExtResource("7_ks5e5"): 1.0,
+ExtResource("8_gkp5r"): 0.5,
+ExtResource("9_efxlq"): 0.93,
+ExtResource("10_husyb"): 1.0,
+ExtResource("11_j30v8"): 1.0,
+ExtResource("12_j450b"): 1.0
+})
+metadata/_custom_type_script = "uid://b1vwhiqmx2noy"

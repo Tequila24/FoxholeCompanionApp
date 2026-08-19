@@ -10,7 +10,8 @@
 [ext_resource type="StyleBox" uid="uid://d3vm35gmu1tef" path="res://scenes/ui/styles/ButtonNormal.tres" id="5_pt0ne"]
 [ext_resource type="StyleBox" uid="uid://cqmge5aqccg8p" path="res://scenes/ui/styles/ButtonActive.tres" id="6_lbn3i"]
 [ext_resource type="Texture2D" uid="uid://7vdwu2jnshfk" path="res://assets/textures/game_icons/vehicles/colonial/tanks/Spatha.png" id="6_rk0tl"]
-[ext_resource type="Texture2D" uid="uid://k074cnqx2dsc" path="res://assets/textures/game_icons/structures/trench/TrenchT2Icon.png" id="11_p5cyp"]
+[ext_resource type="Texture2D" uid="uid://l5tmpalqr3h3" path="res://assets/textures/game_icons/structures/bunker/FortT2Icon.png" id="11_p5cyp"]
+[ext_resource type="Texture2D" uid="uid://bta8petsvixd0" path="res://assets/textures/game_icons/vehicles/warden/cars/Dunne.png" id="11_pt0ne"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qv3ln"]
 bg_color = Color(0.2, 0.20784314, 0.21568628, 1)
@@ -51,6 +52,8 @@ size_flags_vertical = 3
 [node name="Grid" type="GridContainer" parent="MarginContainer/VBoxContainer/ScrollContainer" unique_id=1006525388]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
 columns = 4
 
 [node name="Filters" type="FoldableContainer" parent="MarginContainer/VBoxContainer" unique_id=1635908670]
@@ -60,12 +63,10 @@ theme_override_styles/title_panel = ExtResource("5_pt0ne")
 theme_override_styles/title_hover_panel = ExtResource("5_pt0ne")
 theme_override_styles/title_collapsed_panel = ExtResource("6_lbn3i")
 theme_override_styles/title_collapsed_hover_panel = ExtResource("6_lbn3i")
-folded = true
 title = "Filters"
 title_position = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/Filters" unique_id=1928050772]
-visible = false
 layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer" unique_id=1495427546]
@@ -125,11 +126,11 @@ size_flags_horizontal = 3
 theme = ExtResource("3_6u6da")
 toggle_mode = true
 button_pressed = true
-text = "Vehicles"
-icon = ExtResource("5_ea3co")
+text = "Cars"
+icon = ExtResource("11_pt0ne")
 expand_icon = true
 
-[node name="FilterStructures" type="Button" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3" unique_id=114099951]
+[node name="FilterStructures" type="Button" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3" unique_id=574648705]
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("3_6u6da")
