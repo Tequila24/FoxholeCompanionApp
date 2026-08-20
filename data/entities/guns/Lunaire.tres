@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GunEntity" format=3 uid="uid://c5jbqpddnhd2e"]
+
+[ext_resource type="Script" uid="uid://dth25l6gpg3pq" path="res://data_templaces/game_entities/components/GameEntityComponent.gd" id="1_mnxyr"]
+[ext_resource type="Resource" uid="uid://dy4qupv43gu2c" path="res://data/factions/Colonial.tres" id="2_80p0a"]
+[ext_resource type="Script" uid="uid://c0w1738xwexk5" path="res://data_templaces/game_entities/GunEntity.gd" id="2_pslsn"]
+
+[resource]
+script = ExtResource("2_pslsn")
+_faction = ExtResource("2_80p0a")
+metadata/_custom_type_script = "uid://c0w1738xwexk5"
