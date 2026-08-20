@@ -14,6 +14,6 @@ func clear():
 
 func add_line(title: String, value: String):
 	var new_line = _line_prefab.instantiate() as DamageCalculatorStatLineView
-	new_line.title_label.text = title
-	new_line.value_label.text = value
+	new_line.title_label.fit_text = title
+	new_line.value_label.fit_text = value
 	_lines_holder.add_child(new_line)

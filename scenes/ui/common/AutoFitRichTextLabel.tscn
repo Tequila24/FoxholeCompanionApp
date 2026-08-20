@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c0u42pdjmkxj8"]
+
+[ext_resource type="Script" uid="uid://1lymqfm111mt" path="res://scripts/ui/common/AutoFitRichTextLabel.gd" id="1_dsgp1"]
+
+[node name="AutoFitRichTextLabel" type="RichTextLabel" unique_id=17580340]
+offset_right = 162.0
+offset_bottom = 177.0
+theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/bold_font_size = 28
+theme_override_font_sizes/bold_italics_font_size = 28
+theme_override_font_sizes/italics_font_size = 28
+bbcode_enabled = true
+scroll_active = false
+autowrap_mode = 0
+script = ExtResource("1_dsgp1")
+min_font_size = 4

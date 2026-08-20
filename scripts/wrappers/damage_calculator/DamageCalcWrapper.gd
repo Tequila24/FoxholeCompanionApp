@@ -70,6 +70,6 @@ func recalculate():
 		recalculated.emit(DamageCalculationResult.new())
 		return
 
-	if ((_attacker_entity.category is CategoryVehicle && _target_entity.has_component(VitalsComponent))):
+	if ((_attacker_entity.has_component(AttackComponent) && _target_entity.has_component(VitalsComponent))):
 		current_result = _vic_on_vic_calc.simulate_attack(attacker_entity, target_entity)
 		recalculated.emit(current_result)

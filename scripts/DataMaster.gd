@@ -7,12 +7,6 @@ extends Node
 @export var _all_entities: Dictionary[String, GameEntity]
 
 
-@export var _all_categories: Array[Category]
-var all_categories: Array[Category]:
-	get:
-		return _all_categories
-
-
 @export var _faction_warden: Faction
 var faction_warden: Faction:
 	get:
@@ -35,14 +29,6 @@ func _ready() -> void:
 		func(_res: Variant, _file_name: String):
 			return _file_name.get_basename()
 	))
-
-
-func get_entities_in_category(category: Category) -> Array[GameEntity]:
-	return _all_entities.values().filter(
-		func(entity: GameEntity):
-			# print("%s entity category, %s search category" % [entity.category.name, category.name])
-			return entity.category == category
-	)
 
 
 func get_entities_by_filter(filter: Callable) -> Array[GameEntity]:

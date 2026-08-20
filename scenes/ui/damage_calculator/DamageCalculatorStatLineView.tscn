@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://dke33et1m6vid" path="res://scripts/ui/damage_calculator/DamageCalculatorStatLineView.gd" id="1_dyln0"]
 [ext_resource type="Texture2D" uid="uid://b01qslocb3e1" path="res://assets/textures/ui/dash_tiny.png" id="1_htmu2"]
+[ext_resource type="PackedScene" uid="uid://c0u42pdjmkxj8" path="res://scenes/ui/common/AutoFitRichTextLabel.tscn" id="2_myvp4"]
+[ext_resource type="Theme" uid="uid://banvl88e6fu0f" path="res://scenes/ui/themes/ButtonFilter.tres" id="3_myvp4"]
 
 [node name="StatsLine" type="MarginContainer" unique_id=91342404 node_paths=PackedStringArray("title_label", "value_label")]
 anchors_preset = 14
@@ -13,49 +15,49 @@ offset_bottom = 14.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
-theme_override_constants/margin_left = 16
-theme_override_constants/margin_right = 16
 script = ExtResource("1_dyln0")
-title_label = NodePath("VBoxContainer/MarginContainer/HBox/LabelName")
-value_label = NodePath("VBoxContainer/MarginContainer/HBox/LabelValue")
+title_label = NodePath("VBoxContainer/MarginContainer/HBox/AutoFitRichTextLabel")
+value_label = NodePath("VBoxContainer/MarginContainer/HBox/AutoFitRichTextLabel2")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=986316151]
 layout_mode = 2
 theme_override_constants/separation = 0
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" unique_id=1324874328]
+custom_minimum_size = Vector2(0, 32)
+custom_maximum_size = Vector2(-1, 32)
 layout_mode = 2
-theme_override_constants/margin_left = 8
-theme_override_constants/margin_right = 8
 
 [node name="HBox" type="HBoxContainer" parent="VBoxContainer/MarginContainer" unique_id=1188716374]
 layout_mode = 2
-size_flags_vertical = 0
 theme_override_constants/separation = 0
 
-[node name="LabelName" type="Label" parent="VBoxContainer/MarginContainer/HBox" unique_id=1050690392]
-unique_name_in_owner = true
+[node name="AutoFitRichTextLabel" parent="VBoxContainer/MarginContainer/HBox" unique_id=17580340 instance=ExtResource("2_myvp4")]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 0
-theme_override_colors/font_color = Color(1, 1, 0.9411765, 1)
-text = "Name name"
+theme = ExtResource("3_myvp4")
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+theme_override_font_sizes/bold_italics_font_size = 20
+theme_override_font_sizes/italics_font_size = 20
+text = "Test text"
 vertical_alignment = 1
-clip_text = true
-text_overrun_behavior = 3
-uppercase = true
+max_font_size = 20
+fit_text = "Test text"
 
-[node name="LabelValue" type="RichTextLabel" parent="VBoxContainer/MarginContainer/HBox" unique_id=23247789]
-unique_name_in_owner = true
+[node name="AutoFitRichTextLabel2" parent="VBoxContainer/MarginContainer/HBox" unique_id=81618804 instance=ExtResource("2_myvp4")]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_colors/default_color = Color(1, 1, 0.9411765, 1)
-bbcode_enabled = true
+theme = ExtResource("3_myvp4")
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+theme_override_font_sizes/bold_italics_font_size = 20
+theme_override_font_sizes/italics_font_size = 20
 text = "Text and icon [img width=1.5em]res://assets/textures/game_icons/damage_types/Demolition.png[/img]"
-fit_content = true
-scroll_active = false
 horizontal_alignment = 2
 vertical_alignment = 1
+max_font_size = 20
+fit_text = "Text and icon [img width=1.5em]res://assets/textures/game_icons/damage_types/Demolition.png[/img]"
 
 [node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer" unique_id=375188442]
 layout_mode = 2

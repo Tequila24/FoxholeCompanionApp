@@ -3,8 +3,9 @@
 [ext_resource type="Script" uid="uid://dbeg3tll8md68" path="res://scripts/UI.gd" id="1_m01cm"]
 [ext_resource type="PackedScene" uid="uid://c5m73dwejuh6i" path="res://scenes/ui/damage_calculator/DamageCalculatorWindow.tscn" id="2_nnfdp"]
 [ext_resource type="PackedScene" uid="uid://dx4turl2qfeem" path="res://scenes/ui/bottom_bar/BottomBar.tscn" id="3_nnfdp"]
+[ext_resource type="PackedScene" uid="uid://cv7axrn6g30i5" path="res://scenes/ui/entity_selection_window/EntitySelectionWindow.tscn" id="4_s64wo"]
 
-[node name="UI" type="MarginContainer" unique_id=735004099 node_paths=PackedStringArray("_bottom_bar")]
+[node name="UI" type="MarginContainer" unique_id=735004099 node_paths=PackedStringArray("_bottom_bar", "entity_selection_window")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -12,6 +13,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_m01cm")
 _bottom_bar = NodePath("VBoxContainer/Bar/BottomBar")
+entity_selection_window = NodePath("EntitySelectionWindow")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=424504921]
 layout_mode = 2
@@ -24,12 +26,11 @@ size_flags_vertical = 3
 [node name="KillCountWindow" parent="VBoxContainer/Tabs" unique_id=1785491860 instance=ExtResource("2_nnfdp")]
 layout_mode = 2
 
-[node name="Speed List" type="MarginContainer" parent="VBoxContainer/Tabs" unique_id=280122006]
-visible = false
-layout_mode = 2
-
 [node name="Bar" type="MarginContainer" parent="VBoxContainer" unique_id=332123832]
 layout_mode = 2
 
 [node name="BottomBar" parent="VBoxContainer/Bar" unique_id=156137687 instance=ExtResource("3_nnfdp")]
+layout_mode = 2
+
+[node name="EntitySelectionWindow" parent="." unique_id=60665683 instance=ExtResource("4_s64wo")]
 layout_mode = 2

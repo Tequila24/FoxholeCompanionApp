@@ -25,13 +25,14 @@ signal entity_selected(new_entity: GameEntity)
 
 
 
-static func open_window() -> EntitySelectionWindow:
-	var new_window = SELF_PREFAB.instantiate() as EntitySelectionWindow
-	UI.add_child(new_window)
-	return new_window
+# static func open_window() -> EntitySelectionWindow:
+# 	var new_window = SELF_PREFAB.instantiate() as EntitySelectionWindow
+# 	UI.add_child(new_window)
+# 	return new_window
 
 
 func _ready() -> void:
+	hide_window()
 	_close_button.pressed.connect(close_window)
 	_fill_entities()
 	
@@ -60,7 +61,7 @@ func _fill_entities():
 		new_view.pressed.connect(
 			func(): 
 				entity_selected.emit(entity)
-				close_window()
+				hide_window()
 		)
 
 

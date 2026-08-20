@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://da4nxcp843ngb" path="res://assets/textures/game_icons/Colonial.png" id="4_rl4bl"]
 [ext_resource type="Texture2D" uid="uid://bkgse5tb6vvr1" path="res://assets/textures/game_icons/vehicles/colonial/pushguns/BatteringRam.png" id="5_ea3co"]
 [ext_resource type="StyleBox" uid="uid://d3vm35gmu1tef" path="res://scenes/ui/styles/ButtonNormal.tres" id="5_pt0ne"]
-[ext_resource type="StyleBox" uid="uid://cqmge5aqccg8p" path="res://scenes/ui/styles/ButtonActive.tres" id="6_lbn3i"]
+[ext_resource type="StyleBox" uid="uid://cqmge5aqccg8p" path="res://scenes/ui/styles/ButtonActiveColonial.tres" id="6_lbn3i"]
 [ext_resource type="Texture2D" uid="uid://7vdwu2jnshfk" path="res://assets/textures/game_icons/vehicles/colonial/tanks/Spatha.png" id="6_rk0tl"]
 [ext_resource type="Texture2D" uid="uid://l5tmpalqr3h3" path="res://assets/textures/game_icons/structures/bunker/FortT2Icon.png" id="11_p5cyp"]
 [ext_resource type="Texture2D" uid="uid://bta8petsvixd0" path="res://assets/textures/game_icons/vehicles/warden/cars/Dunne.png" id="11_pt0ne"]

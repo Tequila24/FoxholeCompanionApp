@@ -30,6 +30,7 @@ border_width_bottom = 1
 border_color = Color(0.5254902, 0.5647059, 0.5058824, 1)
 
 [node name="DamageCalculator" type="MarginContainer" unique_id=1785491860 node_paths=PackedStringArray("_attacker_entity_view", "_target_entity_view", "_switch_button", "_invalid_icon", "_counters_views", "_stats_holder")]
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
@@ -133,10 +134,10 @@ min_font_size = 4
 text = "test text "
 
 [node name="RichTextLabel" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Attacker/EntityView/VBoxContainer/AutoFitLabel" index="0" unique_id=853606492]
-theme_override_font_sizes/normal_font_size = 14
-theme_override_font_sizes/bold_font_size = 14
-theme_override_font_sizes/bold_italics_font_size = 14
-theme_override_font_sizes/italics_font_size = 14
+theme_override_font_sizes/normal_font_size = 13
+theme_override_font_sizes/bold_font_size = 13
+theme_override_font_sizes/bold_italics_font_size = 13
+theme_override_font_sizes/italics_font_size = 13
 text = "test text "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -227,10 +228,10 @@ min_font_size = 4
 text = "test text "
 
 [node name="RichTextLabel" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView/VBoxContainer/AutoFitLabel" index="0" unique_id=853606492]
-theme_override_font_sizes/normal_font_size = 14
-theme_override_font_sizes/bold_font_size = 14
-theme_override_font_sizes/bold_italics_font_size = 14
-theme_override_font_sizes/italics_font_size = 14
+theme_override_font_sizes/normal_font_size = 13
+theme_override_font_sizes/bold_font_size = 13
+theme_override_font_sizes/bold_italics_font_size = 13
+theme_override_font_sizes/italics_font_size = 13
 text = "test text "
 horizontal_alignment = 1
 vertical_alignment = 1

@@ -1,6 +1,6 @@
 [gd_resource type="Theme" format=3 uid="uid://banvl88e6fu0f"]
 
-[ext_resource type="StyleBox" uid="uid://cqmge5aqccg8p" path="res://scenes/ui/styles/ButtonActive.tres" id="1_baxwq"]
+[ext_resource type="StyleBox" uid="uid://cqmge5aqccg8p" path="res://scenes/ui/styles/ButtonActiveColonial.tres" id="1_baxwq"]
 [ext_resource type="StyleBox" uid="uid://d3vm35gmu1tef" path="res://scenes/ui/styles/ButtonNormal.tres" id="1_i5ck3"]
 [ext_resource type="FontVariation" uid="uid://bvm4qqvuxyy30" path="res://scenes/ui/fonts_variatios/LilBoldGrotesk.tres" id="1_wyhkj"]
 
@@ -13,3 +13,6 @@ Button/styles/hover = ExtResource("1_i5ck3")
 Button/styles/hover_pressed = ExtResource("1_baxwq")
 Button/styles/normal = ExtResource("1_i5ck3")
 Button/styles/pressed = ExtResource("1_baxwq")
+RichTextLabel/colors/default_color = Color(1, 1, 0.9411765, 1)
+RichTextLabel/fonts/bold_font = ExtResource("1_wyhkj")
+RichTextLabel/fonts/normal_font = ExtResource("1_wyhkj")

@@ -24,25 +24,27 @@ func _ready() -> void:
 
 	_attacker_entity_view.pressed.connect(
 		func(): 
-			var window = EntitySelectionWindow.open_window()
-			window.set_visible_entity_type(GameEntity.COMPONENT_FILTER.ATTACKING)
-			window.entity_selected.connect(
+			UI.entity_selection_window.show_window()
+			UI.entity_selection_window.set_visible_entity_type(GameEntity.COMPONENT_FILTER.ATTACKING)
+			UI.entity_selection_window.entity_selected.connect(
 				func(new_entity: GameEntity):
 					_attacker_entity_view.set_visual(new_entity)
 					DamageCalcWrapper.attacker_entity = new_entity
-					DamageCalcWrapper.recalculate()
+					DamageCalcWrapper.recalculate(),
+					Object.CONNECT_ONE_SHOT
 			)
 	)
 
 	_target_entity_view.pressed.connect(
 		func(): 
-			var window = EntitySelectionWindow.open_window()
-			window.set_visible_entity_type(GameEntity.COMPONENT_FILTER.DAMAGEABLE)
-			window.entity_selected.connect(
+			UI.entity_selection_window.show_window()
+			UI.entity_selection_window.set_visible_entity_type(GameEntity.COMPONENT_FILTER.DAMAGEABLE)
+			UI.entity_selection_window.entity_selected.connect(
 				func(new_entity: GameEntity):
 					_target_entity_view.set_visual(new_entity)
 					DamageCalcWrapper.target_entity = new_entity
-					DamageCalcWrapper.recalculate()
+					DamageCalcWrapper.recalculate(),
+					Object.CONNECT_ONE_SHOT
 			)
 	)
 

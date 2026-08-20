@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dsmpuolssvp5x"]
 
 [ext_resource type="Script" uid="uid://by1c1pi35rn2n" path="res://scripts/ui/common/AutoFitLabel.gd" id="1_gfala"]
+[ext_resource type="Theme" uid="uid://banvl88e6fu0f" path="res://scenes/ui/themes/ButtonFilter.tres" id="2_bsqtx"]
+[ext_resource type="FontVariation" uid="uid://bvm4qqvuxyy30" path="res://scenes/ui/fonts_variatios/LilBoldGrotesk.tres" id="2_r1jgj"]
 
 [node name="AutoFitLabel" type="MarginContainer" unique_id=1446573899 node_paths=PackedStringArray("_label")]
 offset_right = 64.0
@@ -11,10 +13,16 @@ text = "test text"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=853606492]
 layout_mode = 2
-theme_override_font_sizes/normal_font_size = 15
-theme_override_font_sizes/bold_font_size = 15
-theme_override_font_sizes/bold_italics_font_size = 15
-theme_override_font_sizes/italics_font_size = 15
+theme = ExtResource("2_bsqtx")
+theme_override_fonts/normal_font = ExtResource("2_r1jgj")
+theme_override_fonts/bold_font = ExtResource("2_r1jgj")
+theme_override_fonts/bold_italics_font = ExtResource("2_r1jgj")
+theme_override_fonts/italics_font = ExtResource("2_r1jgj")
+theme_override_fonts/mono_font = ExtResource("2_r1jgj")
+theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/bold_font_size = 14
+theme_override_font_sizes/bold_italics_font_size = 14
+theme_override_font_sizes/italics_font_size = 14
 bbcode_enabled = true
 text = "test text"
 scroll_active = false
