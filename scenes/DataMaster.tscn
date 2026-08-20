@@ -1,18 +1,9 @@
 [gd_scene format=3 uid="uid://bk4il0mp30gq3"]
 
 [ext_resource type="Script" uid="uid://cte6ydyy8nfy0" path="res://scripts/DataMaster.gd" id="1_82sau"]
-[ext_resource type="Script" uid="uid://d0e4gfjt55g17" path="res://data_templaces/game_entities/categories/Category.gd" id="2_nmtsp"]
-[ext_resource type="Resource" uid="uid://b1hspeg52jw4w" path="res://data/categories/CategoryVehicle.tres" id="3_nmtsp"]
-[ext_resource type="Resource" uid="uid://cntaal3u7cvon" path="res://data/categories/CategoryStructure.tres" id="4_hqk24"]
-[ext_resource type="Resource" uid="uid://dg2qm3cdky10j" path="res://data/categories/CategoryAmmunition.tres" id="5_21m3w"]
-[ext_resource type="Resource" uid="uid://bhair0uuq0olu" path="res://data/factions/Warden.tres" id="6_6o2fi"]
-[ext_resource type="Resource" uid="uid://dy4qupv43gu2c" path="res://data/factions/Colonial.tres" id="7_ebkhl"]
-[ext_resource type="Resource" uid="uid://hw4r0xhdp1mx" path="res://data/factions/Neutral.tres" id="8_fjqrx"]
 
 [node name="DataMaster" type="Node" unique_id=864800451]
 script = ExtResource("1_82sau")
-_entities_path = "res://data/entities/"
-_all_categories = Array[ExtResource("2_nmtsp")]([ExtResource("3_nmtsp"), ExtResource("4_hqk24"), ExtResource("5_21m3w")])
-_faction_warden = ExtResource("6_6o2fi")
-_faction_colonial = ExtResource("7_ebkhl")
-_faction_neutral = ExtResource("8_fjqrx")
+foxhole_database_path = "res://data/data.db"
+_warden_faction_id = "EFactionId::Wardens"
+_colonial_faction_id = "EFactionId::Colonials"

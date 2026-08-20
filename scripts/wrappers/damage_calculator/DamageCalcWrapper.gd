@@ -5,26 +5,26 @@ extends Node
 signal updated()
 signal recalculated(DamageCalculationResult)
 
-@export var _attacker_entity: GameEntity
-var attacker_entity: GameEntity:
-	get:
-		return _attacker_entity
-	set(value):
-		_attacker_entity = value
-		updated.emit()
+# @export var _attacker_entity: GameEntity
+# var attacker_entity: GameEntity:
+# 	get:
+# 		return _attacker_entity
+# 	set(value):
+# 		_attacker_entity = value
+# 		updated.emit()
 
 
-@export var _target_entity: GameEntity
-var target_entity: GameEntity:
-	get:
-		return _target_entity
-	set(value):
-		_target_entity = value
-		updated.emit()
+# @export var _target_entity: GameEntity
+# var target_entity: GameEntity:
+# 	get:
+# 		return _target_entity
+# 	set(value):
+# 		_target_entity = value
+# 		updated.emit()
 
-var _vic_on_vic_calc: VicOnVicCalc = VicOnVicCalc.new()
+# var _vic_on_vic_calc: VicOnVicCalc = VicOnVicCalc.new()
 
-var current_result: DamageCalculationResult = DamageCalculationResult.new()
+# var current_result: DamageCalculationResult = DamageCalculationResult.new()
 
 
 func _ready() -> void:
@@ -65,11 +65,11 @@ func _ready() -> void:
 # 	return null
 
 
-func recalculate():
-	if (_attacker_entity == null || _target_entity == null):
-		recalculated.emit(DamageCalculationResult.new())
-		return
+# func recalculate():
+# 	if (_attacker_entity == null || _target_entity == null):
+# 		recalculated.emit(DamageCalculationResult.new())
+# 		return
 
-	if ((_attacker_entity.has_component(AttackComponent) && _target_entity.has_component(VitalsComponent))):
-		current_result = _vic_on_vic_calc.simulate_attack(attacker_entity, target_entity)
-		recalculated.emit(current_result)
+# 	if ((_attacker_entity.has_component(AttackComponent) && _target_entity.has_component(VitalsComponent))):
+# 		current_result = _vic_on_vic_calc.simulate_attack(attacker_entity, target_entity)
+# 		recalculated.emit(current_result)

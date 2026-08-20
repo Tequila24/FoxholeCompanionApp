@@ -27,6 +27,7 @@ func _ready() -> void:
 	fit_content = false
 	scroll_active = false
 	autowrap_mode = TextServer.AUTOWRAP_OFF
+	resized.connect(_fit)
 
 
 func _fit() -> void:

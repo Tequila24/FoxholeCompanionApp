@@ -19,6 +19,7 @@ config/icon="uid://s4echc32sssw"
 [autoload]
 
 SignalBus="*uid://cq6ajwhaw0vuj"
+Globals="*uid://u1iuuc0xyq3m"
 DataMaster="*uid://bk4il0mp30gq3"
 UI="*uid://bhc372vnj5jv4"
 DamageCalcWrapper="*uid://cwb1sy67h7a03"
@@ -37,9 +38,8 @@ window/handheld/orientation=1
 
 folder_colors={
 "res://assets/": "red",
-"res://data/": "purple",
-"res://data_templaces/": "pink",
-"res://scenes/": "orange"
+"res://scenes/": "orange",
+"res://scripts/data_templates/": "purple"
 }
 
 [input_devices]

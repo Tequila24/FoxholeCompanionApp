@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://u1iuuc0xyq3m"]
+
+[ext_resource type="Script" uid="uid://ikox43oo7pen" path="res://scripts/Globals.gd" id="1_vyosl"]
+[ext_resource type="Texture2D" uid="uid://dwv6bf41u1bja" path="res://assets/textures/error.png" id="2_nm0h1"]
+
+[node name="Globals" type="Node" unique_id=1311240316]
+script = ExtResource("1_vyosl")
+_error_texture = ExtResource("2_nm0h1")

@@ -1,35 +1,67 @@
 extends Node
 
 
-@export var _entities_path: String = ""
+const DEBUG = true
 
 
-@export var _all_entities: Dictionary[String, GameEntity]
+@export var foxhole_database_path: String  = ""
+@export var _warden_faction_id: String
+@export var _colonial_faction_id: String
 
+var foxhole_db: SQLite = SQLite.new()
 
-@export var _faction_warden: Faction
-var faction_warden: Faction:
-	get:
-		return _faction_warden
-
-@export var _faction_colonial: Faction
-var faction_colonial: Faction:
-	get:
-		return _faction_colonial
-
-@export var _faction_neutral: Faction
-var faction_neutral: Faction:
-	get:
-		return _faction_neutral
 
 
 func _ready() -> void:
-	_all_entities.assign(Utils.load_resources_to_dict_recursive(
-		_entities_path, 
-		func(_res: Variant, _file_name: String):
-			return _file_name.get_basename()
-	))
+
+	foxhole_db.read_only = true
+	foxhole_db.path = foxhole_database_path
+	foxhole_db.open_db()
+
+	# var result = foxhole_db.select_rows("vehicles", "name != 'NULL' AND faction_variant == 'EFactionId::Wardens'", ["name"])
+	# for entry in result:
+	# 	print(entry)
+
+	# get_ammo_data("LightTankAmmo")
 
 
-func get_entities_by_filter(filter: Callable) -> Array[GameEntity]:
-	return _all_entities.values().filter(filter)
+func get_all_entities() -> Array[GameEntity]:
+	var result: Array[GameEntity] = []
+
+	var all_vics = foxhole_db.select_rows("vehicles", "name != 'NULL'", ["id", "name", "max_health", "minor_damage_percent", "iconobject_path"])
+	
+	for vehicle in all_vics:
+		var new_entity: GameEntity = GameEntity.new()
+
+		new_entity.id = vehicle.id
+		new_entity.name = vehicle.name
+		new_entity.icon_path = (vehicle.iconobject_path as String).substr(24).left(-1) + "tga"
+
+		var new_vitals_component: GameEntityComponentVitals = GameEntityComponentVitals.new()
+		new_vitals_component.max_health = vehicle.max_health
+		new_vitals_component.max_armor = 0
+		new_vitals_component.disable_threshold = vehicle.minor_damage_percent if vehicle.minor_damage_percent < 1 else 1
+		new_entity.add_component(new_vitals_component)
+		
+		result.append(new_entity)
+
+	return result
+
+
+func get_ammo_data(id: String) -> AmmoType:
+	var ammo_data: AmmoType = AmmoType.new()
+
+	var quiery_result = foxhole_db.select_rows("ammo", "id == '%s'" % id, ["name", "damage"])
+	if (quiery_result.is_empty()):
+		if (DEBUG): print("Error processing %s id!" % id)
+
+	print(quiery_result.get(0))
+	print(quiery_result.get(0).name)
+	print(quiery_result.get(0).damage)
+	print(type_string(typeof(quiery_result.get(0))))
+
+	return ammo_data
+
+
+func _exit_tree() -> void:
+	foxhole_db.close_db()

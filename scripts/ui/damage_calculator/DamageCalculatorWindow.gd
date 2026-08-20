@@ -19,97 +19,83 @@ extends MarginContainer
 
 
 func _ready() -> void:
-	DamageCalcWrapper.recalculated.connect(_on_new_calculation)
-	_switch_button.pressed.connect(_switch_entities)
+	pass
+	# DamageCalcWrapper.recalculated.connect(_on_new_calculation)
+	# _switch_button.pressed.connect(_switch_entities)
 
-	_attacker_entity_view.pressed.connect(
-		func(): 
-			UI.entity_selection_window.show_window()
-			UI.entity_selection_window.set_visible_entity_type(GameEntity.COMPONENT_FILTER.ATTACKING)
-			UI.entity_selection_window.entity_selected.connect(
-				func(new_entity: GameEntity):
-					_attacker_entity_view.set_visual(new_entity)
-					DamageCalcWrapper.attacker_entity = new_entity
-					DamageCalcWrapper.recalculate(),
-					Object.CONNECT_ONE_SHOT
-			)
-	)
+	# _attacker_entity_view.pressed.connect(
+	# 	func(): 
+	# 		UI.entity_selection_window.show_window()
+	# 		UI.entity_selection_window.set_visible_entity_type(GameEntity.COMPONENT_FILTER.ATTACKING)
+	# 		UI.entity_selection_window.entity_selected.connect(
+	# 			func(new_entity: GameEntity):
+	# 				_attacker_entity_view.set_visual(new_entity)
+	# 				DamageCalcWrapper.attacker_entity = new_entity
+	# 				DamageCalcWrapper.recalculate(),
+	# 				Object.CONNECT_ONE_SHOT
+	# 		)
+	# )
 
-	_target_entity_view.pressed.connect(
-		func(): 
-			UI.entity_selection_window.show_window()
-			UI.entity_selection_window.set_visible_entity_type(GameEntity.COMPONENT_FILTER.DAMAGEABLE)
-			UI.entity_selection_window.entity_selected.connect(
-				func(new_entity: GameEntity):
-					_target_entity_view.set_visual(new_entity)
-					DamageCalcWrapper.target_entity = new_entity
-					DamageCalcWrapper.recalculate(),
-					Object.CONNECT_ONE_SHOT
-			)
-	)
+	# _target_entity_view.pressed.connect(
+	# 	func(): 
+	# 		UI.entity_selection_window.show_window()
+	# 		UI.entity_selection_window.set_visible_entity_type(GameEntity.COMPONENT_FILTER.DAMAGEABLE)
+	# 		UI.entity_selection_window.entity_selected.connect(
+	# 			func(new_entity: GameEntity):
+	# 				_target_entity_view.set_visual(new_entity)
+	# 				DamageCalcWrapper.target_entity = new_entity
+	# 				DamageCalcWrapper.recalculate(),
+	# 				Object.CONNECT_ONE_SHOT
+	# 		)
+	# )
 
-	_on_new_calculation(DamageCalculationResult.new())
-
-
-func _switch_entities():
-	var temp_attacker_entity = DamageCalcWrapper.attacker_entity
-	DamageCalcWrapper.attacker_entity = DamageCalcWrapper.target_entity
-	DamageCalcWrapper.target_entity = temp_attacker_entity
-
-	_update_visual()
-
-	DamageCalcWrapper.recalculate()
+	# _on_new_calculation(DamageCalculationResult.new())
 
 
-func _update_visual():
-	_attacker_entity_view.set_visual(DamageCalcWrapper.attacker_entity)
-	_target_entity_view.set_visual(DamageCalcWrapper.target_entity)
+# func _switch_entities():
+# 	var temp_attacker_entity = DamageCalcWrapper.attacker_entity
+# 	DamageCalcWrapper.attacker_entity = DamageCalcWrapper.target_entity
+# 	DamageCalcWrapper.target_entity = temp_attacker_entity
+
+# 	_update_visual()
+
+# 	DamageCalcWrapper.recalculate()
 
 
-func _on_new_calculation(result: DamageCalculationResult) -> void:
+# func _update_visual():
+# 	_attacker_entity_view.set_visual(DamageCalcWrapper.attacker_entity)
+# 	_target_entity_view.set_visual(DamageCalcWrapper.target_entity)
+
+
+# func _on_new_calculation(result: DamageCalculationResult) -> void:
 	
-	if (not result.is_valid):
-		_invalid_icon.visible = true
-		for view in _counters_views:
-			view.visible = false
+# 	if (not result.is_valid):
+# 		_invalid_icon.visible = true
+# 		for view in _counters_views:
+# 			view.visible = false
 		
-	else:
-		for view in _counters_views:
-			view.visible = false
+# 	else:
+# 		for view in _counters_views:
+# 			view.visible = false
 
-		var idx: int = 0
-		for gun_counter in result.guns_counters:
-			_invalid_icon.visible = false
-			_counters_views.get(idx).visible = true
-			_counters_views.get(idx).counter_label.text = str(gun_counter.shot_count)
-			# if (DamageCalcWrapper.attacker_entity is AmmoEntity):
-				# _counters_views.get(idx).icon_holder.visible = false
-			# else:
-			_counters_views.get(idx).icon_holder.visible = true
-			_counters_views.get(idx).icon_view.texture = gun_counter.ammo_type.icon
+# 		var idx: int = 0
+# 		for gun_counter in result.guns_counters:
+# 			_invalid_icon.visible = false
+# 			_counters_views.get(idx).visible = true
+# 			_counters_views.get(idx).counter_label.text = str(gun_counter.shot_count)
+# 			# if (DamageCalcWrapper.attacker_entity is AmmoEntity):
+# 				# _counters_views.get(idx).icon_holder.visible = false
+# 			# else:
+# 			_counters_views.get(idx).icon_holder.visible = true
+# 			_counters_views.get(idx).icon_view.texture = gun_counter.ammo_type.icon
 
-			idx += 1
+# 			idx += 1
 
-	_update_data_lines(result)
+# 	_update_data_lines(result)
 
 
-func _update_data_lines(result: DamageCalculationResult) -> void:
-	_stats_holder.clear()
+# func _update_data_lines(result: DamageCalculationResult) -> void:
+	# _stats_holder.clear()
 
-	for pair in result.stats:
-		_stats_holder.add_line(pair.title, pair.value)
-
-	# var current_result = DamageCalcWrapper.current_result
-	# if (not current_result || not current_result.is_valid):
-	# 	_line_base_damage.clear()
-	# 	_line_target_health.clear()
-	# 	_line_time_to_kill.clear()
-	# 	return
-	
-	# # _line_base_damage.set_value(current_result.base_damage)
-	# _line_target_health.set_value(current_result.target_health)
-	# if (current_result.time_to_kill > 0):
-	# 	_line_time_to_kill.set_value("%.2f" % current_result.time_to_kill)
-	# 	_line_time_to_kill.set_measurement_visible(true)
-	# else:
-	# 	_line_time_to_kill.clear()
+	# for pair in result.stats:
+	# 	_stats_holder.add_line(pair.title, pair.value)
