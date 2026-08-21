@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cqgmhnm5bbo65" path="res://scripts/ui/entity_selection_window/EntityView.gd" id="1_ji1fv"]
 [ext_resource type="PackedScene" uid="uid://c0u42pdjmkxj8" path="res://scenes/ui/common/AutoFitRichTextLabel.tscn" id="2_maouu"]
-[ext_resource type="Texture2D" uid="uid://bta8petsvixd0" path="res://assets/textures/game_icons/vehicles/warden/cars/Dunne.png" id="2_s7o4m"]
+[ext_resource type="Texture2D" uid="uid://c7js32o8ql5w7" path="res://assets/textures/game_icons/ItemIcons/LoreSkull.tga" id="2_s7o4m"]
 [ext_resource type="Theme" uid="uid://banvl88e6fu0f" path="res://scenes/ui/themes/ButtonFilter.tres" id="4_s7o4m"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_maouu"]
