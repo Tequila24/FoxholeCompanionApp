@@ -14,6 +14,8 @@ config/name="Foxhole Companion App"
 run/main_scene="uid://stpx25x0fgbq"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 run/low_processor_mode=true
+boot_splash/show_image=false
+boot_splash/use_filter=false
 config/icon="uid://s4echc32sssw"
 
 [autoload]
