@@ -11,14 +11,21 @@ signal updated()
 @export var icon: TextureRect
 @export var name_label: AutoFitRichTextLabel
 
-# var _current_entity: GameEntity
-# var attached_entity: GameEntity:
-# 	get:
-# 		return _current_entity
+var attached_entity: GameEntity
+
 
 
 func _ready() -> void:
-	_button.pressed.connect(func(): print("Entity view pressed: %s" % name_label.fit_text))
+	_button.pressed.connect(
+		func(): 
+			print("Entity: %s" % name_label.fit_text)
+			for attack_component: GameEntityComponentAttack in attached_entity.get_components_of_type(GameEntityComponentAttack):
+				print("\t%s" % attack_component.ammo_used_ids[0])
+			var vitals_component: GameEntityComponentVitals = attached_entity.get_component_of_type(GameEntityComponentVitals)
+			if (vitals_component):
+				print("\tResistance id: %s" % vitals_component.resistance_id)
+			
+	)
 
 
 # func set_visual(entity: GameEntity) -> void:

@@ -50,9 +50,9 @@ func _ready() -> void:
 
 
 func _fill_entities():
-	var all_entities: Array[GameEntity] = DataMaster.get_all_entities()
+	var all_vehicle_entities: Array[VehicleEntity] = DataMaster.get_all_vehicle_entities()
 
-	for entity in all_entities:
+	for entity in all_vehicle_entities:
 		var vitals_component: GameEntityComponentVitals = entity.get_component_of_type(GameEntityComponentVitals)
 		# print("Name: %s" % [entity.name])
 		# print("Icon path: %s" % [entity.icon_path])
@@ -68,6 +68,9 @@ func _fill_entities():
 			entity_texture = Globals.error_texture
 		new_view.icon.texture = entity_texture
 		new_view.name_label.fit_text = entity.name
+
+		new_view.attached_entity = entity
+
 		_views_holder.add_child(new_view)
 
 # 	all_entities.sort_custom(func(a: GameEntity, b: GameEntity): return a.name < b.name)
