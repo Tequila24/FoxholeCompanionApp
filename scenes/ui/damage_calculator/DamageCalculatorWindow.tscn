@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cnn8dgwn270q" path="res://scripts/ui/damage_calculator/DamageCalculatorWindow.gd" id="1_nj582"]
 [ext_resource type="Texture2D" uid="uid://bj4e1gi56xg1q" path="res://assets/textures/ui/FrameWithCorners.png" id="2_44dyq"]
 [ext_resource type="Script" uid="uid://cqgmhnm5bbo65" path="res://scripts/ui/entity_selection_window/EntityView.gd" id="2_k4nm8"]
+[ext_resource type="PackedScene" uid="uid://c0u42pdjmkxj8" path="res://scenes/ui/common/AutoFitRichTextLabel.tscn" id="4_bvgr6"]
 [ext_resource type="Texture2D" uid="uid://c7js32o8ql5w7" path="res://assets/textures/game_icons/ItemIcons/LoreSkull.tga" id="4_iej7h"]
 [ext_resource type="PackedScene" uid="uid://dp42mj0oradte" path="res://scenes/ui/damage_calculator/DamageCalculatorStatLineView.tscn" id="5_44dyq"]
 [ext_resource type="PackedScene" uid="uid://bqelobowvj48a" path="res://scenes/ui/damage_calculator/DamageCalculatorCounterView.tscn" id="5_76uj2"]
@@ -48,9 +49,9 @@ theme_override_constants/separation = 8
 [node name="Entities" type="MarginContainer" parent="VBoxContainer2" unique_id=829232399]
 layout_mode = 2
 size_flags_vertical = 0
-theme_override_constants/margin_left = 8
+theme_override_constants/margin_left = 4
 theme_override_constants/margin_top = 12
-theme_override_constants/margin_right = 8
+theme_override_constants/margin_right = 4
 
 [node name="NinePatchRect" type="NinePatchRect" parent="VBoxContainer2/Entities" unique_id=1097190952]
 modulate = Color(0.24313726, 0.28627452, 0.23137255, 1)
@@ -64,32 +65,34 @@ patch_margin_bottom = 32
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2/Entities" unique_id=750189329]
 layout_mode = 2
-theme_override_constants/margin_left = 12
-theme_override_constants/margin_top = 12
-theme_override_constants/margin_right = 12
-theme_override_constants/margin_bottom = 12
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/Entities/MarginContainer" unique_id=1705641293]
 layout_mode = 2
-theme_override_constants/separation = 24
+theme_override_constants/separation = 8
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer" unique_id=1814462140]
 layout_mode = 2
 
 [node name="Attacker" type="MarginContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer" unique_id=356769718]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(128, 128)
 custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
 
-[node name="EntityView" type="MarginContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Attacker" unique_id=427689557 node_paths=PackedStringArray("_button")]
+[node name="EntityView" type="MarginContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Attacker" unique_id=427689557 node_paths=PackedStringArray("_button", "icon", "name_label")]
 propagate_maximum_size = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("2_k4nm8")
 _button = NodePath("Button")
+icon = NodePath("VBoxContainer/TextureRect")
+name_label = NodePath("VBoxContainer/AutoFitRichTextLabel")
 
 [node name="Panel" type="Panel" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Attacker/EntityView" unique_id=1499290949]
 layout_mode = 2
@@ -97,6 +100,16 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_jcnjc")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Attacker/EntityView" unique_id=1684201778]
 layout_mode = 2
+
+[node name="AutoFitRichTextLabel" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Attacker/EntityView/VBoxContainer" unique_id=17580340 instance=ExtResource("4_bvgr6")]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 23
+theme_override_font_sizes/bold_font_size = 23
+theme_override_font_sizes/bold_italics_font_size = 23
+theme_override_font_sizes/italics_font_size = 23
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Attacker/EntityView/VBoxContainer" unique_id=957908133]
 layout_mode = 2
@@ -152,36 +165,48 @@ texture = ExtResource("5_shxm2")
 expand_mode = 5
 stretch_mode = 5
 
-[node name="Target" type="MarginContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer" unique_id=725783878]
-custom_minimum_size = Vector2(100, 100)
+[node name="Target" type="MarginContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer" unique_id=1408872683]
+custom_minimum_size = Vector2(128, 128)
 custom_maximum_size = Vector2(128, 128)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 4
 
-[node name="EntityView" type="MarginContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target" unique_id=21329030 node_paths=PackedStringArray("_button")]
+[node name="EntityView" type="MarginContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target" unique_id=1419426491 node_paths=PackedStringArray("_button", "icon", "name_label")]
 propagate_maximum_size = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("2_k4nm8")
 _button = NodePath("Button")
+icon = NodePath("VBoxContainer/TextureRect")
+name_label = NodePath("VBoxContainer/AutoFitRichTextLabel")
 
-[node name="Panel" type="Panel" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView" unique_id=991555917]
+[node name="Panel" type="Panel" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView" unique_id=1526930340]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_jcnjc")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView" unique_id=1759992008]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView" unique_id=1122592178]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView/VBoxContainer" unique_id=710550166]
+[node name="AutoFitRichTextLabel" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView/VBoxContainer" unique_id=1673605400 instance=ExtResource("4_bvgr6")]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 23
+theme_override_font_sizes/bold_font_size = 23
+theme_override_font_sizes/bold_italics_font_size = 23
+theme_override_font_sizes/italics_font_size = 23
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView/VBoxContainer" unique_id=1812630108]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
 texture = ExtResource("4_iej7h")
 expand_mode = 3
 
-[node name="Button" type="Button" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView" unique_id=1957658230]
+[node name="Button" type="Button" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView" unique_id=2071884490]
 layout_mode = 2
 flat = true
 
@@ -205,7 +230,6 @@ texture_filter = 2
 custom_minimum_size = Vector2(128, 0)
 layout_mode = 2
 icon = ExtResource("6_ok5o1")
-flat = true
 icon_alignment = 1
 
 [node name="StatsLines" type="MarginContainer" parent="VBoxContainer2" unique_id=1849219604 node_paths=PackedStringArray("_lines_holder")]

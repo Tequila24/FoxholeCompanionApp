@@ -16,25 +16,21 @@ var attached_entity: GameEntity
 
 
 func _ready() -> void:
-	_button.pressed.connect(
-		func(): 
-			print("Entity: %s" % name_label.fit_text)
-			for attack_component: GameEntityComponentAttack in attached_entity.get_components_of_type(GameEntityComponentAttack):
-				print("\t%s" % attack_component.ammo_used_ids[0])
-			var vitals_component: GameEntityComponentVitals = attached_entity.get_component_of_type(GameEntityComponentVitals)
-			if (vitals_component):
-				print("\tResistance id: %s" % vitals_component.resistance_id)
-			
-	)
+	_button.pressed.connect(pressed.emit)
+	
 
+func set_visual(new_entity: GameEntity) -> void:
+	if (new_entity == null):
+		return
 
-# func set_visual(entity: GameEntity) -> void:
-# 	if (entity == null):
-# 		return
+	attached_entity = new_entity
 
-# 	_current_entity = entity
+	var entity_texture: Resource 
+	if (ResourceLoader.exists(Globals.ICONS_PATH + attached_entity.icon_path)):
+		entity_texture = load(Globals.ICONS_PATH + attached_entity.icon_path)
+	else:
+		entity_texture = Globals.error_texture
+	icon.texture = entity_texture
+	name_label.fit_text = attached_entity.name
 
-# 	_icon.texture = entity.icon
-# 	_name_label.text = entity.name
-
-# 	updated.emit()
+	updated.emit()

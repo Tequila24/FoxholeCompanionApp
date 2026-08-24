@@ -3,12 +3,11 @@
 [ext_resource type="Script" uid="uid://b48lkv6p1t23a" path="res://scripts/ui/entity_selection_window/EntitySelectionWindow.gd" id="1_penve"]
 [ext_resource type="PackedScene" uid="uid://chgllbe8hpmwg" path="res://scenes/ui/entity_selection_window/EntityView.tscn" id="2_p5cyp"]
 [ext_resource type="Theme" uid="uid://banvl88e6fu0f" path="res://scenes/ui/themes/ButtonFilter.tres" id="3_6u6da"]
-[ext_resource type="PackedScene" uid="uid://b1utxm0ol1a4y" path="res://scenes/ui/entity_selection_window/EntityPaging.tscn" id="3_rl4bl"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qv3ln"]
 bg_color = Color(0.40518206, 0.41796267, 0.43074968, 1)
 
-[node name="EntitySelectionWindow" type="MarginContainer" unique_id=60665683 node_paths=PackedStringArray("_views_holder")]
+[node name="EntitySelectionWindow" type="MarginContainer" unique_id=60665683 node_paths=PackedStringArray("_views_holder", "_close_button")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -19,6 +18,7 @@ size_flags_vertical = 3
 script = ExtResource("1_penve")
 _entity_view_prefab = ExtResource("2_p5cyp")
 _views_holder = NodePath("MarginContainer/VBoxContainer/ScrollContainer/Grid")
+_close_button = NodePath("MarginContainer/VBoxContainer/Close/CloseButton")
 
 [node name="Panel" type="Panel" parent="." unique_id=1147524253]
 layout_mode = 2
@@ -28,9 +28,6 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_qv3ln")
 layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=659004240]
-layout_mode = 2
-
-[node name="EntityPaging" parent="MarginContainer/VBoxContainer" unique_id=410465613 instance=ExtResource("3_rl4bl")]
 layout_mode = 2
 
 [node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer" unique_id=1886772268]
@@ -43,7 +40,6 @@ size_flags_horizontal = 3
 
 [node name="Close" type="MarginContainer" parent="MarginContainer/VBoxContainer" unique_id=1347434934]
 layout_mode = 2
-theme_override_constants/margin_top = 16
 
 [node name="CloseButton" type="Button" parent="MarginContainer/VBoxContainer/Close" unique_id=1883558957]
 custom_minimum_size = Vector2(0, 48)

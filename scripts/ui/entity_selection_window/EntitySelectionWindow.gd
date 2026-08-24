@@ -8,7 +8,7 @@ extends MarginContainer
 @export var _entity_view_prefab: PackedScene
 # # @export var _categories_holder: Control
 @export var _views_holder: Control
-# @export var _close_button: Button
+@export var _close_button: Button
 
 
 
@@ -21,7 +21,7 @@ extends MarginContainer
 # @export var _filter_structures: Button
 
 
-# signal entity_selected(new_entity: GameEntity)
+signal entity_selected(new_entity: GameEntity)
 
 
 
@@ -32,8 +32,8 @@ extends MarginContainer
 
 
 func _ready() -> void:
-# 	hide_window()
-# 	_close_button.pressed.connect(close_window)
+	hide_window()
+	_close_button.pressed.connect(hide_window)
 	_fill_entities()
 	
 # 	_filter_warden.toggled.connect(func(_toggled): _update_filters())
@@ -53,7 +53,7 @@ func _fill_entities():
 	var all_vehicle_entities: Array[VehicleEntity] = DataMaster.get_all_vehicle_entities()
 
 	for entity in all_vehicle_entities:
-		var vitals_component: GameEntityComponentVitals = entity.get_component_of_type(GameEntityComponentVitals)
+		# var vitals_component: ComponentVitals = entity.get_component_of_type(ComponentVitals)
 		# print("Name: %s" % [entity.name])
 		# print("Icon path: %s" % [entity.icon_path])
 		# if (vitals_component):
@@ -61,30 +61,29 @@ func _fill_entities():
 			# print("\t Disabled at: %d%%" % int((1.0 - vitals_component.disable_threshold) * 100))
 
 		var new_view: EntityView = _entity_view_prefab.instantiate() as EntityView
-		var entity_texture: Resource 
-		if (ResourceLoader.exists(Globals.ICONS_PATH + entity.icon_path)):
-			entity_texture = load(Globals.ICONS_PATH + entity.icon_path)
-		else:
-			entity_texture = Globals.error_texture
-		new_view.icon.texture = entity_texture
-		new_view.name_label.fit_text = entity.name
-
-		new_view.attached_entity = entity
-
+		new_view.set_visual(entity)
+		new_view.pressed.connect(func():
+			_on_entity_view_tap(new_view)
+		)
 		_views_holder.add_child(new_view)
 
-# 	all_entities.sort_custom(func(a: GameEntity, b: GameEntity): return a.name < b.name)
+		# 	all_entities.sort_custom(func(a: GameEntity, b: GameEntity): return a.name < b.name)
 
-# 	for entity in all_entities:
-# 		var new_view = _entity_view_prefab.instantiate() as EntityView
-# 		new_view.set_visual(entity)
-# 		_views_holder.add_child(new_view)
-# 		new_view.pressed.connect(
-# 			func(): 
-# 				entity_selected.emit(entity)
-# 				hide_window()
-# 		)
+		# 	for entity in all_entities:
+		# 		var new_view = _entity_view_prefab.instantiate() as EntityView
+		# 		new_view.set_visual(entity)
+		# 		_views_holder.add_child(new_view)
+		# 		new_view.pressed.connect(
+		# 			func(): 
+		# 				entity_selected.emit(entity)
+		# 				hide_window()
+		# 		)
 
+
+
+func _on_entity_view_tap(view: EntityView):
+	entity_selected.emit(view.attached_entity)
+	hide_window()
 
 # func _update_filters():
 # 	for entity_view in (_views_holder.get_children() as Array[EntityView]):
@@ -136,14 +135,14 @@ func _fill_entities():
 # # 		)
 
 
-# func show_window() -> void:
-# 	self.visible = true
+func show_window() -> void:
+	self.visible = true
 
 
-# func hide_window() -> void:
-# 	self.visible = false
+func hide_window() -> void:
+	self.visible = false
 
 
-# func close_window() -> void:
-# 	hide_window()
-# 	queue_free()
+func close_window() -> void:
+	hide_window()
+	queue_free()
