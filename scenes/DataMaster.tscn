@@ -4,6 +4,3 @@
 
 [node name="DataMaster" type="Node" unique_id=864800451]
 script = ExtResource("1_82sau")
-foxhole_database_path = "res://data/data.db"
-_warden_faction_id = "EFactionId::Wardens"
-_colonial_faction_id = "EFactionId::Colonials"

@@ -71,7 +71,7 @@ func simulate_attack(attacker_entity: GameEntity, target_entity: GameEntity) -> 
 		var raw_damage: int = 0
 		var damage_resistance: float = 0
 		
-		var ammo_entity: ItemEntity = DataMaster.get_ammo_entity(gun_component.ammo_used_ids.get(0))
+		var ammo_entity: ItemEntity = DataMaster.get_item_entity(gun_component.ammo_used_ids.get(0))
 		if (ammo_entity == null):
 			continue
 		if (not ammo_entity.has_component_type(ComponentDamage)):
