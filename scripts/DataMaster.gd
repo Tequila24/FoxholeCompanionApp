@@ -7,16 +7,35 @@ const DEBUG = true
 const _VEHICLES_DATA_PATH: String  = "res://data/Foxhole Vehicles.json"
 const _ITEMS_DATA_PATH: String = "res://data/Foxhole Items.json"
 const _ARMAMENT_DATA_PATH: String = "res://data/Foxhole Armament.json"
+const _RESISTANCES_DATA_PATH: String = "res://data/DamageResistances.json"
 
 
 
-var _vehicles_data: Array[Variant]
-var _items_data: Array[Variant]
-var _armament_data: Array[Variant]
+# var _vehicles_data: Array[Variant]
+# var _items_data: Array[Variant]
+# var _armament_data: Array[Variant]
 
 
 var _all_vehicles: Dictionary[String, VehicleEntity] = {}
 var _all_items: Dictionary[String, ItemEntity] = {}
+var _damage_resistances: Dictionary[String, Dictionary] = {
+	"LightVehicle" = {},
+	"Tier1Tank" = {},
+	"Tier2Tank" = {},
+	"Tier1Ship" = {},
+	"Tier2Ship" = {},
+	"Tier1LargeShip" = {},
+	"Tier1Aircraft" = {},
+	"Tier1Structure" = {},
+	"Tier2Structure" = {},
+	"Tier2BStructure" = {},
+	"Tier3Structure" = {},
+	"Tier3BStructure" = {},
+	"Tier1GarrisonHouse" = {},
+	"Tier2GarrisonHouse" = {},
+	"Tier3GarrisonHouse" = {},
+	"Trench" = {}
+}
 
 
 
@@ -25,19 +44,15 @@ func _ready() -> void:
 
 
 func _load_data():
-	var vehicles_file_str = FileAccess.get_file_as_string(_VEHICLES_DATA_PATH)
-	var armaments_file_str = FileAccess.get_file_as_string(_ARMAMENT_DATA_PATH)
-	var items_file_str = FileAccess.get_file_as_string(_ITEMS_DATA_PATH)
-	
-	_vehicles_data = JSON.parse_string(vehicles_file_str)
-	_armament_data = JSON.parse_string(armaments_file_str)
-	_items_data = JSON.parse_string(items_file_str)
-
 	_load_vehicles()
 	_load_items()
+	_load_resistances()
 	
 
 func _load_vehicles():
+	var _vehicles_data = JSON.parse_string(FileAccess.get_file_as_string(_VEHICLES_DATA_PATH))
+	var _armament_data = JSON.parse_string(FileAccess.get_file_as_string(_ARMAMENT_DATA_PATH))
+	
 	for vehicle_entry: Dictionary in _vehicles_data:
 		var new_vehicle: VehicleEntity = VehicleEntity.new()
 		if (vehicle_entry.get("codename") == null):
@@ -65,13 +80,13 @@ func _load_vehicles():
 		# Armament
 		var vic_arm_entries: Array = _armament_data.filter(
 			func(arm_entry: Dictionary):
-				return arm_entry.get("parent_name", "") == new_vehicle.name
+				return arm_entry.get("parent name", "") == new_vehicle.name
 		)
 		
 		for arm_entry: Dictionary in vic_arm_entries:
 			var used_ammo_ids: Array[String] = []
-			for i in range(5):
-				var ammo_id: String = arm_entry.get("AmmoName%d" % i, "")
+			for i in range(1,5):
+				var ammo_id: String = (arm_entry["AmmoName%d" % i]) if (arm_entry["AmmoName%d" % i] != null) else ("")
 				if (not ammo_id.is_empty()):
 					used_ammo_ids.append(ammo_id)
 
@@ -81,11 +96,13 @@ func _load_vehicles():
 
 			var new_gun: ComponentGun = ComponentGun.new()
 			new_gun.ammo_used_ids.assign(used_ammo_ids)
-			new_gun.magazine_size = arm_entry.get("MagazineSize", 1)
-			new_gun.cooldown_duration_s = arm_entry.get("FiringTime", 0)
-			new_gun.reload_duration_s = arm_entry.get("ReloadTime", 0)
-			new_gun.damage_modifier = 1.0 + float(arm_entry.get("VelocityMod", 0.0))
+			new_gun.magazine_size = (arm_entry["MagazineSize"]) if (arm_entry["MagazineSize"] != null) else (1)
+			new_gun.cooldown_duration_s = (arm_entry["FiringTime"]) if (arm_entry["FiringTime"] != null) else (0)
+			new_gun.reload_duration_s = (arm_entry["ReloadTime"]) if (arm_entry["ReloadTime"] != null) else (0)
+			new_gun.fire_rate = (arm_entry["FireRate"]) if (arm_entry["FireRate"] != null) else (0)
+			new_gun.damage_modifier = 1.0 + float(((arm_entry["VelocityMod"]) if (arm_entry["VelocityMod"] != null) else (0)) * 0.01)
 
+			# print("%s adding gun component" % new_vehicle.name)
 			new_vehicle.add_component(new_gun)
 
 		
@@ -93,6 +110,8 @@ func _load_vehicles():
 
 
 func _load_items():
+	var _items_data = JSON.parse_string(FileAccess.get_file_as_string(_ITEMS_DATA_PATH))
+
 	for item_entry: Dictionary in _items_data:
 		if (item_entry["codename"] == null):
 			continue
@@ -118,9 +137,30 @@ func _load_items():
 		_all_items[new_item.name] = new_item
 
 
+func _load_resistances():
+	var _resistances_data = JSON.parse_string(FileAccess.get_file_as_string(_RESISTANCES_DATA_PATH))
+
+	for damage_type: Dictionary in _resistances_data:
+		_damage_resistances["LightVehicle"][damage_type["name"]] = damage_type["LightVehicle"]
+		_damage_resistances["Tier1Tank"][damage_type["name"]] = damage_type["Tier1Tank"]
+		_damage_resistances["Tier2Tank"][damage_type["name"]] = damage_type["Tier2Tank"]
+		_damage_resistances["Tier1Ship"][damage_type["name"]] = damage_type["Tier1Ship"]
+		_damage_resistances["Tier2Ship"][damage_type["name"]] = damage_type["Tier2Ship"]
+		_damage_resistances["Tier1LargeShip"][damage_type["name"]] = damage_type["Tier1LargeShip"]
+		_damage_resistances["Tier1Aircraft"][damage_type["name"]] = damage_type["Tier1Aircraft"]
+		_damage_resistances["Tier1Structure"][damage_type["name"]] = damage_type["Tier1Structure"]
+		_damage_resistances["Tier2Structure"][damage_type["name"]] = damage_type["Tier2Structure"]
+		_damage_resistances["Tier2BStructure"][damage_type["name"]] = damage_type["Tier2BStructure"]
+		_damage_resistances["Tier3Structure"][damage_type["name"]] = damage_type["Tier3Structure"]
+		_damage_resistances["Tier3BStructure"][damage_type["name"]] = damage_type["Tier3BStructure"]
+		_damage_resistances["Tier1GarrisonHouse"][damage_type["name"]] = damage_type["Tier1GarrisonHouse"]
+		_damage_resistances["Tier2GarrisonHouse"][damage_type["name"]] = damage_type["Tier2GarrisonHouse"]
+		_damage_resistances["Tier3GarrisonHouse"][damage_type["name"]] = damage_type["Tier3GarrisonHouse"]
+		_damage_resistances["Trench"][damage_type["name"]] = damage_type["Trench"]
+
 
 func get_resistance_to_damage_type(tier_id: String, damage_type_id: String) -> float:
-	return 0
+	return _damage_resistances[tier_id][damage_type_id]
 	# var tier_column_id: String = _resistance_tier_id_enum_to_column_str.get(tier_id, "light_vehicle_damage_mitigation")
 	# var resistances_for_tier_result: Array[Dictionary] = foxhole_db.select_rows("damageprofiles", "id == '%s'" % damage_type_id, ["%s" % tier_column_id])
 
@@ -137,28 +177,7 @@ func get_vehicle_entity(id: String) -> VehicleEntity:
 
 
 func get_item_entity(id: String) -> ItemEntity:
-	var item: ItemEntity = ItemEntity.new()
-
-	# var quiery_result = foxhole_db.select_rows("ammo", "id == '%s'" % id, ["name", "damage", "damage_type_display_name", "iconobject_path"])
-	# if (quiery_result.is_empty()):
-	# 	if (DEBUG): print("Error processing %s id!" % id)
-	# 	return null
-
-	# ammo_entity.id = id
-	# ammo_entity.name = quiery_result.get(0).name
-	# ammo_entity.icon_path = quiery_result.get(0).iconobject_path
-
-	# var new_damage_component: ComponentDamage = ComponentDamage.new()
-	# new_damage_component.raw_damage = quiery_result.get(0).damage
-	# new_damage_component.damage_type_id = _damage_type_name_to_id.get(quiery_result.get(0).damage_type_display_name, "Light Kinetic")
-	# ammo_entity.add_component(new_damage_component)
-
-	# # print(quiery_result.get(0))
-	# # print(quiery_result.get(0).name)
-	# # print(quiery_result.get(0).damage)
-	# # print(type_string(typeof(quiery_result.get(0))))
-
-	return item
+	return _all_items.get(id, ItemEntity.new())
 
 
 func _exit_tree() -> void:

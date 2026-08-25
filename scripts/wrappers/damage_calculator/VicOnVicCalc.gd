@@ -6,7 +6,7 @@ extends RefCounted
 const INLINE_TEXT_FMT: String = "[img width=1em]%s[/img]"
 const TTK_SIMULATION_TIME_STEP: float = 0.05
 const TTK_TO_MINUTES_LIMIT: float = 120
-const DEBUG: bool = false
+const DEBUG: bool = true
 
 
 #
@@ -14,6 +14,8 @@ class GunSimulationData:
 	enum GunState {READY, COOLDOWN, RELOAD}
 	var damage: int = 1
 	var magazine_size: int = 1
+	var reload_duration_s: float = 0.1
+	var cooldown_duration_s: float = 0.1
 	var state: GunState = GunState.READY
 	var state_timer: float = 0.0
 	var ammo_entity_id: String = ""
@@ -63,6 +65,7 @@ func simulate_attack(attacker_entity: GameEntity, target_entity: GameEntity) -> 
 	_all_attack_components.assign(attacker_entity.get_components_of_type(ComponentGun))
 	if (_all_attack_components.is_empty()):
 		result.is_valid = false
+		print("no attack component found")
 		return result
 
 	for gun_component: ComponentGun in _all_attack_components:
@@ -73,8 +76,10 @@ func simulate_attack(attacker_entity: GameEntity, target_entity: GameEntity) -> 
 		
 		var ammo_entity: ItemEntity = DataMaster.get_item_entity(gun_component.ammo_used_ids.get(0))
 		if (ammo_entity == null):
+			if DEBUG: print("No ammo type found")
 			continue
 		if (not ammo_entity.has_component_type(ComponentDamage)):
+			if DEBUG: print("No damage component on ammo entity")
 			continue
 
 		var damage_component: ComponentDamage = ammo_entity.get_component_of_type(ComponentDamage)
@@ -88,19 +93,28 @@ func simulate_attack(attacker_entity: GameEntity, target_entity: GameEntity) -> 
 		if (new_gun_sim_data.damage == 0):
 			continue
 
+		new_gun_sim_data.reload_duration_s = gun_component.reload_duration_s
+		var actual_cooldown: float = 0
+		if (gun_component.magazine_size > 1 && is_equal_approx(gun_component.cooldown_duration_s, 0.0)):
+			actual_cooldown = 60 / gun_component.fire_rate
+		else:
+			actual_cooldown = gun_component.cooldown_duration_s
+		new_gun_sim_data.cooldown_duration_s = actual_cooldown
+
 		new_gun_sim_data.magazine_size = gun_component.magazine_size
 		new_gun_sim_data.state = GunSimulationData.GunState.READY
 		new_gun_sim_data.state_timer = 0
 
 		_simulation_data.attacker_guns.append(new_gun_sim_data)
 
-		print("Gun: %s damage: %s mag_size: %s" % [_simulation_data.attacker_guns.back().ammo_entity_id, _simulation_data.attacker_guns.back().damage, _simulation_data.attacker_guns.back().magazine_size])
+		if DEBUG: print("Gun: %s damage: %s mag_size: %s" % [_simulation_data.attacker_guns.back().ammo_entity_id, _simulation_data.attacker_guns.back().damage, _simulation_data.attacker_guns.back().magazine_size])
 
 	# print("Calculated guns count: %s" % str(_simulation_data.attacker_guns.size()))
 	# print("Gun type %s mag size %s" % [_simulation_data.attacker_guns.get(0).ammo_entity_id, _simulation_data.attacker_guns.get(0).magazine_size])
 
 	if (_simulation_data.attacker_guns.is_empty()):
 		result.is_valid = false
+		if DEBUG: print("no guns found found")
 		return result
 
 
@@ -165,13 +179,13 @@ func process_shot(gun: GunSimulationData, gun_idx: int):
 	process_cooldown.call(gun, gun_idx)
 
 	if (DEBUG):
-			print("SHOT! Time step %.2f" % [_accumulated_time_to_kill])
+			print("SHOT +%s damage! Time step %.2f" % [gun.damage, _accumulated_time_to_kill])
 
 
 func process_cooldown(gun: GunSimulationData, gun_idx: int):
-	var cooldown_duration = (_all_attack_components[gun_idx] as ComponentGun).cooldown_duration_s
+	# var cooldown_duration = (_all_attack_components[gun_idx] as ComponentGun).cooldown_duration_s
 
-	if (is_equal_approx(gun.state_timer, cooldown_duration) || gun.state_timer > cooldown_duration):
+	if (is_equal_approx(gun.state_timer, gun.cooldown_duration_s) || gun.state_timer > gun.cooldown_duration_s):
 		if (DEBUG):
 			print("COOLED! Time step %.2f" % [_accumulated_time_to_kill])
 			print("Shots count: %d - Mag Size %d" % [_simulation_data.attacker_guns[gun_idx].shots_count, gun.magazine_size])
@@ -188,9 +202,9 @@ func process_cooldown(gun: GunSimulationData, gun_idx: int):
 		
 
 func process_reload(gun: GunSimulationData, gun_idx: int):
-	var reload_duration = (_all_attack_components[gun_idx] as ComponentGun).reload_duration_s
+	# var reload_duration = (_all_attack_components[gun_idx] as ComponentGun).reload_duration_s
 
-	if (is_equal_approx(gun.state_timer, reload_duration) || gun.state_timer >= reload_duration):
+	if (is_equal_approx(gun.state_timer, gun.reload_duration_s) || gun.state_timer >= gun.reload_duration_s):
 		if (DEBUG):
 			print("RELOADED! Time step %.2f" % [_accumulated_time_to_kill])
 		gun.state = GunSimulationData.GunState.READY
