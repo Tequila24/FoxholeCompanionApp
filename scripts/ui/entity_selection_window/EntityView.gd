@@ -26,9 +26,10 @@ func set_visual(new_entity: GameEntity) -> void:
 	attached_entity = new_entity
 
 	var entity_texture: Resource 
-	if (ResourceLoader.exists(Globals.ICONS_PATH + attached_entity.icon_path)):
-		entity_texture = load(Globals.ICONS_PATH + attached_entity.icon_path)
+	if (ResourceLoader.exists(Globals.ICONS_PATH + attached_entity.image_name)):
+		entity_texture = load(Globals.ICONS_PATH + attached_entity.image_name)
 	else:
+		print("Icon not found for %s" % attached_entity.image_name)
 		entity_texture = Globals.error_texture
 	icon.texture = entity_texture
 	name_label.fit_text = attached_entity.name

@@ -1,6 +1,7 @@
+class_name Enums
 
 
-enum Factions {
+enum Faction {
 	NEUTRAL,
 	WARDEN,
 	COLONIAL
