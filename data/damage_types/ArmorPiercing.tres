@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="DamageType" format=3 uid="uid://1dekj3luodu"]
-
-[ext_resource type="Texture2D" uid="uid://be7alytugdptf" path="res://assets/textures/game_icons/damage_types/ArmorPiercing.png" id="1_ghsts"]
-[ext_resource type="Script" uid="uid://bupfw8yvghm6c" path="res://data_templaces/DamageType.gd" id="1_hdys6"]
-
-[resource]
-script = ExtResource("1_hdys6")
-icon = ExtResource("1_ghsts")

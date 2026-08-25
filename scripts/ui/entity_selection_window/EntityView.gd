@@ -8,26 +8,29 @@ signal updated()
 
 
 @export var _button: Button
-@export var _icon: TextureRect
-@export var _name_label: AutoFitLabel
+@export var icon: TextureRect
+@export var name_label: AutoFitRichTextLabel
 
-var _current_entity: GameEntity
-var attached_entity: GameEntity:
-	get:
-		return _current_entity
+var attached_entity: GameEntity
+
 
 
 func _ready() -> void:
 	_button.pressed.connect(pressed.emit)
+	
 
-
-func set_visual(entity: GameEntity) -> void:
-	if (entity == null):
+func set_visual(new_entity: GameEntity) -> void:
+	if (new_entity == null):
 		return
 
-	_current_entity = entity
+	attached_entity = new_entity
 
-	_icon.texture = entity.icon
-	_name_label.text = entity.name
+	var entity_texture: Resource 
+	if (ResourceLoader.exists(Globals.ICONS_PATH + attached_entity.icon_path)):
+		entity_texture = load(Globals.ICONS_PATH + attached_entity.icon_path)
+	else:
+		entity_texture = Globals.error_texture
+	icon.texture = entity_texture
+	name_label.fit_text = attached_entity.name
 
 	updated.emit()

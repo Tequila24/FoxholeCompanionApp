@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="DamageType" format=3 uid="uid://bmwt8luxebe46"]
-
-[ext_resource type="Texture2D" uid="uid://b1jf6mfar66to" path="res://assets/textures/game_icons/damage_types/IncendiaryExplosive.png" id="1_44vc0"]
-[ext_resource type="Script" uid="uid://bupfw8yvghm6c" path="res://data_templaces/DamageType.gd" id="1_go3rq"]
-
-[resource]
-script = ExtResource("1_go3rq")
-icon = ExtResource("1_44vc0")

@@ -5,7 +5,7 @@ extends Node
 signal updated()
 signal recalculated(DamageCalculationResult)
 
-@export var _attacker_entity: GameEntity
+var _attacker_entity: GameEntity
 var attacker_entity: GameEntity:
 	get:
 		return _attacker_entity
@@ -14,7 +14,7 @@ var attacker_entity: GameEntity:
 		updated.emit()
 
 
-@export var _target_entity: GameEntity
+var _target_entity: GameEntity
 var target_entity: GameEntity:
 	get:
 		return _target_entity
@@ -40,8 +40,8 @@ func _ready() -> void:
 
 
 # func get_attacker_damage_amount() -> int:
-# 	if _attacker_entity is AmmoEntity:
-# 		return (_attacker_entity as AmmoEntity).damage
+# 	if _attacker_entity is ItemEntity:
+# 		return (_attacker_entity as ItemEntity).damage
 # 	if _attacker_entity is VehicleEntity:
 # 		var main_gun_attack: AttackComponent = _attacker_entity.get_component(AttackComponent)
 # 		if (main_gun_attack == null):
@@ -53,8 +53,8 @@ func _ready() -> void:
 
 
 # func get_attacker_damage_type() -> DamageType:
-# 	if _attacker_entity is AmmoEntity:
-# 		return (_attacker_entity as AmmoEntity).damage_type
+# 	if _attacker_entity is ItemEntity:
+# 		return (_attacker_entity as ItemEntity).damage_type
 # 	if _attacker_entity is VehicleEntity:
 # 		var main_gun_attack: AttackComponent = _attacker_entity.get_component(AttackComponent)
 # 		if (main_gun_attack == null):
@@ -68,8 +68,13 @@ func _ready() -> void:
 func recalculate():
 	if (_attacker_entity == null || _target_entity == null):
 		recalculated.emit(DamageCalculationResult.new())
+		print(current_result.is_valid)
 		return
 
-	if ((_attacker_entity.has_component(AttackComponent) && _target_entity.has_component(VitalsComponent))):
+	if ((_attacker_entity.has_component_type(ComponentGun) && _target_entity.has_component_type(ComponentVitals))):
 		current_result = _vic_on_vic_calc.simulate_attack(attacker_entity, target_entity)
 		recalculated.emit(current_result)
+		return
+
+	# empty result
+	recalculated.emit(DamageCalculationResult.new())

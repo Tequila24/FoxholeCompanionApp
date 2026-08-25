@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="DamageType" format=3 uid="uid://bmu7if7aja10"]
-
-[ext_resource type="Texture2D" uid="uid://bmnioe1d2m3jm" path="res://assets/textures/game_icons/damage_types/KineticHeavy.png" id="1_fet3q"]
-[ext_resource type="Script" uid="uid://bupfw8yvghm6c" path="res://data_templaces/DamageType.gd" id="1_v14qj"]
-
-[resource]
-script = ExtResource("1_v14qj")
-icon = ExtResource("1_fet3q")

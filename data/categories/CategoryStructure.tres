@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="CategoryStructure" format=3 uid="uid://cntaal3u7cvon"]
-
-[ext_resource type="Script" uid="uid://crfp6m75fd2wv" path="res://data_templaces/game_entities/categories/CategoryStructure.gd" id="1_cksmp"]
-
-[resource]
-script = ExtResource("1_cksmp")
-_name = "Structure"
-metadata/_custom_type_script = "uid://d0e4gfjt55g17"
