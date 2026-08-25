@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dxyxes00f8kms"]
+
+[ext_resource type="Script" uid="uid://cxocchakmt4ei" path="res://scripts/ui/common/paging/PagingButton.gd" id="1_2cy2v"]
+[ext_resource type="Texture2D" uid="uid://c7js32o8ql5w7" path="res://assets/textures/game_icons/ItemIcons/LoreSkull.tga" id="1_u0bcf"]
+[ext_resource type="PackedScene" uid="uid://c0u42pdjmkxj8" path="res://scenes/ui/common/AutoFitRichTextLabel.tscn" id="2_2cy2v"]
+
+[node name="PagingButton" type="Button" unique_id=1576433363]
+custom_minimum_size = Vector2(48, 58)
+anchors_preset = -1
+anchor_right = 0.11400001
+anchor_bottom = 0.072000004
+offset_right = 0.11999512
+offset_bottom = 0.3999977
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource("1_2cy2v")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1264236000]
+layout_mode = 0
+offset_right = 48.0
+offset_bottom = 58.0
+size_flags_horizontal = 4
+theme_override_constants/separation = -6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer" unique_id=1357064229]
+custom_minimum_size = Vector2(48, 48)
+custom_maximum_size = Vector2(48, 48)
+layout_mode = 2
+texture = ExtResource("1_u0bcf")
+
+[node name="AutoFitRichTextLabel" parent="VBoxContainer" unique_id=17580340 instance=ExtResource("2_2cy2v")]
+custom_minimum_size = Vector2(0, 16)
+custom_maximum_size = Vector2(-1, 16)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 9
+theme_override_font_sizes/bold_font_size = 9
+theme_override_font_sizes/bold_italics_font_size = 9
+theme_override_font_sizes/italics_font_size = 9
+text = "Something"
+horizontal_alignment = 1
+vertical_alignment = 1
+fit_text = "Something"
