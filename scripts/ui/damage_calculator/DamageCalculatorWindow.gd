@@ -109,8 +109,6 @@ func _on_new_calculation(result: DamageCalculationResult) -> void:
 func _update_data_lines(result: DamageCalculationResult) -> void:
 	_stats_holder.clear()
 
-	print("clear")
-
 	if (not result.is_valid):
 		return
 
