@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://be7alytugdptf"
-path="res://.godot/imported/ArmorPiercing.png-261533bf7f3c31d179ef1f7fe9e6fcc7.ctex"
+uid="uid://cuqolci8yup6t"
+path="res://.godot/imported/AAAmmoIcon.tga-c82a692c0ee267ba946100b0f0d68e47.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/game_icons/damage_types/ArmorPiercing.png"
-dest_files=["res://.godot/imported/ArmorPiercing.png-261533bf7f3c31d179ef1f7fe9e6fcc7.ctex"]
+source_file="res://assets/textures/game_icons/ItemIcons/AAAmmoIcon.tga"
+dest_files=["res://.godot/imported/AAAmmoIcon.tga-c82a692c0ee267ba946100b0f0d68e47.ctex"]
 
 [params]
 

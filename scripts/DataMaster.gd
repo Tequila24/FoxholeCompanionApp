@@ -18,23 +18,23 @@ const _RESISTANCES_DATA_PATH: String = "res://data/DamageResistances.json"
 
 var _all_vehicles: Dictionary[String, VehicleEntity] = {}
 var _all_items: Dictionary[String, ItemEntity] = {}
-var _damage_resistances: Dictionary[String, Dictionary] = {
-	"LightVehicle" = {},
-	"Tier1Tank" = {},
-	"Tier2Tank" = {},
-	"Tier1Ship" = {},
-	"Tier2Ship" = {},
-	"Tier1LargeShip" = {},
-	"Tier1Aircraft" = {},
-	"Tier1Structure" = {},
-	"Tier2Structure" = {},
-	"Tier2BStructure" = {},
-	"Tier3Structure" = {},
-	"Tier3BStructure" = {},
-	"Tier1GarrisonHouse" = {},
-	"Tier2GarrisonHouse" = {},
-	"Tier3GarrisonHouse" = {},
-	"Trench" = {}
+var _damage_type_resistances: Dictionary[String, Dictionary] = {
+	# "LightVehicle" = {},
+	# "Tier1Tank" = {},
+	# "Tier2Tank" = {},
+	# "Tier1Ship" = {},
+	# "Tier2Ship" = {},
+	# "Tier1LargeShip" = {},
+	# "Tier1Aircraft" = {},
+	# "Tier1Structure" = {},
+	# "Tier2Structure" = {},
+	# "Tier2BStructure" = {},
+	# "Tier3Structure" = {},
+	# "Tier3BStructure" = {},
+	# "Tier1GarrisonHouse" = {},
+	# "Tier2GarrisonHouse" = {},
+	# "Tier3GarrisonHouse" = {},
+	# "Trench" = {}
 }
 
 
@@ -140,31 +140,38 @@ func _load_items():
 func _load_resistances():
 	var _resistances_data = JSON.parse_string(FileAccess.get_file_as_string(_RESISTANCES_DATA_PATH))
 
-	for damage_type: Dictionary in _resistances_data:
-		_damage_resistances["LightVehicle"][damage_type["name"]] = damage_type["LightVehicle"]
-		_damage_resistances["Tier1Tank"][damage_type["name"]] = damage_type["Tier1Tank"]
-		_damage_resistances["Tier2Tank"][damage_type["name"]] = damage_type["Tier2Tank"]
-		_damage_resistances["Tier1Ship"][damage_type["name"]] = damage_type["Tier1Ship"]
-		_damage_resistances["Tier2Ship"][damage_type["name"]] = damage_type["Tier2Ship"]
-		_damage_resistances["Tier1LargeShip"][damage_type["name"]] = damage_type["Tier1LargeShip"]
-		_damage_resistances["Tier1Aircraft"][damage_type["name"]] = damage_type["Tier1Aircraft"]
-		_damage_resistances["Tier1Structure"][damage_type["name"]] = damage_type["Tier1Structure"]
-		_damage_resistances["Tier2Structure"][damage_type["name"]] = damage_type["Tier2Structure"]
-		_damage_resistances["Tier2BStructure"][damage_type["name"]] = damage_type["Tier2BStructure"]
-		_damage_resistances["Tier3Structure"][damage_type["name"]] = damage_type["Tier3Structure"]
-		_damage_resistances["Tier3BStructure"][damage_type["name"]] = damage_type["Tier3BStructure"]
-		_damage_resistances["Tier1GarrisonHouse"][damage_type["name"]] = damage_type["Tier1GarrisonHouse"]
-		_damage_resistances["Tier2GarrisonHouse"][damage_type["name"]] = damage_type["Tier2GarrisonHouse"]
-		_damage_resistances["Tier3GarrisonHouse"][damage_type["name"]] = damage_type["Tier3GarrisonHouse"]
-		_damage_resistances["Trench"][damage_type["name"]] = damage_type["Trench"]
+	for damage_type_data: Dictionary in _resistances_data:
+		_damage_type_resistances[damage_type_data["name"]] = {}
+		_damage_type_resistances[damage_type_data["name"]]["image"] = damage_type_data["image"]
+		
+		_damage_type_resistances[damage_type_data["name"]]["LightVehicle"] = damage_type_data["LightVehicle"]
+		_damage_type_resistances[damage_type_data["name"]]["Tier1Tank"] = damage_type_data["Tier1Tank"]
+		_damage_type_resistances[damage_type_data["name"]]["Tier2Tank"] = damage_type_data["Tier2Tank"]
+		_damage_type_resistances[damage_type_data["name"]]["Tier1Ship"] = damage_type_data["Tier1Ship"]
+		_damage_type_resistances[damage_type_data["name"]]["Tier2Ship"] = damage_type_data["Tier2Ship"]
+		_damage_type_resistances[damage_type_data["name"]]["Tier1LargeShip"] = damage_type_data["Tier1LargeShip"]
+		_damage_type_resistances[damage_type_data["name"]]["Tier1Aircraft"] = damage_type_data["Tier1Aircraft"]
+		_damage_type_resistances[damage_type_data["name"]]["Tier1Structure"] = damage_type_data["Tier1Structure"]
+		_damage_type_resistances[damage_type_data["name"]]["Tier2Structure"] = damage_type_data["Tier2Structure"]
+		_damage_type_resistances[damage_type_data["name"]]["Tier2BStructure"] = damage_type_data["Tier2BStructure"]
+		_damage_type_resistances[damage_type_data["name"]]["Tier3Structure"] = damage_type_data["Tier3Structure"]
+		_damage_type_resistances[damage_type_data["name"]]["Tier3BStructure"] = damage_type_data["Tier3BStructure"]
+		_damage_type_resistances[damage_type_data["name"]]["Tier1GarrisonHouse"] = damage_type_data["Tier1GarrisonHouse"]
+		_damage_type_resistances[damage_type_data["name"]]["Tier2GarrisonHouse"] = damage_type_data["Tier2GarrisonHouse"]
+		_damage_type_resistances[damage_type_data["name"]]["Tier3GarrisonHouse"] = damage_type_data["Tier3GarrisonHouse"]
+		_damage_type_resistances[damage_type_data["name"]]["Trench"] = damage_type_data["Trench"]
 
 
-func get_resistance_to_damage_type(tier_id: String, damage_type_id: String) -> float:
-	return _damage_resistances[tier_id][damage_type_id]
+func get_damage_resistance(tier_id: String, damage_type_id: String) -> float:
+	return _damage_type_resistances[damage_type_id][tier_id]
 	# var tier_column_id: String = _resistance_tier_id_enum_to_column_str.get(tier_id, "light_vehicle_damage_mitigation")
 	# var resistances_for_tier_result: Array[Dictionary] = foxhole_db.select_rows("damageprofiles", "id == '%s'" % damage_type_id, ["%s" % tier_column_id])
 
 	# return (resistances_for_tier_result.get(0)[tier_column_id] as float)
+
+
+func get_damage_resistance_as_string(tier_id: String, damage_type_id: String) -> String:
+	return "[img width=1.2em]%s[/img]%s%%" % [("res://assets/textures/game_icons/ItemIcons/" + _damage_type_resistances[damage_type_id]["image"]), str(_damage_type_resistances[damage_type_id][tier_id] * 100)]
 
 
 

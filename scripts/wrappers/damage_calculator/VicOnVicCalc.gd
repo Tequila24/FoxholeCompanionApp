@@ -6,7 +6,7 @@ extends RefCounted
 const INLINE_TEXT_FMT: String = "[img width=1em]%s[/img]"
 const TTK_SIMULATION_TIME_STEP: float = 0.05
 const TTK_TO_MINUTES_LIMIT: float = 120
-const DEBUG: bool = true
+const DEBUG: bool = false
 
 
 #
@@ -39,15 +39,15 @@ func get_target_damage_type_resistance(target_entity: GameEntity, damage_type_id
 	if (vitals_component == null):
 		return 0
 
-	return DataMaster.get_resistance_to_damage_type(vitals_component.resistance_id, damage_type_id)
+	return DataMaster.get_damage_resistance(vitals_component.resistance_id, damage_type_id)
 
 
-# func get_target_damage_type_resistance_as_string(target_entity: GameEntity, damage_type: DamageType) -> String:
-# 	var resistance_component: DamageResistanceComponent = target_entity.get_component(DamageResistanceComponent)
-# 	if (resistance_component == null):
-# 		return ""
+func get_target_damage_resistance_as_string(target_entity: GameEntity, damage_type_id: String) -> String:
+	var vitals_component: ComponentVitals = target_entity.get_component_of_type(ComponentVitals)
+	if (vitals_component == null):
+		return ""
 
-# 	return resistance_component.get_resistance_for_as_string(damage_type)
+	return DataMaster.get_damage_resistance_as_string(vitals_component.resistance_id, damage_type_id)
 
 
 func get_target_health_points(target_entity: GameEntity) -> int:
@@ -74,6 +74,7 @@ func simulate_attack(attacker_entity: GameEntity, target_entity: GameEntity) -> 
 		var raw_damage: int = 0
 		var damage_resistance: float = 0
 		
+		new_gun_sim_data.ammo_entity_id = gun_component.ammo_used_ids.get(0)
 		var ammo_entity: ItemEntity = DataMaster.get_item_entity(gun_component.ammo_used_ids.get(0))
 		if (ammo_entity == null):
 			if DEBUG: print("No ammo type found")
@@ -89,7 +90,8 @@ func simulate_attack(attacker_entity: GameEntity, target_entity: GameEntity) -> 
 		# print("Target: %s resistance for %s - %s" % [target_entity.name, damage_component.damage_type_id, damage_resistance])
 
 		new_gun_sim_data.damage = raw_damage * gun_component.damage_modifier * damage_resistance
-		# print("Target: %s damage from %s - %s" % [target_entity.name, ammo_entity.id, all_guns.back().damage])
+		# print("Raw damage: %s" % [str(raw_damage)])
+		# print("Target: %s damage from %s - %s" % [target_entity.name, ammo_entity.name, new_gun_sim_data.damage])
 		if (new_gun_sim_data.damage == 0):
 			continue
 
@@ -142,10 +144,11 @@ func simulate_attack(attacker_entity: GameEntity, target_entity: GameEntity) -> 
 			elif gun.state == GunSimulationData.GunState.RELOAD:
 				process_reload.call(gun, gun_idx)
 			
+			if (_accumulated_damage >= _simulation_data.target_health):
+				break
+
 			gun_idx += 1
 
-		if (_accumulated_damage >= _simulation_data.target_health):
-			break
 		
 		_accumulated_time_to_kill += TTK_SIMULATION_TIME_STEP
 		step += 1
@@ -158,11 +161,13 @@ func simulate_attack(attacker_entity: GameEntity, target_entity: GameEntity) -> 
 		result.guns_counters.append(DamageCalculationResult.GunCalculationResult.new(gun_sim_data.ammo_entity_id, gun_sim_data.shots_count))
 
 	result.add_stats_line("Target health", ("%d" % _simulation_data.target_health))	
-	# var target_resistances_str: String = ""
-	# for gun in _simulation_data.attacker_guns:
-	# 	target_resistances_str += get_target_damage_type_resistance_as_string(target_entity, gun.ammo_type.damage_type)
-	# 	target_resistances_str += " "
-	# result.add_stats_line("Target resistances", target_resistances_str)
+	var target_resistances_str: String = ""
+	for gun in _simulation_data.attacker_guns:
+		var ammo_entity: ItemEntity = DataMaster.get_item_entity(gun.ammo_entity_id)
+		var damage_component: ComponentDamage = ammo_entity.get_component_of_type(ComponentDamage)
+		target_resistances_str += get_target_damage_resistance_as_string(target_entity, damage_component.damage_type_id)
+		target_resistances_str += " "
+	result.add_stats_line("Target resistances", target_resistances_str)
 	if (_simulation_data.time_to_kill < TTK_TO_MINUTES_LIMIT):
 		result.add_stats_line("Time to kill", ("%.2f seconds" % _simulation_data.time_to_kill))
 	else:

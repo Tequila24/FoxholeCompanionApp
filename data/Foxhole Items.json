@@ -2,7 +2,7 @@
     {
         "codename": null,
         "name": "55mm",
-        "image": "Light Artillery Ammo.png",
+        "image": "ItemIcons/Light Artillery Ammo.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -18,7 +18,7 @@
     {
         "codename": null,
         "name": "Brasa Shotgun",
-        "image": "ShotgunItemIcon.png",
+        "image": "ItemIcons/ShotgunItemIcon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -34,7 +34,7 @@
     {
         "codename": null,
         "name": "Crude Oil",
-        "image": "CrudeOilIcon.png",
+        "image": "ItemIcons/CrudeOilIcon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -50,7 +50,7 @@
     {
         "codename": null,
         "name": "Deadly Soulstone",
-        "image": "Soulstone02Icon.png",
+        "image": "ItemIcons/Soulstone02Icon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -66,7 +66,7 @@
     {
         "codename": null,
         "name": "Fists",
-        "image": "FistItemIcon.png",
+        "image": "ItemIcons/FistItemIcon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": 50,
@@ -82,7 +82,7 @@
     {
         "codename": null,
         "name": "Relic Parts",
-        "image": "Tech Parts.png",
+        "image": "ItemIcons/Tech Parts.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -98,7 +98,7 @@
     {
         "codename": null,
         "name": "Relic Tech",
-        "image": "TechPartIcon.png",
+        "image": "ItemIcons/TechPartIcon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -114,7 +114,7 @@
     {
         "codename": null,
         "name": "Research Part",
-        "image": "Tech Parts.png",
+        "image": "ItemIcons/Tech Parts.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -130,7 +130,7 @@
     {
         "codename": null,
         "name": "Rocket Booster",
-        "image": "RocketBoosterIcon.png",
+        "image": "ItemIcons/RocketBoosterIcon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -146,7 +146,7 @@
     {
         "codename": null,
         "name": "Sinister Soulstone",
-        "image": "Soulstone03Icon.png",
+        "image": "ItemIcons/Soulstone03Icon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -162,7 +162,7 @@
     {
         "codename": null,
         "name": "Soulstone",
-        "image": "Soulstone01Icon.png",
+        "image": "ItemIcons/Soulstone01Icon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -178,7 +178,7 @@
     {
         "codename": null,
         "name": "Strong Materials",
-        "image": "Concrete_Materials_Icon.png",
+        "image": "ItemIcons/Concrete_Materials_Icon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -194,7 +194,7 @@
     {
         "codename": null,
         "name": "Technology Part",
-        "image": "TechPartIcon.png",
+        "image": "ItemIcons/TechPartIcon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -210,7 +210,7 @@
     {
         "codename": null,
         "name": "Upgrade Part",
-        "image": "UpgradePartIcon.png",
+        "image": "ItemIcons/UpgradePartIcon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -226,7 +226,7 @@
     {
         "codename": null,
         "name": "Warhead",
-        "image": "RocketWarheadIcon.png",
+        "image": "ItemIcons/RocketWarheadIcon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -242,7 +242,7 @@
     {
         "codename": "AAAmmo",
         "name": "950-70b Anti-Aircraft Shell",
-        "image": "AAAmmoIcon.png",
+        "image": "ItemIcons/AAAmmoIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 1200,
@@ -258,7 +258,7 @@
     {
         "codename": "AircraftAmmo",
         "name": "20mm",
-        "image": "AircraftAmmoIcon.png",
+        "image": "ItemIcons/AircraftAmmoIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 65,
@@ -274,7 +274,7 @@
     {
         "codename": "AircraftPartLargeEngineC",
         "name": "Colonial Aircraft Engine (Large)",
-        "image": "AircraftEngineIcon.png",
+        "image": "ItemIcons/AircraftEngineIcon.tga",
         "faction": "Col",
         "ItemCategory": "Parts",
         "damage": null,
@@ -290,7 +290,7 @@
     {
         "codename": "AircraftPartLargeEngineW",
         "name": "Warden Aircraft Engine (Large)",
-        "image": "AircraftPartLargeEngineWIcon.png",
+        "image": "ItemIcons/AircraftPartLargeEngineWIcon.tga",
         "faction": "War",
         "ItemCategory": "Parts",
         "damage": null,
@@ -306,7 +306,7 @@
     {
         "codename": "AircraftPartLargeEngineWreckedC",
         "name": "Damaged Colonial Aircraft Engine (Large)",
-        "image": "DamagedAircraftEngineIcon.png",
+        "image": "ItemIcons/DamagedAircraftEngineIcon.tga",
         "faction": "Col",
         "ItemCategory": "Parts",
         "damage": null,
@@ -322,7 +322,7 @@
     {
         "codename": "AircraftPartLargeEngineWreckedW",
         "name": "Damaged Warden Aircraft Engine (Large)",
-        "image": "DamagedAircraftPartLargeEngineWIcon.png",
+        "image": "ItemIcons/DamagedAircraftPartLargeEngineWIcon.tga",
         "faction": "War",
         "ItemCategory": "Parts",
         "damage": null,
@@ -338,7 +338,7 @@
     {
         "codename": "AircraftPartLargeMechanicalC",
         "name": "Colonial Aircraft Mechanical Parts (Large)",
-        "image": "AircraftFuselageIcon.png",
+        "image": "ItemIcons/AircraftFuselageIcon.tga",
         "faction": "Col",
         "ItemCategory": "Parts",
         "damage": null,
@@ -354,7 +354,7 @@
     {
         "codename": "AircraftPartLargeMechanicalW",
         "name": "Warden Aircraft Mechanical Parts (Large)",
-        "image": "AircraftPartLargeMechanicalWIcon.png",
+        "image": "ItemIcons/AircraftPartLargeMechanicalWIcon.tga",
         "faction": "War",
         "ItemCategory": "Parts",
         "damage": null,
@@ -370,7 +370,7 @@
     {
         "codename": "AircraftPartLargeMechanicalWreckedC",
         "name": "Damaged Colonial Aircraft Mechanical Parts (Large)",
-        "image": "DamagedAircraftFuselageIcon.png",
+        "image": "ItemIcons/DamagedAircraftFuselageIcon.tga",
         "faction": "Col",
         "ItemCategory": "Parts",
         "damage": null,
@@ -386,7 +386,7 @@
     {
         "codename": "AircraftPartLargeMechanicalWreckedW",
         "name": "Damaged Warden Aircraft Mechanical Parts (Large)",
-        "image": "DamagedAircraftPartLargeMechanicalWIcon.png",
+        "image": "ItemIcons/DamagedAircraftPartLargeMechanicalWIcon.tga",
         "faction": "War",
         "ItemCategory": "Parts",
         "damage": null,
@@ -402,7 +402,7 @@
     {
         "codename": "AircraftPartSmallEngineC",
         "name": "Colonial Aircraft Engine (Small)",
-        "image": "AircraftPartSmallEngineCIcon.png",
+        "image": "ItemIcons/AircraftPartSmallEngineCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Parts",
         "damage": null,
@@ -418,7 +418,7 @@
     {
         "codename": "AircraftPartSmallEngineW",
         "name": "Warden Aircraft Engine (Small)",
-        "image": "AircraftSmallEngineWIcon.png",
+        "image": "ItemIcons/AircraftSmallEngineWIcon.tga",
         "faction": "War",
         "ItemCategory": "Parts",
         "damage": null,
@@ -434,7 +434,7 @@
     {
         "codename": "AircraftPartSmallEngineWreckedC",
         "name": "Damaged Colonial Aircraft Engine (Small)",
-        "image": "DamagedAircraftPartSmallEngineCIcon.png",
+        "image": "ItemIcons/DamagedAircraftPartSmallEngineCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Parts",
         "damage": null,
@@ -450,7 +450,7 @@
     {
         "codename": "AircraftPartSmallEngineWreckedW",
         "name": "Damaged Warden Aircraft Engine (Small)",
-        "image": "DamagedAircraftSmallEngineWIcon.png",
+        "image": "ItemIcons/DamagedAircraftSmallEngineWIcon.tga",
         "faction": "War",
         "ItemCategory": "Parts",
         "damage": null,
@@ -466,7 +466,7 @@
     {
         "codename": "AircraftPartSmallMechanicalC",
         "name": "Colonial Aircraft Mechanical Parts (Small)",
-        "image": "AircraftPartSmallMechanicalCIcon.png",
+        "image": "ItemIcons/AircraftPartSmallMechanicalCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Parts",
         "damage": null,
@@ -482,7 +482,7 @@
     {
         "codename": "AircraftPartSmallMechanicalW",
         "name": "Warden Aircraft Mechanical Parts (Small)",
-        "image": "AircraftWingsIcon.png",
+        "image": "ItemIcons/AircraftWingsIcon.tga",
         "faction": "War",
         "ItemCategory": "Parts",
         "damage": null,
@@ -498,7 +498,7 @@
     {
         "codename": "AircraftPartSmallMechanicalWreckedC",
         "name": "Damaged Colonial Aircraft Mechanical Parts (Small)",
-        "image": "DamagedAircraftPartSmallMechanicalCIcon.png",
+        "image": "ItemIcons/DamagedAircraftPartSmallMechanicalCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Parts",
         "damage": null,
@@ -514,7 +514,7 @@
     {
         "codename": "AircraftPartSmallMechanicalWreckedW",
         "name": "Damaged Warden Aircraft Mechanical Parts (Small)",
-        "image": "DamagedAircraftWingsIcon.png",
+        "image": "ItemIcons/DamagedAircraftWingsIcon.tga",
         "faction": "War",
         "ItemCategory": "Parts",
         "damage": null,
@@ -530,7 +530,7 @@
     {
         "codename": "AircraftTorpedoAmmo",
         "name": "Tenta Torpedo",
-        "image": "AircraftTorpedoAmmoIcon.png",
+        "image": "ItemIcons/AircraftTorpedoAmmoIcon.tga",
         "faction": "War",
         "ItemCategory": "HeavyAmmo",
         "damage": 1483,
@@ -546,7 +546,7 @@
     {
         "codename": "AirSirenT",
         "name": "Air Raid Siren",
-        "image": "AirSirenTIcon.png",
+        "image": "ItemIcons/AirSirenTIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -562,7 +562,7 @@
     {
         "codename": "Aluminum",
         "name": "Aluminum",
-        "image": "ResouceAluminumIcon.png",
+        "image": "ItemIcons/ResouceAluminumIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -578,7 +578,7 @@
     {
         "codename": "AluminumA",
         "name": "Aluminum Alloy",
-        "image": "ResouceAluminumRefinedIcon.png",
+        "image": "ItemIcons/ResouceAluminumRefinedIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -594,7 +594,7 @@
     {
         "codename": "AmmoUniformW",
         "name": "Specialist&#039;s Overcoat",
-        "image": "AmmoUniformWIcon.png",
+        "image": "ItemIcons/AmmoUniformWIcon.tga",
         "faction": "War",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -610,7 +610,7 @@
     {
         "codename": "ArmourUniformC",
         "name": "Velian Flak Vest",
-        "image": "ArmourUniformC.png",
+        "image": "ItemIcons/ArmourUniformC.tga",
         "faction": "Col",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -626,7 +626,7 @@
     {
         "codename": "ArmourUniformW",
         "name": "Gunner&#039;s Breastplate",
-        "image": "ArmourUniformW.png",
+        "image": "ItemIcons/ArmourUniformW.tga",
         "faction": "War",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -642,7 +642,7 @@
     {
         "codename": "AssaultRifleAmmo",
         "name": "7.92mm",
-        "image": "AssaultRifleAmmoItemIcon.png",
+        "image": "ItemIcons/AssaultRifleAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "SmallArms",
         "damage": 35,
@@ -658,7 +658,7 @@
     {
         "codename": "AssaultRifleC",
         "name": "Catara mo.II",
-        "image": "LightMachineGunIcon.png",
+        "image": "ItemIcons/LightMachineGunIcon.tga",
         "faction": "Col",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -674,7 +674,7 @@
     {
         "codename": "AssaultRifleHeavyC",
         "name": "\u201cDusk\u201d ce.III",
-        "image": "AssaultRifleHeavyCItemIcon.png",
+        "image": "ItemIcons/AssaultRifleHeavyCItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -690,7 +690,7 @@
     {
         "codename": "AssaultRifleHeavyW",
         "name": "Booker Storm Rifle Model 838",
-        "image": "AssaultRifleHeavyWItemIcon.png",
+        "image": "ItemIcons/AssaultRifleHeavyWItemIcon.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -706,7 +706,7 @@
     {
         "codename": "AssaultRifleW",
         "name": "Aalto Storm Rifle 24",
-        "image": "AssaultRifleItemIcon.png",
+        "image": "ItemIcons/AssaultRifleItemIcon.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -722,7 +722,7 @@
     {
         "codename": "ATAmmo",
         "name": "68mm",
-        "image": "ATAmmoIcon.png",
+        "image": "ItemIcons/ATAmmoIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 600,
@@ -738,7 +738,7 @@
     {
         "codename": "ATGrenadeW",
         "name": "BF5 White Ash Flask Grenade",
-        "image": "ATGrenadeWIcon.png",
+        "image": "ItemIcons/ATGrenadeWIcon.tga",
         "faction": "War",
         "ItemCategory": "HeavyArms",
         "damage": 280,
@@ -754,7 +754,7 @@
     {
         "codename": "ATLargeAmmo",
         "name": "94.5mm",
-        "image": "ATLargeAmmoIcon.png",
+        "image": "ItemIcons/ATLargeAmmoIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 1750,
@@ -770,7 +770,7 @@
     {
         "codename": "ATLaunchedGrenadeW",
         "name": "B2 Varsi Anti-Tank Grenade",
-        "image": "ATLaunchedGrenadeWIcon.png",
+        "image": "ItemIcons/ATLaunchedGrenadeWIcon.tga",
         "faction": "War",
         "ItemCategory": "HeavyArms",
         "damage": 412,
@@ -786,7 +786,7 @@
     {
         "codename": "ATRifleAmmo",
         "name": "14.5mm",
-        "image": "ATRifleAmmoItemIcon.png",
+        "image": "ItemIcons/ATRifleAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyArms",
         "damage": 150,
@@ -802,7 +802,7 @@
     {
         "codename": "ATRifleAssaultW",
         "name": "228 Satterley Heavy Storm Rifle",
-        "image": "ATRifleAssaultWIcontga.png",
+        "image": "ItemIcons/ATRifleAssaultWIcontga.tga",
         "faction": "War",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -818,7 +818,7 @@
     {
         "codename": "ATRifleAutomaticW",
         "name": "Booker Greyhound Model 910",
-        "image": "ATRifleAutomaticWItemIcon.png",
+        "image": "ItemIcons/ATRifleAutomaticWItemIcon.tga",
         "faction": "War",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -834,7 +834,7 @@
     {
         "codename": "ATRifleLightC",
         "name": "\u201cDawn\u201d Ve.II",
-        "image": "ATRifleLightCIcon.png",
+        "image": "ItemIcons/ATRifleLightCIcon.tga",
         "faction": "Col",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -850,7 +850,7 @@
     {
         "codename": "ATRifleSniperC",
         "name": "\u201cQuickhatch\u201d Rt.I",
-        "image": "ATRifleSniperCIcontga.png",
+        "image": "ItemIcons/ATRifleSniperCIcontga.tga",
         "faction": "Col",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -866,7 +866,7 @@
     {
         "codename": "ATRifleTC",
         "name": "\u201cTyphon\u201d ra.XII",
-        "image": "ATRifleTCIcon.png",
+        "image": "ItemIcons/ATRifleTCIcon.tga",
         "faction": "Col",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -882,7 +882,7 @@
     {
         "codename": "ATRifleW",
         "name": "Neville Anti-Tank Rifle",
-        "image": "ATRifleItemIcon.png",
+        "image": "ItemIcons/ATRifleItemIcon.tga",
         "faction": "War",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -898,7 +898,7 @@
     {
         "codename": "ATRPGAmmo",
         "name": "AP\u29f8RPG",
-        "image": "ATRpgAmmoItemIcon.png",
+        "image": "ItemIcons/ATRpgAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyArms",
         "damage": 528,
@@ -914,7 +914,7 @@
     {
         "codename": "ATRPGC",
         "name": "Venom c.II 35",
-        "image": "ATRPGCItemIcon.png",
+        "image": "ItemIcons/ATRPGCItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -930,7 +930,7 @@
     {
         "codename": "ATRPGHeavyC",
         "name": "Bane 45",
-        "image": "ATRpgItemIcon.png",
+        "image": "ItemIcons/ATRpgItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -946,7 +946,7 @@
     {
         "codename": "ATRPGHeavyW",
         "name": "Carnyx Anti-Tank Rocket Launcher",
-        "image": "ATRPGHeavyWIcon.png",
+        "image": "ItemIcons/ATRPGHeavyWIcon.tga",
         "faction": "War",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -962,7 +962,7 @@
     {
         "codename": "ATRPGIndirectAmmo",
         "name": "ARC\u29f8RPG",
-        "image": "ATMortarAmmoItemIcon.png",
+        "image": "ItemIcons/ATMortarAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyArms",
         "damage": 647,
@@ -978,7 +978,7 @@
     {
         "codename": "ATRPGLightC",
         "name": "Ignifist 30",
-        "image": "ATRPGLightCItemIcon.png",
+        "image": "ItemIcons/ATRPGLightCItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "HeavyArms",
         "damage": 359,
@@ -994,7 +994,7 @@
     {
         "codename": "ATRPGTW",
         "name": "Mounted Bonesaw MK.3",
-        "image": "ATMortarWTripodItemIcon.png",
+        "image": "ItemIcons/ATMortarWTripodItemIcon.tga",
         "faction": "War",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -1010,7 +1010,7 @@
     {
         "codename": "ATRPGW",
         "name": "Bonesaw MK.3",
-        "image": "ATMortarItemIcon.png",
+        "image": "ItemIcons/ATMortarItemIcon.tga",
         "faction": "War",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -1026,7 +1026,7 @@
     {
         "codename": "Bandages",
         "name": "Bandages",
-        "image": "BandagesItemIcon.png",
+        "image": "ItemIcons/BandagesItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Medical",
         "damage": null,
@@ -1042,7 +1042,7 @@
     {
         "codename": "BannerTC",
         "name": "Legion Vexillum",
-        "image": "BannerTCItemIcon.png",
+        "image": "ItemIcons/BannerTCItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "Utility",
         "damage": null,
@@ -1058,7 +1058,7 @@
     {
         "codename": "BannerTW",
         "name": "War Ensign",
-        "image": "BannerTWItemIcon.png",
+        "image": "ItemIcons/BannerTWItemIcon.tga",
         "faction": "War",
         "ItemCategory": "Utility",
         "damage": null,
@@ -1074,7 +1074,7 @@
     {
         "codename": "BarbedWireMaterials",
         "name": "Barbed Wire",
-        "image": "BarbedWireMaterialItemIcon.png",
+        "image": "ItemIcons/BarbedWireMaterialItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -1090,7 +1090,7 @@
     {
         "codename": "BattleTankAmmo",
         "name": "75mm",
-        "image": "BattleTankAmmoItemIcon.png",
+        "image": "ItemIcons/BattleTankAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 1750,
@@ -1106,7 +1106,7 @@
     {
         "codename": "Bayonet",
         "name": "Buckhorn CCQ-18",
-        "image": "BayonetIcon.png",
+        "image": "ItemIcons/BayonetIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": 55,
@@ -1122,7 +1122,7 @@
     {
         "codename": "Binoculars",
         "name": "Binoculars",
-        "image": "BinocularsItemIcon.png",
+        "image": "ItemIcons/BinocularsItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -1138,7 +1138,7 @@
     {
         "codename": "BloodPlasma",
         "name": "Blood Plasma",
-        "image": "BloodPlasmaItemIcon.png",
+        "image": "ItemIcons/BloodPlasmaItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Medical",
         "damage": null,
@@ -1154,7 +1154,7 @@
     {
         "codename": "BomberAmmo",
         "name": "Mark II Raidbreaker",
-        "image": "AerialBombsIcon.png",
+        "image": "ItemIcons/AerialBombsIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 1200,
@@ -1170,7 +1170,7 @@
     {
         "codename": "BunkerSupplies",
         "name": "Bunker Supplies",
-        "image": "BunkerSuppliesIcon.png",
+        "image": "ItemIcons/BunkerSuppliesIcon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -1186,7 +1186,7 @@
     {
         "codename": "Cloth",
         "name": "Basic Materials",
-        "image": "BasicMaterialsIcon.png",
+        "image": "ItemIcons/BasicMaterialsIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1202,7 +1202,7 @@
     {
         "codename": "Coal",
         "name": "Coal",
-        "image": "CoalIcon.png",
+        "image": "ItemIcons/CoalIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1218,7 +1218,7 @@
     {
         "codename": "Components",
         "name": "Components",
-        "image": "ComponentsIcon.png",
+        "image": "ItemIcons/ComponentsIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1234,7 +1234,7 @@
     {
         "codename": "Concrete",
         "name": "Concrete Materials",
-        "image": "ConcreteBagIcon.png",
+        "image": "ItemIcons/ConcreteBagIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1250,7 +1250,7 @@
     {
         "codename": "Copper",
         "name": "Copper",
-        "image": "ResourceCopperIcon.png",
+        "image": "ItemIcons/ResourceCopperIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1266,7 +1266,7 @@
     {
         "codename": "CopperA",
         "name": "Copper Alloy",
-        "image": "ResourceCopperRefinedIcon.png",
+        "image": "ItemIcons/ResourceCopperRefinedIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1282,7 +1282,7 @@
     {
         "codename": "Crate",
         "name": "Crate",
-        "image": "CrateItemIcon.png",
+        "image": "ItemIcons/CrateItemIcon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -1298,7 +1298,7 @@
     {
         "codename": "CriticalSoldier",
         "name": "Critically Wounded Soldier",
-        "image": "CriticallyWoundedIcon.png",
+        "image": "ItemIcons/CriticallyWoundedIcon.tga",
         "faction": "Both",
         "ItemCategory": "Medical",
         "damage": null,
@@ -1314,7 +1314,7 @@
     {
         "codename": "DemolitionRocketAmmo",
         "name": "Shatter Missile",
-        "image": "DemolitionRocketAmmoIcon.png",
+        "image": "ItemIcons/DemolitionRocketAmmoIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 250,
@@ -1330,7 +1330,7 @@
     {
         "codename": "DepthChargeAmmo",
         "name": "Model-7 \u201cEvie\u201d",
-        "image": "DepthChargeIcon.png",
+        "image": "ItemIcons/DepthChargeIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 890,
@@ -1346,7 +1346,7 @@
     {
         "codename": "Diesel",
         "name": "Diesel",
-        "image": "ResourceFuelIcon.png",
+        "image": "ItemIcons/ResourceFuelIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1362,7 +1362,7 @@
     {
         "codename": "DiveBomberAmmo",
         "name": "912 Shrike Rounds",
-        "image": "DiveBomberAmmoIcon.png",
+        "image": "ItemIcons/DiveBomberAmmoIcon.tga",
         "faction": "Col",
         "ItemCategory": "HeavyAmmo",
         "damage": 937,
@@ -1378,7 +1378,7 @@
     {
         "codename": "EngineerUniformC",
         "name": "Fabri Rucksack",
-        "image": "EngineerUniformCIcon.png",
+        "image": "ItemIcons/EngineerUniformCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -1394,7 +1394,7 @@
     {
         "codename": "EngineerUniformW",
         "name": "Sapper Gear",
-        "image": "EngineerUniformWIcon.png",
+        "image": "ItemIcons/EngineerUniformWIcon.tga",
         "faction": "War",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -1410,7 +1410,7 @@
     {
         "codename": "Explosive",
         "name": "Explosive Powder",
-        "image": "ExplosiveMaterialIcon.png",
+        "image": "ItemIcons/ExplosiveMaterialIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1426,7 +1426,7 @@
     {
         "codename": "ExplosiveLightC",
         "name": "Hydra&#039;s Whisper",
-        "image": "BangaloreItemIcon.png",
+        "image": "ItemIcons/BangaloreItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "Utility",
         "damage": 550,
@@ -1442,7 +1442,7 @@
     {
         "codename": "ExplosiveTripod",
         "name": "Havoc Charge",
-        "image": "ExplosiveTripodIcon.png",
+        "image": "ItemIcons/ExplosiveTripodIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": 1950,
@@ -1458,7 +1458,7 @@
     {
         "codename": "FacilityCoal1",
         "name": "Coke",
-        "image": "CokeIcon.png",
+        "image": "ItemIcons/CokeIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1474,7 +1474,7 @@
     {
         "codename": "FacilityComponents1",
         "name": "Damaged Components",
-        "image": "ComponentsDamagedIcon.png",
+        "image": "ItemIcons/ComponentsDamagedIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1490,7 +1490,7 @@
     {
         "codename": "FacilityMaterials1",
         "name": "Construction Materials",
-        "image": "ConstructionMaterialsIcon.png",
+        "image": "ItemIcons/ConstructionMaterialsIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1506,7 +1506,7 @@
     {
         "codename": "FacilityMaterials10",
         "name": "Unstable Substances",
-        "image": "FacilityMaterials10Icon.png",
+        "image": "ItemIcons/FacilityMaterials10Icon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1522,7 +1522,7 @@
     {
         "codename": "FacilityMaterials11",
         "name": "Thermal Shielding",
-        "image": "FacilityMaterials11Icon.png",
+        "image": "ItemIcons/FacilityMaterials11Icon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1538,7 +1538,7 @@
     {
         "codename": "FacilityMaterials12",
         "name": "Rare Materials",
-        "image": "FacilityMaterials12Icon.png",
+        "image": "ItemIcons/FacilityMaterials12Icon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1554,7 +1554,7 @@
     {
         "codename": "FacilityMaterials2",
         "name": "Processed Construction Materials",
-        "image": "ProcessedConstructionMaterialsIcon.png",
+        "image": "ItemIcons/ProcessedConstructionMaterialsIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1570,7 +1570,7 @@
     {
         "codename": "FacilityMaterials3",
         "name": "Steel Construction Materials",
-        "image": "SteelConstructionMaterialsIcon.png",
+        "image": "ItemIcons/SteelConstructionMaterialsIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1586,7 +1586,7 @@
     {
         "codename": "FacilityMaterials4",
         "name": "Assembly Materials I",
-        "image": "AssemblyMaterials1Icon.png",
+        "image": "ItemIcons/AssemblyMaterials1Icon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1602,7 +1602,7 @@
     {
         "codename": "FacilityMaterials5",
         "name": "Assembly Materials II",
-        "image": "AssemblyMaterials2Icon.png",
+        "image": "ItemIcons/AssemblyMaterials2Icon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1618,7 +1618,7 @@
     {
         "codename": "FacilityMaterials6",
         "name": "Assembly Materials III",
-        "image": "AssemblyMaterials3Icon.png",
+        "image": "ItemIcons/AssemblyMaterials3Icon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1634,7 +1634,7 @@
     {
         "codename": "FacilityMaterials7",
         "name": "Assembly Materials IV",
-        "image": "AssemblyMaterials4Icon.png",
+        "image": "ItemIcons/AssemblyMaterials4Icon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1650,7 +1650,7 @@
     {
         "codename": "FacilityMaterials8",
         "name": "Assembly Materials V",
-        "image": "AssemblyMaterials5Icon.png",
+        "image": "ItemIcons/AssemblyMaterials5Icon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1666,7 +1666,7 @@
     {
         "codename": "FacilityMaterials9",
         "name": "Rare Alloys",
-        "image": "FacilityMaterials09Icon.png",
+        "image": "ItemIcons/FacilityMaterials09Icon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1682,7 +1682,7 @@
     {
         "codename": "FacilityOil1",
         "name": "Heavy Oil",
-        "image": "HeavyOilIcon.png",
+        "image": "ItemIcons/HeavyOilIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1698,7 +1698,7 @@
     {
         "codename": "FacilityOil2",
         "name": "Enriched Oil",
-        "image": "EnrichedOilIcon.png",
+        "image": "ItemIcons/EnrichedOilIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -1714,7 +1714,7 @@
     {
         "codename": "FacilityPower",
         "name": "Facility Power",
-        "image": "IconFilterPower.png",
+        "image": "ItemIcons/IconFilterPower.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -1730,7 +1730,7 @@
     {
         "codename": "FieldMGAmmo",
         "name": "14.5mm (pre-0.45)",
-        "image": "FieldMGAmmoItemIcon.png",
+        "image": "ItemIcons/FieldMGAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -1746,7 +1746,7 @@
     {
         "codename": "FireRocketAmmo",
         "name": "4C-Fire Rocket",
-        "image": "FlameRocketAmmoIcon.png",
+        "image": "ItemIcons/FlameRocketAmmoIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 145,
@@ -1762,7 +1762,7 @@
     {
         "codename": "FirstAidKit",
         "name": "First Aid Kit",
-        "image": "FirstAidKitItem.png",
+        "image": "ItemIcons/FirstAidKitItem.tga",
         "faction": "Both",
         "ItemCategory": "Medical",
         "damage": null,
@@ -1778,7 +1778,7 @@
     {
         "codename": "FlameAmmo",
         "name": "Flame Ammo",
-        "image": "FlameAmmoIcon.png",
+        "image": "ItemIcons/FlameAmmoIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 25,
@@ -1794,7 +1794,7 @@
     {
         "codename": "FlameBackpackC",
         "name": "\u201cMolten Wind\u201d v.II Ammo",
-        "image": "FlamePackCIcon.png",
+        "image": "ItemIcons/FlamePackCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Utility",
         "damage": 15,
@@ -1810,7 +1810,7 @@
     {
         "codename": "FlameBackpackW",
         "name": "Willow&#039;s Bane Ammo",
-        "image": "FlamePackWIcon.png",
+        "image": "ItemIcons/FlamePackWIcon.tga",
         "faction": "War",
         "ItemCategory": "Utility",
         "damage": 15,
@@ -1826,7 +1826,7 @@
     {
         "codename": "FlameTorchC",
         "name": "\u201cMolten Wind\u201d v.II Flame Torch",
-        "image": "FlamegunCICon.png",
+        "image": "ItemIcons/FlamegunCICon.tga",
         "faction": "Col",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -1842,7 +1842,7 @@
     {
         "codename": "FlameTorchW",
         "name": "Willow&#039;s Bane Model 845",
-        "image": "FlamegunWICon.png",
+        "image": "ItemIcons/FlamegunWICon.tga",
         "faction": "War",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -1858,7 +1858,7 @@
     {
         "codename": "GasMask",
         "name": "Gas Mask",
-        "image": "GasmaskIcon.png",
+        "image": "ItemIcons/GasmaskIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -1874,7 +1874,7 @@
     {
         "codename": "GasMaskFilter",
         "name": "Gas Mask Filter",
-        "image": "GasMaskFilterIcon.png",
+        "image": "ItemIcons/GasMaskFilterIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -1890,7 +1890,7 @@
     {
         "codename": "GreenAsh",
         "name": "Green Ash Grenade",
-        "image": "DeadlyGas01Icon.png",
+        "image": "ItemIcons/DeadlyGas01Icon.tga",
         "faction": "Both",
         "ItemCategory": "SmallArms",
         "damage": 25,
@@ -1906,7 +1906,7 @@
     {
         "codename": "GrenadeAdapter",
         "name": "The Ospreay",
-        "image": "GrenadeAdapterIcon.png",
+        "image": "ItemIcons/GrenadeAdapterIcon.tga",
         "faction": "War",
         "ItemCategory": "Utility",
         "damage": null,
@@ -1922,7 +1922,7 @@
     {
         "codename": "GrenadeC",
         "name": "Bomastone Grenade",
-        "image": "GrenadeCItemIcon.png",
+        "image": "ItemIcons/GrenadeCItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "SmallArms",
         "damage": 125,
@@ -1938,7 +1938,7 @@
     {
         "codename": "GrenadeLauncherC",
         "name": "KLG901-2 Lunaire F",
-        "image": "GrenadeLauncherCItemIcon.png",
+        "image": "ItemIcons/GrenadeLauncherCItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -1954,7 +1954,7 @@
     {
         "codename": "GrenadeLauncherTC",
         "name": "Mounted Fissura gd.I",
-        "image": "GrenadeLauncherTCIcon.png",
+        "image": "ItemIcons/GrenadeLauncherTCIcon.tga",
         "faction": "Col",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -1970,7 +1970,7 @@
     {
         "codename": "GrenadeUniformC",
         "name": "Grenadier&#039;s Baldric",
-        "image": "GrenadeUniformCIcon.png",
+        "image": "ItemIcons/GrenadeUniformCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -1986,7 +1986,7 @@
     {
         "codename": "GrenadeW",
         "name": "A3 Harpa Fragmentation Grenade",
-        "image": "GrenadeItemIcon.png",
+        "image": "ItemIcons/GrenadeItemIcon.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": 200,
@@ -2002,7 +2002,7 @@
     {
         "codename": "GroundMaterials",
         "name": "Gravel",
-        "image": "GroundMaterialsIcon.png",
+        "image": "ItemIcons/GroundMaterialsIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -2018,7 +2018,7 @@
     {
         "codename": "HeavyArtilleryAmmo",
         "name": "150mm",
-        "image": "HeavyArtilleryAmmoItemIcon.png",
+        "image": "ItemIcons/HeavyArtilleryAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 900,
@@ -2034,7 +2034,7 @@
     {
         "codename": "HeavyExplosive",
         "name": "Heavy Explosive Powder",
-        "image": "HeavyExplosiveMaterialsIcon.png",
+        "image": "ItemIcons/HeavyExplosiveMaterialsIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -2050,7 +2050,7 @@
     {
         "codename": "HEGrenade",
         "name": "Mammon 91-b",
-        "image": "HEGrenadeItemIcon.png",
+        "image": "ItemIcons/HEGrenadeItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyArms",
         "damage": 229,
@@ -2066,7 +2066,7 @@
     {
         "codename": "HELaunchedGrenade",
         "name": "Tremola Grenade GPb-1",
-        "image": "HELaunchedGrenadeItemIcon.png",
+        "image": "ItemIcons/HELaunchedGrenadeItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyArms",
         "damage": 388,
@@ -2082,7 +2082,7 @@
     {
         "codename": "HERocketAmmo",
         "name": "3C-High Explosive Rocket",
-        "image": "HERocketAmmoIcon.png",
+        "image": "ItemIcons/HERocketAmmoIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 700,
@@ -2098,7 +2098,7 @@
     {
         "codename": "In01KItem",
         "name": "Small key",
-        "image": "Key01Icon.png",
+        "image": "ItemIcons/Key01Icon.tga",
         "faction": "Lore",
         "ItemCategory": null,
         "damage": null,
@@ -2114,7 +2114,7 @@
     {
         "codename": "In02KItem",
         "name": "Slick Runestone",
-        "image": "RunestoneBIcon.png",
+        "image": "ItemIcons/RunestoneBIcon.tga",
         "faction": "Lore",
         "ItemCategory": null,
         "damage": null,
@@ -2130,7 +2130,7 @@
     {
         "codename": "In03KItem",
         "name": "Sharp Runestone",
-        "image": "RunestoneEIcon.png",
+        "image": "ItemIcons/RunestoneEIcon.tga",
         "faction": "Lore",
         "ItemCategory": null,
         "damage": null,
@@ -2146,7 +2146,7 @@
     {
         "codename": "In04KItem",
         "name": "Airy Runestone",
-        "image": "RunestoneGIcon.png",
+        "image": "ItemIcons/RunestoneGIcon.tga",
         "faction": "Lore",
         "ItemCategory": null,
         "damage": null,
@@ -2162,7 +2162,7 @@
     {
         "codename": "In05KItem",
         "name": "Shimmering Runestone",
-        "image": "RunestoneWIcon.png",
+        "image": "ItemIcons/RunestoneWIcon.tga",
         "faction": "Lore",
         "ItemCategory": null,
         "damage": null,
@@ -2178,7 +2178,7 @@
     {
         "codename": "In06KItem",
         "name": "Blackened Runestone",
-        "image": "RunestoneSIcon.png",
+        "image": "ItemIcons/RunestoneSIcon.tga",
         "faction": "Lore",
         "ItemCategory": null,
         "damage": null,
@@ -2194,7 +2194,7 @@
     {
         "codename": "In07KItem",
         "name": "Burning Runestone",
-        "image": "RunestoneAIcon.png",
+        "image": "ItemIcons/RunestoneAIcon.tga",
         "faction": "Lore",
         "ItemCategory": null,
         "damage": null,
@@ -2210,7 +2210,7 @@
     {
         "codename": "InfantryMine",
         "name": "Crow&#039;s Foot Mine",
-        "image": "InfantryMineIcon.png",
+        "image": "ItemIcons/InfantryMineIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": 250,
@@ -2226,7 +2226,7 @@
     {
         "codename": "Iron",
         "name": "Iron",
-        "image": "ResouceIronIcon.png",
+        "image": "ItemIcons/ResouceIronIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -2242,7 +2242,7 @@
     {
         "codename": "IronA",
         "name": "Iron Alloy",
-        "image": "ResouceIronRefinedIcon.png",
+        "image": "ItemIcons/ResouceIronRefinedIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -2258,7 +2258,7 @@
     {
         "codename": "ISGTC",
         "name": "Daucus isg.III",
-        "image": "InfantrySupportGunItemIcon.png",
+        "image": "ItemIcons/InfantrySupportGunItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -2274,7 +2274,7 @@
     {
         "codename": "LightAAAmmo",
         "name": "Absol Anti-Aircraft Rounds",
-        "image": "LightAAAmmoIcon.png",
+        "image": "ItemIcons/LightAAAmmoIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 600,
@@ -2290,7 +2290,7 @@
     {
         "codename": "LightArtilleryAmmo",
         "name": "120mm",
-        "image": "LightArtilleryAmmoItemIcon.png",
+        "image": "ItemIcons/LightArtilleryAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 400,
@@ -2306,7 +2306,7 @@
     {
         "codename": "LightTankAmmo",
         "name": "40mm",
-        "image": "LightTankAmmoItemIcon.png",
+        "image": "ItemIcons/LightTankAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 600,
@@ -2322,7 +2322,7 @@
     {
         "codename": "ListeningKit",
         "name": "Listening Kit",
-        "image": "ListeningKitIcon.png",
+        "image": "ItemIcons/ListeningKitIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -2338,7 +2338,7 @@
     {
         "codename": "Lore1",
         "name": "Tin Case",
-        "image": "TobaccoPickupIcon.png",
+        "image": "ItemIcons/TobaccoPickupIcon.tga",
         "faction": "Lore",
         "ItemCategory": null,
         "damage": null,
@@ -2354,7 +2354,7 @@
     {
         "codename": "Lore12",
         "name": "Flask",
-        "image": "MaintenanceSuppliesIcon.png",
+        "image": "ItemIcons/MaintenanceSuppliesIcon.tga",
         "faction": "Lore",
         "ItemCategory": null,
         "damage": null,
@@ -2370,7 +2370,7 @@
     {
         "codename": "Lore13",
         "name": "Rusty Shovel",
-        "image": "LoreShovelIcon.png",
+        "image": "ItemIcons/LoreShovelIcon.tga",
         "faction": "Lore",
         "ItemCategory": null,
         "damage": null,
@@ -2386,7 +2386,7 @@
     {
         "codename": "Lore4",
         "name": "Peculiar Book",
-        "image": "LoreIcon3.png",
+        "image": "ItemIcons/LoreIcon3.tga",
         "faction": "Lore",
         "ItemCategory": null,
         "damage": null,
@@ -2402,7 +2402,7 @@
     {
         "codename": "Lore9",
         "name": "Bloodied Rifle",
-        "image": "RifleItemIcon.png",
+        "image": "ItemIcons/RifleItemIcon.tga",
         "faction": "Lore",
         "ItemCategory": null,
         "damage": null,
@@ -2418,7 +2418,7 @@
     {
         "codename": "LoreSkull",
         "name": "Pale Skull",
-        "image": "LoreSkull.png",
+        "image": "ItemIcons/LoreSkull.tga",
         "faction": "Lore",
         "ItemCategory": null,
         "damage": null,
@@ -2434,7 +2434,7 @@
     {
         "codename": "LRArtilleryAmmo",
         "name": "300mm",
-        "image": "LRArtilleryAmmoItemIcon.png",
+        "image": "ItemIcons/LRArtilleryAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 3000,
@@ -2450,7 +2450,7 @@
     {
         "codename": "MaceW",
         "name": "Falias Raiding Club",
-        "image": "TrenchMaceWIcon.png",
+        "image": "ItemIcons/TrenchMaceWIcon.tga",
         "faction": "War",
         "ItemCategory": "Utility",
         "damage": 80,
@@ -2466,7 +2466,7 @@
     {
         "codename": "MaintenanceSupplies",
         "name": "Maintenance Supplies",
-        "image": "MaintenanceSuppliesIcon.png",
+        "image": "ItemIcons/MaintenanceSuppliesIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -2482,7 +2482,7 @@
     {
         "codename": "MedicUniformC",
         "name": "Medic Fatigues",
-        "image": "MedicUniformCIcon.png",
+        "image": "ItemIcons/MedicUniformCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -2498,7 +2498,7 @@
     {
         "codename": "MedicUniformW",
         "name": "Physician&#039;s Jacket",
-        "image": "MedicUniformWIcon.png",
+        "image": "ItemIcons/MedicUniformWIcon.tga",
         "faction": "War",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -2514,7 +2514,7 @@
     {
         "codename": "Metal",
         "name": "Salvage",
-        "image": "SalvageIcon.png",
+        "image": "ItemIcons/SalvageIcon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -2530,7 +2530,7 @@
     {
         "codename": "Metal",
         "name": "Salvage",
-        "image": "SalvageIcon.png",
+        "image": "ItemIcons/SalvageIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -2546,7 +2546,7 @@
     {
         "codename": "MetalBeamMaterials",
         "name": "Metal Beam",
-        "image": "MetalBeamMaterialItemIcon.png",
+        "image": "ItemIcons/MetalBeamMaterialItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -2562,7 +2562,7 @@
     {
         "codename": "MGAmmo",
         "name": "12.7mm",
-        "image": "MachineGunAmmoIcon.png",
+        "image": "ItemIcons/MachineGunAmmoIcon.tga",
         "faction": "Both",
         "ItemCategory": "SmallArms",
         "damage": 55,
@@ -2578,7 +2578,7 @@
     {
         "codename": "MGC",
         "name": "KRN886-127 Gast Machine Gun",
-        "image": "MGCItemIcon.png",
+        "image": "ItemIcons/MGCItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -2594,7 +2594,7 @@
     {
         "codename": "MGTC",
         "name": "Lamentum mm.IV",
-        "image": "HeavyMachineGunIcon.png",
+        "image": "ItemIcons/HeavyMachineGunIcon.tga",
         "faction": "Col",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -2610,7 +2610,7 @@
     {
         "codename": "MGTW",
         "name": "Malone Ratcatcher MK.1",
-        "image": "MGHeavyTWItemIcon.png",
+        "image": "ItemIcons/MGHeavyTWItemIcon.tga",
         "faction": "War",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -2626,7 +2626,7 @@
     {
         "codename": "MGW",
         "name": "Malone MK.2",
-        "image": "MGWItemIcon.png",
+        "image": "ItemIcons/MGWItemIcon.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -2642,7 +2642,7 @@
     {
         "codename": "MiniTankAmmo",
         "name": "30mm",
-        "image": "MiniTankAmmoItemIcon.png",
+        "image": "ItemIcons/MiniTankAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyArms",
         "damage": 400,
@@ -2658,7 +2658,7 @@
     {
         "codename": "MiniTorpedoAmmo",
         "name": "Quillback Torpedo",
-        "image": "MiniTorpedoAmmoIcon.png",
+        "image": "ItemIcons/MiniTorpedoAmmoIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 494,
@@ -2674,7 +2674,7 @@
     {
         "codename": "Mortar",
         "name": "Cremari Mortar",
-        "image": "MortarItemIcon.png",
+        "image": "ItemIcons/MortarItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -2690,7 +2690,7 @@
     {
         "codename": "MortarAmmo",
         "name": "Mortar Shell",
-        "image": "MortarAmmoIcon.png",
+        "image": "ItemIcons/MortarAmmoIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyArms",
         "damage": 300,
@@ -2706,7 +2706,7 @@
     {
         "codename": "MortarAmmoFL",
         "name": "Flare Mortar Shell",
-        "image": "MortarAmmoIconFlare.png",
+        "image": "ItemIcons/MortarAmmoIconFlare.tga",
         "faction": "Both",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -2722,7 +2722,7 @@
     {
         "codename": "MortarAmmoFlame",
         "name": "Incendiary Mortar Shell",
-        "image": "MortarAmmoIconFlame.png",
+        "image": "ItemIcons/MortarAmmoIconFlame.tga",
         "faction": "Both",
         "ItemCategory": "HeavyArms",
         "damage": 55,
@@ -2738,7 +2738,7 @@
     {
         "codename": "MortarAmmoSH",
         "name": "Shrapnel Mortar Shell",
-        "image": "MortarAmmoIconShrapnel.png",
+        "image": "ItemIcons/MortarAmmoIconShrapnel.tga",
         "faction": "Both",
         "ItemCategory": "HeavyArms",
         "damage": 125,
@@ -2754,7 +2754,7 @@
     {
         "codename": "MortarTankAmmo",
         "name": "250mm \u201cPurity\u201d Shell",
-        "image": "MortarTankIcon.png",
+        "image": "ItemIcons/MortarTankIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 787,
@@ -2770,7 +2770,7 @@
     {
         "codename": "MortarTankAmmoBR",
         "name": "250mm \u201cFury\u201d Shell",
-        "image": "MortarTankAmmoBRIcon.png",
+        "image": "ItemIcons/MortarTankAmmoBRIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 787,
@@ -2786,7 +2786,7 @@
     {
         "codename": "NavalUniformC",
         "name": "Remex Garb",
-        "image": "NavalUniformC.png",
+        "image": "ItemIcons/NavalUniformC.tga",
         "faction": "Col",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -2802,7 +2802,7 @@
     {
         "codename": "NavalUniformW",
         "name": "Gentleman&#039;s Peacoat",
-        "image": "NavalUniformW.png",
+        "image": "ItemIcons/NavalUniformW.tga",
         "faction": "War",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -2818,7 +2818,7 @@
     {
         "codename": "OfficerUniformC",
         "name": "Officialis&#039; Attire",
-        "image": "OfficerUniformCIcon.png",
+        "image": "ItemIcons/OfficerUniformCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -2834,7 +2834,7 @@
     {
         "codename": "OfficerUniformW",
         "name": "Officer&#039;s Regalia",
-        "image": "OfficerUniformWIcon.png",
+        "image": "ItemIcons/OfficerUniformWIcon.tga",
         "faction": "War",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -2850,7 +2850,7 @@
     {
         "codename": "Oil",
         "name": "Oil",
-        "image": "OilIcon.png",
+        "image": "ItemIcons/OilIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -2866,7 +2866,7 @@
     {
         "codename": "ParatrooperBackpack",
         "name": "Paratrooper&#039;s Ruck",
-        "image": "ParatrooperBackpackItemIcon.png",
+        "image": "ItemIcons/ParatrooperBackpackItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -2882,7 +2882,7 @@
     {
         "codename": "ParatrooperUniformC",
         "name": "Auster&#039;s Harness",
-        "image": "ParatrooperUniformCIcon.png",
+        "image": "ItemIcons/ParatrooperUniformCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -2898,7 +2898,7 @@
     {
         "codename": "ParatrooperUniformW",
         "name": "Cloudrunner&#039;s Vesture",
-        "image": "ParatrooperUniformWIcon.png",
+        "image": "ItemIcons/ParatrooperUniformWIcon.tga",
         "faction": "War",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -2914,7 +2914,7 @@
     {
         "codename": "Petrol",
         "name": "Petrol",
-        "image": "RefinedFuelIcon.png",
+        "image": "ItemIcons/RefinedFuelIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -2930,7 +2930,7 @@
     {
         "codename": "PilotMask",
         "name": "Flight Mask",
-        "image": "PilotMaskIcon.png",
+        "image": "ItemIcons/PilotMaskIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -2946,7 +2946,7 @@
     {
         "codename": "PilotUniformC",
         "name": "Lodesman&#039;s Lorica",
-        "image": "PilotUniformCIcon.png",
+        "image": "ItemIcons/PilotUniformCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -2962,7 +2962,7 @@
     {
         "codename": "PilotUniformW",
         "name": "Aviator&#039;s Raiment",
-        "image": "PilotUniformWIcon.png",
+        "image": "ItemIcons/PilotUniformWIcon.tga",
         "faction": "War",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -2978,7 +2978,7 @@
     {
         "codename": "PipeMaterials",
         "name": "Pipe",
-        "image": "EngineRoomPipeIcon.png",
+        "image": "ItemIcons/EngineRoomPipeIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -2994,7 +2994,7 @@
     {
         "codename": "PistolAmmo",
         "name": "8mm",
-        "image": "PistolAmmoItemIcon.png",
+        "image": "ItemIcons/PistolAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "SmallArms",
         "damage": 30,
@@ -3010,7 +3010,7 @@
     {
         "codename": "PistolC",
         "name": "Ferro 879",
-        "image": "PistolItemIcon.png",
+        "image": "ItemIcons/PistolItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3026,7 +3026,7 @@
     {
         "codename": "PistolLightW",
         "name": "Cascadier 873",
-        "image": "PistolLightWItemIcon.png",
+        "image": "ItemIcons/PistolLightWItemIcon.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3042,7 +3042,7 @@
     {
         "codename": "PistolW",
         "name": "Ahti Model 2",
-        "image": "PistolWItemIcon.png",
+        "image": "ItemIcons/PistolWItemIcon.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3058,7 +3058,7 @@
     {
         "codename": "PrototypeKit",
         "name": "Prototype Kit",
-        "image": "PrototypeKitIcon.png",
+        "image": "ItemIcons/PrototypeKitIcon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -3074,7 +3074,7 @@
     {
         "codename": "Radio",
         "name": "Radio",
-        "image": "RadioItemIcon.png",
+        "image": "ItemIcons/RadioItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -3090,7 +3090,7 @@
     {
         "codename": "RadioAircraft",
         "name": "Liaison Transmitter",
-        "image": "RadioAircraftItemIcon.png",
+        "image": "ItemIcons/RadioAircraftItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -3106,7 +3106,7 @@
     {
         "codename": "RadioBackpack",
         "name": "Radio Backpack",
-        "image": "RadioBackpackItemIcon.png",
+        "image": "ItemIcons/RadioBackpackItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -3122,7 +3122,7 @@
     {
         "codename": "RainUniformC",
         "name": "Legionary&#039;s Oilcoat",
-        "image": "RainUniformCIcon.png",
+        "image": "ItemIcons/RainUniformCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -3138,7 +3138,7 @@
     {
         "codename": "RareMetal",
         "name": "Rare Metal",
-        "image": "RareMaterialsIcon.png",
+        "image": "ItemIcons/RareMaterialsIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -3154,7 +3154,7 @@
     {
         "codename": "RelicMaterials",
         "name": "Relic Materials",
-        "image": "RelicMaterialItemIcon.png",
+        "image": "ItemIcons/RelicMaterialItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -3170,7 +3170,7 @@
     {
         "codename": "ReservePower",
         "name": "Reserve Power",
-        "image": "ReservePower.png",
+        "image": "ItemIcons/ReservePower.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -3186,7 +3186,7 @@
     {
         "codename": "Revolver",
         "name": "Cometa T2-9",
-        "image": "RevolverItemIcon.png",
+        "image": "ItemIcons/RevolverItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3202,7 +3202,7 @@
     {
         "codename": "RevolverAmmo",
         "name": ".44 Mag",
-        "image": "RevolverAmmoItemIcon.png",
+        "image": "ItemIcons/RevolverAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "SmallArms",
         "damage": 60,
@@ -3218,7 +3218,7 @@
     {
         "codename": "RifleAmmo",
         "name": "7.62mm",
-        "image": "RifleAmmoItemIcon.png",
+        "image": "ItemIcons/RifleAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "SmallArms",
         "damage": 45,
@@ -3234,7 +3234,7 @@
     {
         "codename": "RifleAutomaticC",
         "name": "Catena rt.IV Auto-Rifle",
-        "image": "RifleAutomaticCIcon.png",
+        "image": "ItemIcons/RifleAutomaticCIcon.tga",
         "faction": "Col",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3250,7 +3250,7 @@
     {
         "codename": "RifleAutomaticW",
         "name": "Sampo Auto-Rifle 77",
-        "image": "RifleAutomaticW.png",
+        "image": "ItemIcons/RifleAutomaticW.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3266,7 +3266,7 @@
     {
         "codename": "RifleC",
         "name": "Argenti r.II Rifle",
-        "image": "RifleCItemIcon.png",
+        "image": "ItemIcons/RifleCItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3282,7 +3282,7 @@
     {
         "codename": "RifleHeavyC",
         "name": "Volta r.I Repeater",
-        "image": "RifleHeavyCItemIcon.png",
+        "image": "ItemIcons/RifleHeavyCItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3298,7 +3298,7 @@
     {
         "codename": "RifleHeavyW",
         "name": "The Hangman 757",
-        "image": "RevolvingRifleWItemIcon.png",
+        "image": "ItemIcons/RevolvingRifleWItemIcon.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3314,7 +3314,7 @@
     {
         "codename": "RifleLightC",
         "name": "Fuscina pi.I",
-        "image": "RifleLightCItemIcon.png",
+        "image": "ItemIcons/RifleLightCItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3330,7 +3330,7 @@
     {
         "codename": "RifleLightW",
         "name": "Blakerow 871",
-        "image": "CarbineItemIcon.png",
+        "image": "ItemIcons/CarbineItemIcon.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3346,7 +3346,7 @@
     {
         "codename": "RifleLongC",
         "name": "KRR2-790 Omen",
-        "image": "RifleLongC.png",
+        "image": "ItemIcons/RifleLongC.tga",
         "faction": "Col",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3362,7 +3362,7 @@
     {
         "codename": "RifleLongW",
         "name": "Clancy Cinder M3",
-        "image": "RifleLongW.png",
+        "image": "ItemIcons/RifleLongW.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3378,7 +3378,7 @@
     {
         "codename": "RifleShortW",
         "name": "No.2B Hawthorne",
-        "image": "RifleShortWIcon.png",
+        "image": "ItemIcons/RifleShortWIcon.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3394,7 +3394,7 @@
     {
         "codename": "RifleW",
         "name": "No.2 Loughcaster",
-        "image": "RifleW.png",
+        "image": "ItemIcons/RifleW.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3410,7 +3410,7 @@
     {
         "codename": "RpgAmmo",
         "name": "RPG",
-        "image": "RpgAmmoItemIcon.png",
+        "image": "ItemIcons/RpgAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyArms",
         "damage": 524,
@@ -3426,7 +3426,7 @@
     {
         "codename": "RPGTW",
         "name": "Cutler Foebreaker",
-        "image": "ATRPGTWIcon.png",
+        "image": "ItemIcons/ATRPGTWIcon.tga",
         "faction": "War",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -3442,7 +3442,7 @@
     {
         "codename": "RpgW",
         "name": "Cutler Launcher 4",
-        "image": "RpgItemIcon.png",
+        "image": "ItemIcons/RpgItemIcon.tga",
         "faction": "War",
         "ItemCategory": "HeavyArms",
         "damage": null,
@@ -3458,7 +3458,7 @@
     {
         "codename": "SandbagMaterials",
         "name": "Sandbag",
-        "image": "SandbagMaterialItemIcon.png",
+        "image": "ItemIcons/SandbagMaterialItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -3474,7 +3474,7 @@
     {
         "codename": "SatchelChargeT",
         "name": "Havoc Charge Detonator",
-        "image": "SatchelChargeTIcon.png",
+        "image": "ItemIcons/SatchelChargeTIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -3490,7 +3490,7 @@
     {
         "codename": "SatchelChargeW",
         "name": "Alligator Charge",
-        "image": "SatchelCharge.png",
+        "image": "ItemIcons/SatchelCharge.tga",
         "faction": "War",
         "ItemCategory": "Utility",
         "damage": 550,
@@ -3506,7 +3506,7 @@
     {
         "codename": "ScoutUniformC",
         "name": "Recon Camo",
-        "image": "ScoutUniformCIcon.png",
+        "image": "ItemIcons/ScoutUniformCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -3522,7 +3522,7 @@
     {
         "codename": "ScoutUniformW",
         "name": "Outrider&#039;s Mantle",
-        "image": "ScoutUniformWIcon.png",
+        "image": "ItemIcons/ScoutUniformWIcon.tga",
         "faction": "War",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -3538,7 +3538,7 @@
     {
         "codename": "ShotgunAmmo",
         "name": "Buckshot",
-        "image": "ShotgunAmmoItemIcon.png",
+        "image": "ItemIcons/ShotgunAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "SmallArms",
         "damage": 70,
@@ -3554,7 +3554,7 @@
     {
         "codename": "ShotgunC",
         "name": "KRF1-750 Dragonfly",
-        "image": "ShotgunCItemIcon.png",
+        "image": "ItemIcons/ShotgunCItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3570,7 +3570,7 @@
     {
         "codename": "ShotgunW",
         "name": "No.4 The Pillory Scattergun",
-        "image": "ShotgunWItemIcon.png",
+        "image": "ItemIcons/ShotgunWItemIcon.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3586,7 +3586,7 @@
     {
         "codename": "Shovel",
         "name": "Shovel",
-        "image": "ShovelIcon.png",
+        "image": "ItemIcons/ShovelIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -3602,7 +3602,7 @@
     {
         "codename": "SledgeHammer",
         "name": "Sledge Hammer",
-        "image": "SledgeHammerItemIcon.png",
+        "image": "ItemIcons/SledgeHammerItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -3618,7 +3618,7 @@
     {
         "codename": "SMGAmmo",
         "name": "9mm",
-        "image": "SubMachineGunAmmoIcon.png",
+        "image": "ItemIcons/SubMachineGunAmmoIcon.tga",
         "faction": "Both",
         "ItemCategory": "SmallArms",
         "damage": 27,
@@ -3634,7 +3634,7 @@
     {
         "codename": "SMGC",
         "name": "\u201cThe Pitch Gun\u201d mc.V",
-        "image": "SMGCItemIcon.png",
+        "image": "ItemIcons/SMGCItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3650,7 +3650,7 @@
     {
         "codename": "SMGHeavyC",
         "name": "\u201cLionclaw\u201d mc.VIII",
-        "image": "SMGHeavyCItemIcon.png",
+        "image": "ItemIcons/SMGHeavyCItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3666,7 +3666,7 @@
     {
         "codename": "SMGHeavyW",
         "name": "No.1 \u201cThe Liar\u201d Submachine Gun",
-        "image": "SMGHeavyWItemIcon.png",
+        "image": "ItemIcons/SMGHeavyWItemIcon.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3682,7 +3682,7 @@
     {
         "codename": "SMGW",
         "name": "Fiddler Submachine Gun Model 868",
-        "image": "SubMachineGunIcon.png",
+        "image": "ItemIcons/SubMachineGunIcon.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3698,7 +3698,7 @@
     {
         "codename": "SmokeGrenade",
         "name": "PT-815 Smoke Grenade",
-        "image": "Smokegrenadeicon1.png",
+        "image": "ItemIcons/Smokegrenadeicon1.tga",
         "faction": "Both",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3714,7 +3714,7 @@
     {
         "codename": "SniperRifleAmmo",
         "name": "8.5mm",
-        "image": "SniperRifleAmmoItemIcon.png",
+        "image": "ItemIcons/SniperRifleAmmoItemIcon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -3730,7 +3730,7 @@
     {
         "codename": "SniperRifleC",
         "name": "KRR3-792 Auger",
-        "image": "SniperRifleCItemIcon.png",
+        "image": "ItemIcons/SniperRifleCItemIcon.tga",
         "faction": "Col",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3746,7 +3746,7 @@
     {
         "codename": "SniperRifleW",
         "name": "Clancy-Raca M4",
-        "image": "SniperRifleItemIcon.png",
+        "image": "ItemIcons/SniperRifleItemIcon.tga",
         "faction": "War",
         "ItemCategory": "SmallArms",
         "damage": null,
@@ -3762,7 +3762,7 @@
     {
         "codename": "SnowUniformC",
         "name": "Heavy Topcoat",
-        "image": "SnowUniformCIcon.png",
+        "image": "ItemIcons/SnowUniformCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -3778,7 +3778,7 @@
     {
         "codename": "SnowUniformW",
         "name": "Caoivish Parka",
-        "image": "SnowUniformWIcon.png",
+        "image": "ItemIcons/SnowUniformWIcon.tga",
         "faction": "War",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -3794,7 +3794,7 @@
     {
         "codename": "SoldierSupplies",
         "name": "Soldier Supplies",
-        "image": "ClothItemIcon.png",
+        "image": "ItemIcons/ClothItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Medical",
         "damage": null,
@@ -3810,7 +3810,7 @@
     {
         "codename": "SoldierUniformC",
         "name": "Legionary Fatigues",
-        "image": "SoldierUniformCIcon.png",
+        "image": "ItemIcons/SoldierUniformCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -3826,7 +3826,7 @@
     {
         "codename": "SoldierUniformW",
         "name": "Infantry Battledress",
-        "image": "SoldierUniformWIcon.png",
+        "image": "ItemIcons/SoldierUniformWIcon.tga",
         "faction": "War",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -3842,7 +3842,7 @@
     {
         "codename": "StickyBomb",
         "name": "Anti-Tank Sticky Bomb",
-        "image": "StickyBombIcon.png",
+        "image": "ItemIcons/StickyBombIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyArms",
         "damage": 407,
@@ -3858,7 +3858,7 @@
     {
         "codename": "Sulfur",
         "name": "Sulfur",
-        "image": "SulfurIcon.png",
+        "image": "ItemIcons/SulfurIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -3874,7 +3874,7 @@
     {
         "codename": "SurfaceWaterMine",
         "name": "E681-B Hullbreaker Mine",
-        "image": "SurfaceMineIcon.png",
+        "image": "ItemIcons/SurfaceMineIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 650,
@@ -3890,7 +3890,7 @@
     {
         "codename": "SwordC",
         "name": "Eleos Infantry Dagger",
-        "image": "StilSwordCIcon.png",
+        "image": "ItemIcons/StilSwordCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Utility",
         "damage": 80,
@@ -3906,7 +3906,7 @@
     {
         "codename": "TankMine",
         "name": "Abisme AT-99",
-        "image": "AntiTankMineItemIcon.png",
+        "image": "ItemIcons/AntiTankMineItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": 850,
@@ -3922,7 +3922,7 @@
     {
         "codename": "TankUniformC",
         "name": "Tankman&#039;s Coveralls",
-        "image": "TankUniformCIcon.png",
+        "image": "ItemIcons/TankUniformCIcon.tga",
         "faction": "Col",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -3938,7 +3938,7 @@
     {
         "codename": "TankUniformW",
         "name": "Padded Boiler Suit",
-        "image": "TankUniformWIcon.png",
+        "image": "ItemIcons/TankUniformWIcon.tga",
         "faction": "War",
         "ItemCategory": "Uniforms",
         "damage": null,
@@ -3954,7 +3954,7 @@
     {
         "codename": "TorpedoAmmo",
         "name": "Moray Torpedo",
-        "image": "TorpedoIcon.png",
+        "image": "ItemIcons/TorpedoIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": 3512,
@@ -3970,7 +3970,7 @@
     {
         "codename": "TraumaKit",
         "name": "Trauma Kit",
-        "image": "TraumaKitItemIcon.png",
+        "image": "ItemIcons/TraumaKitItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Medical",
         "damage": null,
@@ -3986,7 +3986,7 @@
     {
         "codename": "Tripod",
         "name": "Tripod",
-        "image": "DeployableTripodItemIcon.png",
+        "image": "ItemIcons/DeployableTripodItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -4002,7 +4002,7 @@
     {
         "codename": "UnexplodedOrdnance",
         "name": "Unexploded Ordnance",
-        "image": "UnexplodedOrdnanceIcon.png",
+        "image": "ItemIcons/UnexplodedOrdnanceIcon.tga",
         "faction": "Both",
         "ItemCategory": null,
         "damage": null,
@@ -4018,7 +4018,7 @@
     {
         "codename": "Water",
         "name": "Water",
-        "image": "WaterIcon.png",
+        "image": "ItemIcons/WaterIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -4034,7 +4034,7 @@
     {
         "codename": "WaterBucket",
         "name": "Water Bucket",
-        "image": "LoreBucket.png",
+        "image": "ItemIcons/LoreBucket.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -4050,7 +4050,7 @@
     {
         "codename": "WaterMine",
         "name": "E680-S Rudder Lock",
-        "image": "SeaMineIcon.png",
+        "image": "ItemIcons/SeaMineIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": 1350,
@@ -4066,7 +4066,7 @@
     {
         "codename": "WaterWallMaterials",
         "name": "Naval Buoy",
-        "image": "WaterWallItemIcon.png",
+        "image": "ItemIcons/WaterWallItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "HeavyAmmo",
         "damage": null,
@@ -4082,7 +4082,7 @@
     {
         "codename": "WindsockT",
         "name": "Wind Sock",
-        "image": "WindsockItemIcon.png",
+        "image": "ItemIcons/WindsockItemIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -4098,7 +4098,7 @@
     {
         "codename": "Wood",
         "name": "Refined Materials",
-        "image": "RefinedMaterialsIcon.png",
+        "image": "ItemIcons/RefinedMaterialsIcon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,
@@ -4114,7 +4114,7 @@
     {
         "codename": "WorkHammer",
         "name": "Hammer",
-        "image": "HammerIcon.png",
+        "image": "ItemIcons/HammerIcon.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -4130,7 +4130,7 @@
     {
         "codename": "WorkWrench",
         "name": "Wrench",
-        "image": "WorkWrench.png",
+        "image": "ItemIcons/WorkWrench.tga",
         "faction": "Both",
         "ItemCategory": "Utility",
         "damage": null,
@@ -4146,7 +4146,7 @@
     {
         "codename": "WoundedCarriedPlayer",
         "name": "Wounded Player",
-        "image": "WoundedIcon.png",
+        "image": "ItemIcons/WoundedIcon.tga",
         "faction": "Both",
         "ItemCategory": "Medical",
         "damage": null,
@@ -4162,7 +4162,7 @@
     {
         "codename": "Wreckage",
         "name": "Wreckage",
-        "image": "Salvage02Icon.png",
+        "image": "ItemIcons/Salvage02Icon.tga",
         "faction": "Both",
         "ItemCategory": "Supplies",
         "damage": null,

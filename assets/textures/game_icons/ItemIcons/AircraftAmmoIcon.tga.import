@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcx14fs2bub8x"
-path="res://.godot/imported/AircraftAmmoIcon.tga-8555c2328760f8d00744c0f6c009fc44.ctex"
+path="res://.godot/imported/AircraftAmmoIcon.tga-560a1df4363f558f08e7c4d866ece6e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/game_icons/AircraftAmmoIcon.tga"
-dest_files=["res://.godot/imported/AircraftAmmoIcon.tga-8555c2328760f8d00744c0f6c009fc44.ctex"]
+source_file="res://assets/textures/game_icons/ItemIcons/AircraftAmmoIcon.tga"
+dest_files=["res://.godot/imported/AircraftAmmoIcon.tga-560a1df4363f558f08e7c4d866ece6e9.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [
     {
         "name": "Anti-Tank Explosive",
-        "image": "SubtypeATIcon.png",
+        "image": "SubtypeATIcon.tga",
         "None": 0,
         "LightVehicle": 0.25,
         "Tier1Tank": 0,
@@ -22,7 +22,7 @@
     },
     {
         "name": "Anti-Tank Kinetic",
-        "image": "SubtypeAntiTank.png",
+        "image": "SubtypeAntiTank.tga",
         "None": 0,
         "LightVehicle": 0.5,
         "Tier1Tank": 0.35,
@@ -43,7 +43,7 @@
     },
     {
         "name": "Armour Piercing",
-        "image": "SubtypeAPIcon.png",
+        "image": "SubtypeAPIcon.tga",
         "None": 0,
         "LightVehicle": 0,
         "Tier1Tank": 0,
@@ -64,7 +64,7 @@
     },
     {
         "name": "Bomb High Explosive",
-        "image": "SubtypeBHEIcon.png",
+        "image": "SubtypeBHEIcon.tga",
         "None": 0,
         "LightVehicle": 0.7,
         "Tier1Tank": 0.7,
@@ -85,7 +85,7 @@
     },
     {
         "name": "Demolition",
-        "image": "SubtypeLRAIcon.png",
+        "image": "SubtypeLRAIcon.tga",
         "None": 0,
         "LightVehicle": 0,
         "Tier1Tank": 0.7,
@@ -106,7 +106,7 @@
     },
     {
         "name": "Explosive",
-        "image": "SubtypeSEIcon.png",
+        "image": "SubtypeSEIcon.tga",
         "None": 0,
         "LightVehicle": 0.3,
         "Tier1Tank": 0.15,
@@ -127,7 +127,7 @@
     },
     {
         "name": "Extinguishing",
-        "image": "SubtypeRainIcon.png",
+        "image": "SubtypeRainIcon.tga",
         "None": 1,
         "LightVehicle": 1,
         "Tier1Tank": 1,
@@ -148,7 +148,7 @@
     },
     {
         "name": "Fire",
-        "image": "IconStatusFireState.png",
+        "image": "IconStatusFireState.tga",
         "None": 0,
         "LightVehicle": 0,
         "Tier1Tank": 0.8,
@@ -169,7 +169,7 @@
     },
     {
         "name": "Flare",
-        "image": "SubtypeFLIcon.png",
+        "image": "SubtypeFLIcon.tga",
         "None": 1,
         "LightVehicle": 1,
         "Tier1Tank": 1,
@@ -190,7 +190,7 @@
     },
     {
         "name": "Heavy Kinetic",
-        "image": "SubtypeHBIcon.png",
+        "image": "SubtypeHBIcon.tga",
         "None": 0,
         "LightVehicle": 0.4,
         "Tier1Tank": 0.85,
@@ -211,7 +211,7 @@
     },
     {
         "name": "High Explosive",
-        "image": "SubtypeHEIcon.png",
+        "image": "SubtypeHEIcon.tga",
         "None": 0,
         "LightVehicle": 0.7,
         "Tier1Tank": 0.7,
@@ -232,7 +232,7 @@
     },
     {
         "name": "Incendiary",
-        "image": "SubtypeFireIcon.png",
+        "image": "SubtypeFireIcon.tga",
         "None": 0,
         "LightVehicle": 0,
         "Tier1Tank": 1,
@@ -253,7 +253,7 @@
     },
     {
         "name": "Incendiary High Explosive",
-        "image": "SubtypeIHEIcon.png",
+        "image": "SubtypeIHEIcon.tga",
         "None": 0,
         "LightVehicle": 0.7,
         "Tier1Tank": 0.7,
@@ -274,7 +274,7 @@
     },
     {
         "name": "Light Kinetic",
-        "image": "SubtypeSBIcon.png",
+        "image": "SubtypeSBIcon.tga",
         "None": 0,
         "LightVehicle": 0.4,
         "Tier1Tank": 0.99,
@@ -295,7 +295,7 @@
     },
     {
         "name": "Melee",
-        "image": "FistItemIcon.png",
+        "image": "FistItemIcon.tga",
         "None": 1,
         "LightVehicle": 1,
         "Tier1Tank": 1,
@@ -316,7 +316,7 @@
     },
     {
         "name": "Poisonous Gas",
-        "image": "SubtypeGAIcon.png",
+        "image": "SubtypeGAIcon.tga",
         "None": 0,
         "LightVehicle": 1,
         "Tier1Tank": 1,
@@ -337,7 +337,7 @@
     },
     {
         "name": "Shrapnel",
-        "image": "SubtypeSHIcon.png",
+        "image": "SubtypeSHIcon.tga",
         "None": 0,
         "LightVehicle": 0.85,
         "Tier1Tank": 0.85,
@@ -358,7 +358,7 @@
     },
     {
         "name": "Smoke",
-        "image": "SubtypeSMKIcon.png",
+        "image": "SubtypeSMKIcon.tga",
         "None": 1,
         "LightVehicle": 1,
         "Tier1Tank": 1,
