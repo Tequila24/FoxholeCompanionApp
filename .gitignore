@@ -31,3 +31,4 @@ builds/*.*
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/godot,visualstudiocode
+/data/Queries.txt
