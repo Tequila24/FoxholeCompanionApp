@@ -1,10 +1,7 @@
-# Created by https://www.toptal.com/developers/gitignore/api/godot,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=godot,visualstudiocode
-
 ### Godot ###
 # Godot 4+ specific ignores
 .godot/
-builds/*.*
+/builds
 
 # Godot-specific ignores
 
@@ -30,5 +27,6 @@ builds/*.*
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/godot,visualstudiocode
+
 /data/Queries.txt
+# /builds/web/Foxhole Companion App.html
