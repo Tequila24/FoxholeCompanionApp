@@ -33,4 +33,5 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="EntitySelectionWindow" parent="." unique_id=60665683 instance=ExtResource("4_s64wo")]
+visible = false
 layout_mode = 2

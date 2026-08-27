@@ -18,24 +18,7 @@ const _RESISTANCES_DATA_PATH: String = "res://data/DamageResistances.json"
 
 var _all_vehicles: Dictionary[String, VehicleEntity] = {}
 var _all_items: Dictionary[String, ItemEntity] = {}
-var _damage_type_resistances: Dictionary[String, Dictionary] = {
-	# "LightVehicle" = {},
-	# "Tier1Tank" = {},
-	# "Tier2Tank" = {},
-	# "Tier1Ship" = {},
-	# "Tier2Ship" = {},
-	# "Tier1LargeShip" = {},
-	# "Tier1Aircraft" = {},
-	# "Tier1Structure" = {},
-	# "Tier2Structure" = {},
-	# "Tier2BStructure" = {},
-	# "Tier3Structure" = {},
-	# "Tier3BStructure" = {},
-	# "Tier1GarrisonHouse" = {},
-	# "Tier2GarrisonHouse" = {},
-	# "Tier3GarrisonHouse" = {},
-	# "Trench" = {}
-}
+var _damage_type_resistances: Dictionary[String, Dictionary] = {}
 
 
 
@@ -119,7 +102,7 @@ func _load_items():
 		var new_item: ItemEntity = ItemEntity.new()
 		new_item.id = item_entry["codename"]
 		new_item.name = item_entry["name"]
-		new_item.image_name = item_entry["image"]
+		new_item.image_name = Globals.ITEMS_SUBPATH + item_entry["image"]
 		var faction_name = item_entry["faction"]
 		if (faction_name == "War"):
 			new_item.faction = Enums.Faction.WARDEN
