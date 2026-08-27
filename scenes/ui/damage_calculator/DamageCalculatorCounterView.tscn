@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://bqelobowvj48a"]
 
 [ext_resource type="Script" uid="uid://cix3h5dg1c3j2" path="res://scripts/ui/damage_calculator/CounterView.gd" id="1_4uary"]
-[ext_resource type="Texture2D" uid="uid://c7js32o8ql5w7" path="res://assets/textures/game_icons/ItemIcons/LoreSkull.tga" id="2_dg6or"]
+[ext_resource type="Texture2D" uid="uid://bp4rxtvi0qqii" path="res://assets/textures/game_icons/ItemIcons/LoreSkull.png" id="2_dg6or"]
+
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jcnjc"]
 bg_color = Color(0.2, 0.20784314, 0.21568628, 1)

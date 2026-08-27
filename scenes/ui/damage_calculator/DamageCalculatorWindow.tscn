@@ -4,11 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://bj4e1gi56xg1q" path="res://assets/textures/ui/FrameWithCorners.png" id="2_44dyq"]
 [ext_resource type="Script" uid="uid://cqgmhnm5bbo65" path="res://scripts/ui/entity_selection_window/EntityView.gd" id="2_k4nm8"]
 [ext_resource type="PackedScene" uid="uid://c0u42pdjmkxj8" path="res://scenes/ui/common/AutoFitRichTextLabel.tscn" id="4_bvgr6"]
-[ext_resource type="Texture2D" uid="uid://c7js32o8ql5w7" path="res://assets/textures/game_icons/ItemIcons/LoreSkull.tga" id="4_iej7h"]
 [ext_resource type="PackedScene" uid="uid://dp42mj0oradte" path="res://scenes/ui/damage_calculator/DamageCalculatorStatLineView.tscn" id="5_44dyq"]
 [ext_resource type="PackedScene" uid="uid://bqelobowvj48a" path="res://scenes/ui/damage_calculator/DamageCalculatorCounterView.tscn" id="5_76uj2"]
 [ext_resource type="Texture2D" uid="uid://dnpx53c1ijicq" path="res://assets/textures/ui_icons/cancel.png" id="5_shxm2"]
 [ext_resource type="Texture2D" uid="uid://j11s4n60lvgn" path="res://assets/textures/ui_icons/change.png" id="6_ok5o1"]
+[ext_resource type="Texture2D" uid="uid://bp4rxtvi0qqii" path="res://assets/textures/game_icons/ItemIcons/LoreSkull.png" id="8_7o62a"]
 [ext_resource type="Script" uid="uid://dey5g7ajp07b" path="res://scripts/ui/damage_calculator/StatsLinesHolder.gd" id="8_iej7h"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jcnjc"]
@@ -115,7 +115,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
-texture = ExtResource("4_iej7h")
+texture = ExtResource("8_7o62a")
 expand_mode = 3
 
 [node name="Button" type="Button" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Attacker/EntityView" unique_id=2040943509]
@@ -203,7 +203,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
-texture = ExtResource("4_iej7h")
+texture = ExtResource("8_7o62a")
 expand_mode = 3
 
 [node name="Button" type="Button" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView" unique_id=2071884490]
