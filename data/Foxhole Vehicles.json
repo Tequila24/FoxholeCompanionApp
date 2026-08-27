@@ -2,7 +2,7 @@
     {
         "codename": null,
         "name": "74c-2 Ronan Meteora Gunship",
-        "image": "74c-2 Ronan Meteora Gunship Vehicle Icon.tga",
+        "image": "74c-2 Ronan Meteora Gunship Vehicle Icon.png",
         "vehicle hp": 1320,
         "disable": 50,
         "armour type": "Tier1Tank",
@@ -13,7 +13,7 @@
     {
         "codename": null,
         "name": "BMS - White Whale",
-        "image": "Cargoship.tga",
+        "image": "Cargoship.png",
         "vehicle hp": 4000,
         "disable": 50,
         "armour type": "Tier1Tank",
@@ -24,7 +24,7 @@
     {
         "codename": null,
         "name": "Diamon aK-5 \u201cHarpy\u201d",
-        "image": "AircraftFighter2CIcon.tga",
+        "image": "AircraftFighter2CIcon.png",
         "vehicle hp": 6500,
         "disable": null,
         "armour type": "Tier1Aircraft",
@@ -35,7 +35,7 @@
     {
         "codename": null,
         "name": "Flood Ascension Mk. V",
-        "image": "Flood Ascension Mk. V Vehicle Icon.tga",
+        "image": "Flood Ascension Mk. V Vehicle Icon.png",
         "vehicle hp": 6280,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -46,7 +46,7 @@
     {
         "codename": null,
         "name": "Lance-40 \u201cHalberd\u201d",
-        "image": "Lance-40 Hallberd Vehicle Icon.tga",
+        "image": "Lance-40 Hallberd Vehicle Icon.png",
         "vehicle hp": 6300,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -57,7 +57,7 @@
     {
         "codename": null,
         "name": "Mulloy Flying Squid",
-        "image": "Mulloy_Flying_Squid.tga",
+        "image": "Mulloy_Flying_Squid.png",
         "vehicle hp": null,
         "disable": null,
         "armour type": null,
@@ -68,7 +68,7 @@
     {
         "codename": null,
         "name": "UV-05 \u201cCollector\u201d",
-        "image": "ScoutVehicleIcon.tga",
+        "image": "ScoutVehicleIcon.png",
         "vehicle hp": 1150,
         "disable": 40,
         "armour type": "None",
@@ -79,7 +79,7 @@
     {
         "codename": "AircraftBomberC",
         "name": "V-1 Tzykalia",
-        "image": "AircraftBomberCIcon.tga",
+        "image": "AircraftBomberCIcon.png",
         "vehicle hp": 10000,
         "disable": null,
         "armour type": "Tier1Aircraft",
@@ -90,7 +90,7 @@
     {
         "codename": "AircraftBomberW",
         "name": "Tulka P4 Welkinrive",
-        "image": "AircraftBomberWIcon.tga",
+        "image": "AircraftBomberWIcon.png",
         "vehicle hp": 10000,
         "disable": null,
         "armour type": "Tier1Aircraft",
@@ -101,7 +101,7 @@
     {
         "codename": "AircraftDiveC",
         "name": "Mergo-4 \u201cMyrmidon\u201d",
-        "image": "AircraftDiveCIcon.tga",
+        "image": "AircraftDiveCIcon.png",
         "vehicle hp": 5500,
         "disable": null,
         "armour type": "Tier1Aircraft",
@@ -112,7 +112,7 @@
     {
         "codename": "AircraftFighterC",
         "name": "Toxot-902 \u201cBlind Silver\u201d",
-        "image": "AircraftFigtherCIcon.tga",
+        "image": "AircraftFigtherCIcon.png",
         "vehicle hp": 5500,
         "disable": null,
         "armour type": "Tier1Aircraft",
@@ -123,7 +123,7 @@
     {
         "codename": "AircraftFighterW",
         "name": "Luminary Mk. II Harbinger",
-        "image": "AircraftFighterWIcon.tga",
+        "image": "AircraftFighterWIcon.png",
         "vehicle hp": 6000,
         "disable": null,
         "armour type": "Tier1Aircraft",
@@ -134,7 +134,7 @@
     {
         "codename": "AircraftParatrooperC",
         "name": "V-5b Pegasus",
-        "image": "AircraftParatrooperCIcon.tga",
+        "image": "AircraftParatrooperCIcon.png",
         "vehicle hp": 7000,
         "disable": null,
         "armour type": "Tier1Aircraft",
@@ -145,7 +145,7 @@
     {
         "codename": "AircraftParatrooperW",
         "name": "Rinnspeir Mk. I Zealot",
-        "image": "AircraftParatrooperWIcon.tga",
+        "image": "AircraftParatrooperWIcon.png",
         "vehicle hp": 7000,
         "disable": null,
         "armour type": "Tier1Aircraft",
@@ -156,7 +156,7 @@
     {
         "codename": "AircraftScout2C",
         "name": "A59 Venti \u201cPerdix\u201d",
-        "image": "AircraftScout2CIcon.tga",
+        "image": "AircraftScout2CIcon.png",
         "vehicle hp": 300,
         "disable": null,
         "armour type": "Tier1Aircraft",
@@ -167,7 +167,7 @@
     {
         "codename": "AircraftScout2W",
         "name": "Luminary Mk. VI Emissary",
-        "image": "AircraftScout2WIcon.tga",
+        "image": "AircraftScout2WIcon.png",
         "vehicle hp": 300,
         "disable": null,
         "armour type": "Tier1Aircraft",
@@ -178,7 +178,7 @@
     {
         "codename": "AircraftScoutC",
         "name": "A51 Venti \u201cDaedalus\u201d",
-        "image": "AircraftScoutCIcon.tga",
+        "image": "AircraftScoutCIcon.png",
         "vehicle hp": 300,
         "disable": null,
         "armour type": "Tier1Aircraft",
@@ -189,7 +189,7 @@
     {
         "codename": "AircraftScoutW",
         "name": "Luminary Mk. IV Herald",
-        "image": "AircraftScoutWIcon.tga",
+        "image": "AircraftScoutWIcon.png",
         "vehicle hp": 300,
         "disable": null,
         "armour type": "Tier1Aircraft",
@@ -200,7 +200,7 @@
     {
         "codename": "AircraftTorpedoW",
         "name": "M925 Austringer Man-O-War",
-        "image": "AircraftTorpedoWIcon.tga",
+        "image": "AircraftTorpedoWIcon.png",
         "vehicle hp": 7000,
         "disable": null,
         "armour type": "Tier1Aircraft",
@@ -211,7 +211,7 @@
     {
         "codename": "AircraftWaterW",
         "name": "Tulka I1.9 White Raven",
-        "image": "AircraftWaterWIcon.tga",
+        "image": "AircraftWaterWIcon.png",
         "vehicle hp": 5750,
         "disable": null,
         "armour type": "Tier1Aircraft",
@@ -222,7 +222,7 @@
     {
         "codename": "AmbulanceC",
         "name": "R-12 - \u201cSalus\u201d Ambulance",
-        "image": "Ambulance.tga",
+        "image": "Ambulance.png",
         "vehicle hp": 750,
         "disable": 81.25,
         "armour type": "LightVehicle",
@@ -233,7 +233,7 @@
     {
         "codename": "AmbulanceFlameC",
         "name": "R-12b - \u201cSalva\u201d Flame Truck",
-        "image": "AmbulanceFlameC.tga",
+        "image": "AmbulanceFlameC.png",
         "vehicle hp": 750,
         "disable": 81.25,
         "armour type": "LightVehicle",
@@ -244,7 +244,7 @@
     {
         "codename": "AmbulanceFlameW",
         "name": "Dunne Dousing Engine 3r",
-        "image": "AmbulanceFlameW.tga",
+        "image": "AmbulanceFlameW.png",
         "vehicle hp": 750,
         "disable": 81.25,
         "armour type": "LightVehicle",
@@ -255,7 +255,7 @@
     {
         "codename": "AmbulanceW",
         "name": "Dunne Responder 3e",
-        "image": "AmbulanceWar.tga",
+        "image": "AmbulanceWar.png",
         "vehicle hp": 750,
         "disable": 81.25,
         "armour type": "LightVehicle",
@@ -266,7 +266,7 @@
     {
         "codename": "ArmoredCar2LargeW",
         "name": "O&#039;Brien V.101 Freeman",
-        "image": "ArmoredCarOffensiveWVehicleIcon.tga",
+        "image": "ArmoredCarOffensiveWVehicleIcon.png",
         "vehicle hp": 1500,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -277,7 +277,7 @@
     {
         "codename": "ArmoredCar2MultiW",
         "name": "O&#039;Brien V.200 Squire",
-        "image": "ArmoredCar2MultiWIcon.tga",
+        "image": "ArmoredCar2MultiWIcon.png",
         "vehicle hp": 1500,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -288,7 +288,7 @@
     {
         "codename": "ArmoredCar2TwinW",
         "name": "O&#039;Brien V.190 Knave",
-        "image": "ArmoredCarTwinWIcon.tga",
+        "image": "ArmoredCarTwinWIcon.png",
         "vehicle hp": 1500,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -299,7 +299,7 @@
     {
         "codename": "ArmoredCarATW",
         "name": "O&#039;Brien V.113 Gravekeeper",
-        "image": "ArmoredCarATWVehicleIcon.tga",
+        "image": "ArmoredCarATWVehicleIcon.png",
         "vehicle hp": 1250,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -310,7 +310,7 @@
     {
         "codename": "ArmoredCarC",
         "name": "T3 \u201cXiphos\u201d",
-        "image": "ArmoredCarVehicleIcon.tga",
+        "image": "ArmoredCarVehicleIcon.png",
         "vehicle hp": 1250,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -321,7 +321,7 @@
     {
         "codename": "ArmoredCarFlameW",
         "name": "O&#039;Brien V.130 Wild Jack",
-        "image": "ArmoredCarFlameWarVehicleIcon.tga",
+        "image": "ArmoredCarFlameWarVehicleIcon.png",
         "vehicle hp": 1250,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -332,7 +332,7 @@
     {
         "codename": "ArmoredCarMobilityW",
         "name": "O&#039;Brien V.121 Highlander",
-        "image": "ArmoredCarMobilityWarVehicleIcon.tga",
+        "image": "ArmoredCarMobilityWarVehicleIcon.png",
         "vehicle hp": 1250,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -343,7 +343,7 @@
     {
         "codename": "ArmoredCarOffensiveC",
         "name": "T5 \u201cPercutio\u201d",
-        "image": "ArmoredCarOffensiveCVehicleIcon.tga",
+        "image": "ArmoredCarOffensiveCVehicleIcon.png",
         "vehicle hp": 1250,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -354,7 +354,7 @@
     {
         "codename": "ArmoredCarTwinC",
         "name": "T8 \u201cGemini\u201d",
-        "image": "ArmoredCarTwinCItemIcon.tga",
+        "image": "ArmoredCarTwinCItemIcon.png",
         "vehicle hp": 1250,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -365,7 +365,7 @@
     {
         "codename": "ArmoredCarW",
         "name": "O&#039;Brien V.110",
-        "image": "ArmoredCarWarVehicleIcon.tga",
+        "image": "ArmoredCarWarVehicleIcon.png",
         "vehicle hp": 1150,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -376,7 +376,7 @@
     {
         "codename": "Barge",
         "name": "BMS - Aquatipper",
-        "image": "BargeVehicleIcon.tga",
+        "image": "BargeVehicleIcon.png",
         "vehicle hp": 950,
         "disable": 50,
         "armour type": "Tier1Ship",
@@ -387,7 +387,7 @@
     {
         "codename": "BattleTankATC",
         "name": "Lance-25 \u201cHasta\u201d",
-        "image": "BattleTankATCIcon.tga",
+        "image": "BattleTankATCIcon.png",
         "vehicle hp": 6250,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -398,7 +398,7 @@
     {
         "codename": "BattleTankC",
         "name": "Lance-36",
-        "image": "BattleTank.tga",
+        "image": "BattleTank.png",
         "vehicle hp": 6250,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -409,7 +409,7 @@
     {
         "codename": "BattleTankDefensiveW",
         "name": "Flood Juggernaut Mk. VII",
-        "image": "BattleTankWarDefensiveVehicleIcon.tga",
+        "image": "BattleTankWarDefensiveVehicleIcon.png",
         "vehicle hp": 5100,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -420,7 +420,7 @@
     {
         "codename": "BattleTankHeavyArtilleryC",
         "name": "Lance-46 \u201cSarissa\u201d",
-        "image": "BattleTankHeavyArtilleryCIcon.tga",
+        "image": "BattleTankHeavyArtilleryCIcon.png",
         "vehicle hp": 6250,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -431,7 +431,7 @@
     {
         "codename": "BattleTankHeavyArtilleryW",
         "name": "Flood Mk. IX Stain",
-        "image": "BattleTankHeavyArtilleryWIcon.tga",
+        "image": "BattleTankHeavyArtilleryWIcon.png",
         "vehicle hp": 4800,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -442,7 +442,7 @@
     {
         "codename": "BattleTankW",
         "name": "Flood Mk. I",
-        "image": "BattleTankWar.tga",
+        "image": "BattleTankWar.png",
         "vehicle hp": 5100,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -453,7 +453,7 @@
     {
         "codename": "Bicycle",
         "name": "Blumfield LK205",
-        "image": "RelicBicycleVehicleIcon.tga",
+        "image": "RelicBicycleVehicleIcon.png",
         "vehicle hp": 200,
         "disable": null,
         "armour type": "LightVehicle",
@@ -464,7 +464,7 @@
     {
         "codename": "BusC",
         "name": "R-15 - \u201cChariot\u201d",
-        "image": "BusIcon.tga",
+        "image": "BusIcon.png",
         "vehicle hp": 600,
         "disable": 66.6,
         "armour type": "LightVehicle",
@@ -475,7 +475,7 @@
     {
         "codename": "BusW",
         "name": "Dunne Caravaner 2f",
-        "image": "BusWarIcon.tga",
+        "image": "BusWarIcon.png",
         "vehicle hp": 600,
         "disable": 66.6,
         "armour type": "LightVehicle",
@@ -486,7 +486,7 @@
     {
         "codename": "Construction",
         "name": "BMS - Universal Assembly Rig",
-        "image": "ConstructionVehicleIcon.tga",
+        "image": "ConstructionVehicleIcon.png",
         "vehicle hp": 1000,
         "disable": 75,
         "armour type": "LightVehicle",
@@ -497,7 +497,7 @@
     {
         "codename": "ConstructionUtility",
         "name": "BMS - Fabricator",
-        "image": "AdvancedConstructionVehicleIcon.tga",
+        "image": "AdvancedConstructionVehicleIcon.png",
         "vehicle hp": 1000,
         "disable": 75,
         "armour type": "LightVehicle",
@@ -508,7 +508,7 @@
     {
         "codename": "Crane",
         "name": "BMS - Class 2 Mobile Auto-Crane",
-        "image": "CraneVehicleIcon.tga",
+        "image": "CraneVehicleIcon.png",
         "vehicle hp": 1500,
         "disable": 50,
         "armour type": "LightVehicle",
@@ -519,7 +519,7 @@
     {
         "codename": "DestroyerTankFlameW",
         "name": "Noble Firebrand Mk. XVII",
-        "image": "DestroyerTankFlameWIcon.tga",
+        "image": "DestroyerTankFlameWIcon.png",
         "vehicle hp": 2200,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -530,7 +530,7 @@
     {
         "codename": "DestroyerTankW",
         "name": "Noble Widow MK. XIV",
-        "image": "DestroyerTankWVehicleIcon.tga",
+        "image": "DestroyerTankWVehicleIcon.png",
         "vehicle hp": 2200,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -541,7 +541,7 @@
     {
         "codename": "FieldAT2C",
         "name": "GA6 \u201cCestus\u201d",
-        "image": "FieldAT2CIcon.tga",
+        "image": "FieldAT2CIcon.png",
         "vehicle hp": 1600,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -552,7 +552,7 @@
     {
         "codename": "FieldAT2W",
         "name": "Duncan&#039;s Coin 14.5mm",
-        "image": "FieldAT2WIcon.tga",
+        "image": "FieldAT2WIcon.png",
         "vehicle hp": 1600,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -563,7 +563,7 @@
     {
         "codename": "FieldATC",
         "name": "AA-2 Battering Ram",
-        "image": "FieldAntiTankColVehicleIcon.tga",
+        "image": "FieldAntiTankColVehicleIcon.png",
         "vehicle hp": 2850,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -574,7 +574,7 @@
     {
         "codename": "FieldATDamageW",
         "name": "Balfour Rampart 68mm",
-        "image": "FieldCannonOffensiveWIcon.tga",
+        "image": "FieldCannonOffensiveWIcon.png",
         "vehicle hp": 4000,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -585,7 +585,7 @@
     {
         "codename": "FieldATW",
         "name": "Collins Cannon 68mm",
-        "image": "FieldAntiTankWarVehicleIcon.tga",
+        "image": "FieldAntiTankWarVehicleIcon.png",
         "vehicle hp": 2850,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -596,7 +596,7 @@
     {
         "codename": "FieldCannonDamageC",
         "name": "40-45 \u201cSmelter\u201d",
-        "image": "FieldATOffensiveCIcon.tga",
+        "image": "FieldATOffensiveCIcon.png",
         "vehicle hp": 4000,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -607,7 +607,7 @@
     {
         "codename": "FieldCannonW",
         "name": "Balfour Wolfhound 40mm",
-        "image": "FieldCannonWVehicleIcon.tga",
+        "image": "FieldCannonWVehicleIcon.png",
         "vehicle hp": 2850,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -618,7 +618,7 @@
     {
         "codename": "FieldMGC",
         "name": "G40 \u201cSagittarii\u201d",
-        "image": "FieldMachineGun.tga",
+        "image": "FieldMachineGun.png",
         "vehicle hp": 1850,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -629,7 +629,7 @@
     {
         "codename": "FieldMGW",
         "name": "Swallowtail 988\/127-2",
-        "image": "FieldMachineGunWar.tga",
+        "image": "FieldMachineGunWar.png",
         "vehicle hp": 1850,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -640,7 +640,7 @@
     {
         "codename": "FieldMortarC",
         "name": "30-250 \u201cTisiphone\u201d Field Cannon",
-        "image": "FieldMortarCIcon.tga",
+        "image": "FieldMortarCIcon.png",
         "vehicle hp": 2450,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -651,7 +651,7 @@
     {
         "codename": "FieldMortarW",
         "name": "Balfour Falconer 250mm",
-        "image": "FieldMortarWIcon.tga",
+        "image": "FieldMortarWIcon.png",
         "vehicle hp": 2850,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -662,7 +662,7 @@
     {
         "codename": "FlatbedTruck",
         "name": "BMS - Packmule Flatbed",
-        "image": "FlatbedTruckVehicleIcon.tga",
+        "image": "FlatbedTruckVehicleIcon.png",
         "vehicle hp": 1125,
         "disable": 80,
         "armour type": "LightVehicle",
@@ -673,7 +673,7 @@
     {
         "codename": "Freighter",
         "name": "BMS - Ironship",
-        "image": "Freighter02ItemIcon.tga",
+        "image": "Freighter02ItemIcon.png",
         "vehicle hp": 2600,
         "disable": 50,
         "armour type": "Tier1Ship",
@@ -684,7 +684,7 @@
     {
         "codename": "FreighterLight",
         "name": "Das Krokodil by VAC",
-        "image": "LightFreighterVehicleIcon.tga",
+        "image": "LightFreighterVehicleIcon.png",
         "vehicle hp": 1500,
         "disable": 40,
         "armour type": "Tier1Ship",
@@ -695,7 +695,7 @@
     {
         "codename": "Gunboat2C",
         "name": "Type B - \u201cLucian\u201d",
-        "image": "GunBoat2CVehicleIcon.tga",
+        "image": "GunBoat2CVehicleIcon.png",
         "vehicle hp": 1800,
         "disable": 30,
         "armour type": "Tier2Ship",
@@ -706,7 +706,7 @@
     {
         "codename": "Gunboat2W",
         "name": "81f-f Ronan Blackguard",
-        "image": "Gunboat2WIcon.tga",
+        "image": "Gunboat2WIcon.png",
         "vehicle hp": 2000,
         "disable": 30,
         "armour type": "Tier2Ship",
@@ -717,7 +717,7 @@
     {
         "codename": "GunboatC",
         "name": "Type C - \u201cCharon\u201d",
-        "image": "GunBoatCHullIcon.tga",
+        "image": "GunBoatCHullIcon.png",
         "vehicle hp": 1850,
         "disable": 30,
         "armour type": "Tier2Ship",
@@ -728,7 +728,7 @@
     {
         "codename": "GunboatW",
         "name": "74b-1 Ronan Gunship",
-        "image": "GunboatWIcon.tga",
+        "image": "GunboatWIcon.png",
         "vehicle hp": 1650,
         "disable": 30,
         "armour type": "Tier2Ship",
@@ -739,7 +739,7 @@
     {
         "codename": "HalfTrackArtilleryC",
         "name": "HH-d \u201cPeltast\u201d",
-        "image": "HalfTrackArtilleryCIcon.tga",
+        "image": "HalfTrackArtilleryCIcon.png",
         "vehicle hp": 1350,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -750,7 +750,7 @@
     {
         "codename": "HalfTrackC",
         "name": "HH-a \u201cJavelin\u201d",
-        "image": "HalfTrackColVehicleIcon.tga",
+        "image": "HalfTrackColVehicleIcon.png",
         "vehicle hp": 1350,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -761,7 +761,7 @@
     {
         "codename": "HalfTrackDefensiveC",
         "name": "HH-b \u201cHoplite\u201d",
-        "image": "HalfTrackColHeavyArmorVehicleIcon.tga",
+        "image": "HalfTrackColHeavyArmorVehicleIcon.png",
         "vehicle hp": 1500,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -772,7 +772,7 @@
     {
         "codename": "HalftrackMultiW",
         "name": "Niska-Rycker Mk. IX Skycaller",
-        "image": "HalftrackMultiWIcon.tga",
+        "image": "HalftrackMultiWIcon.png",
         "vehicle hp": 1500,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -783,7 +783,7 @@
     {
         "codename": "HalfTrackOffensiveW",
         "name": "Niska Mk. II Blinder",
-        "image": "HalfTrackOffensiveWarVehicleIcon.tga",
+        "image": "HalfTrackOffensiveWarVehicleIcon.png",
         "vehicle hp": 1500,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -794,7 +794,7 @@
     {
         "codename": "HalfTrackTwinW",
         "name": "Niska Mk. III Scar Twin",
-        "image": "HalftrackTwinW.tga",
+        "image": "HalftrackTwinW.png",
         "vehicle hp": 1500,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -805,7 +805,7 @@
     {
         "codename": "HalfTrackW",
         "name": "Niska Mk. I Gun Motor Carriage",
-        "image": "HalfTrackWarVehicleIcon.tga",
+        "image": "HalfTrackWarVehicleIcon.png",
         "vehicle hp": 1500,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -816,7 +816,7 @@
     {
         "codename": "Harvester",
         "name": "BMS - Scrap Hauler",
-        "image": "Harvester.tga",
+        "image": "Harvester.png",
         "vehicle hp": 1250,
         "disable": 50,
         "armour type": "LightVehicle",
@@ -827,7 +827,7 @@
     {
         "codename": "HeavyTruckC",
         "name": "AU-A150 Taurine Rigger",
-        "image": "HeavyTruckCVehicleIcon.tga",
+        "image": "HeavyTruckCVehicleIcon.png",
         "vehicle hp": 1150,
         "disable": 50,
         "armour type": "Tier1Tank",
@@ -838,7 +838,7 @@
     {
         "codename": "HeavyTruckW",
         "name": "Cnute Cliffwrest",
-        "image": "HeavyTruckWItemIcon copy.tga",
+        "image": "HeavyTruckWItemIcon copy.png",
         "vehicle hp": 1150,
         "disable": 50,
         "armour type": "Tier1Tank",
@@ -849,7 +849,7 @@
     {
         "codename": "LandingCraftC",
         "name": "AB-8 \u201cAcheron\u201d",
-        "image": "LandingCraftVehicleIcon.tga",
+        "image": "LandingCraftVehicleIcon.png",
         "vehicle hp": 1000,
         "disable": 50,
         "armour type": "Tier1Tank",
@@ -860,7 +860,7 @@
     {
         "codename": "LandingCraftOffensiveC",
         "name": "AB-11 \u201cDoru\u201d",
-        "image": "LandingCraftOffensiveVehicleIcon.tga",
+        "image": "LandingCraftOffensiveVehicleIcon.png",
         "vehicle hp": 1000,
         "disable": 50,
         "armour type": "Tier1Tank",
@@ -871,7 +871,7 @@
     {
         "codename": "LandingCraftW",
         "name": "Mulloy LPC",
-        "image": "LandingCraftWarVehicleIcon.tga",
+        "image": "LandingCraftWarVehicleIcon.png",
         "vehicle hp": 1000,
         "disable": 50,
         "armour type": "Tier1Tank",
@@ -882,7 +882,7 @@
     {
         "codename": "LandingShipC",
         "name": "Interceptor PA-12",
-        "image": "LandingShipCIcon.tga",
+        "image": "LandingShipCIcon.png",
         "vehicle hp": 2250,
         "disable": 50,
         "armour type": "Tier1Ship",
@@ -893,7 +893,7 @@
     {
         "codename": "LandingShipW",
         "name": "MacConmara Shorerunner",
-        "image": "LandingShipWIcon.tga",
+        "image": "LandingShipWIcon.png",
         "vehicle hp": 2250,
         "disable": 50,
         "armour type": "Tier1Ship",
@@ -904,7 +904,7 @@
     {
         "codename": "LargeCrane",
         "name": "BMS - Overseer Sky-Hauler",
-        "image": "LargeCraneItemIcon.tga",
+        "image": "LargeCraneItemIcon.png",
         "vehicle hp": 2600,
         "disable": 50,
         "armour type": "Tier3Structure",
@@ -915,7 +915,7 @@
     {
         "codename": "LargeFieldATC",
         "name": "945g \u201cStygian Bolt\u201d",
-        "image": "FieldATHeavyCIcon.tga",
+        "image": "FieldATHeavyCIcon.png",
         "vehicle hp": 5000,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -926,7 +926,7 @@
     {
         "codename": "LargeFieldCannonW",
         "name": "Balfour Stockade 75mm",
-        "image": "FieldCannonHeavyWIcon.tga",
+        "image": "FieldCannonHeavyWIcon.png",
         "vehicle hp": 5000,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -937,7 +937,7 @@
     {
         "codename": "LargeFieldLightArtilleryC",
         "name": "120-68 \u201cKoronides\u201d Field Gun",
-        "image": "FieldArtilleryColVehicleIcon.tga",
+        "image": "FieldArtilleryColVehicleIcon.png",
         "vehicle hp": 1000,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -948,7 +948,7 @@
     {
         "codename": "LargeFieldMortarC",
         "name": "40-250 \u201cAlekto\u201d Heavy Cannon",
-        "image": "LargeFieldMortarCIcon.tga",
+        "image": "LargeFieldMortarCIcon.png",
         "vehicle hp": 3750,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -959,7 +959,7 @@
     {
         "codename": "LargeFieldMultiW",
         "name": "Rycker 4\/3-F Wasp Nest",
-        "image": "FieldMultiWItemIcon.tga",
+        "image": "FieldMultiWItemIcon.png",
         "vehicle hp": 1000,
         "disable": 30,
         "armour type": "Tier1Tank",
@@ -970,7 +970,7 @@
     {
         "codename": "LargeShipAircraftC",
         "name": "Poseidon",
-        "image": "LargeshipAircraftCIcon.tga",
+        "image": "LargeshipAircraftCIcon.png",
         "vehicle hp": 78050,
         "disable": null,
         "armour type": "Tier1LargeShip",
@@ -981,7 +981,7 @@
     {
         "codename": "LargeShipBaseShip",
         "name": "BMS - Longhook",
-        "image": "LargeShipBaseShipIcon.tga",
+        "image": "LargeShipBaseShipIcon.png",
         "vehicle hp": 49500,
         "disable": null,
         "armour type": "Tier1LargeShip",
@@ -992,7 +992,7 @@
     {
         "codename": "LargeShipBattleshipAircraftW",
         "name": "Mercy",
-        "image": "LargeShipBattleshipAircraftWIcon.tga",
+        "image": "LargeShipBattleshipAircraftWIcon.png",
         "vehicle hp": 74750,
         "disable": null,
         "armour type": "Tier1LargeShip",
@@ -1003,7 +1003,7 @@
     {
         "codename": "LargeShipBattleshipC",
         "name": "Titan",
-        "image": "LargeShipBattleshipCIcon.tga",
+        "image": "LargeShipBattleshipCIcon.png",
         "vehicle hp": 85960,
         "disable": null,
         "armour type": "Tier1LargeShip",
@@ -1014,7 +1014,7 @@
     {
         "codename": "LargeShipBattleshipW",
         "name": "Callahan",
-        "image": "LargeShipBattleshipWIcon.tga",
+        "image": "LargeShipBattleshipWIcon.png",
         "vehicle hp": 85960,
         "disable": null,
         "armour type": "Tier1LargeShip",
@@ -1025,7 +1025,7 @@
     {
         "codename": "LargeShipDestroyerC",
         "name": "Conqueror",
-        "image": "LargeShipDestroyerCIcon.tga",
+        "image": "LargeShipDestroyerCIcon.png",
         "vehicle hp": 46200,
         "disable": null,
         "armour type": "Tier1LargeShip",
@@ -1036,7 +1036,7 @@
     {
         "codename": "LargeShipDestroyerW",
         "name": "Blacksteele",
-        "image": "LargeShipDestroyerWIcon.tga",
+        "image": "LargeShipDestroyerWIcon.png",
         "vehicle hp": 41400,
         "disable": null,
         "armour type": "Tier1LargeShip",
@@ -1047,7 +1047,7 @@
     {
         "codename": "LargeShipResourceShip",
         "name": "BMS - Bowhead",
-        "image": "LargeShipResourceIcon.tga",
+        "image": "LargeShipResourceIcon.png",
         "vehicle hp": 55000,
         "disable": null,
         "armour type": "Tier1LargeShip",
@@ -1058,7 +1058,7 @@
     {
         "codename": "LargeShipStorageShip",
         "name": "BMS - Bluefin",
-        "image": "LargeShipStorageShipIcon.tga",
+        "image": "LargeShipStorageShipIcon.png",
         "vehicle hp": 72190,
         "disable": null,
         "armour type": "Tier1LargeShip",
@@ -1069,7 +1069,7 @@
     {
         "codename": "LargeShipSubmarineC",
         "name": "AC-b \u201cTrident\u201d",
-        "image": "LargeShipSubmarineCIcon.tga",
+        "image": "LargeShipSubmarineCIcon.png",
         "vehicle hp": 28500,
         "disable": null,
         "armour type": "Tier1LargeShip",
@@ -1080,7 +1080,7 @@
     {
         "codename": "LargeShipSubmarineW",
         "name": "Nakki",
-        "image": "LargeShipSubmarineWIcon.tga",
+        "image": "LargeShipSubmarineWIcon.png",
         "vehicle hp": 21275,
         "disable": null,
         "armour type": "Tier1LargeShip",
@@ -1091,7 +1091,7 @@
     {
         "codename": "LightBoatInfantryC",
         "name": "K-81e \u201cSombre\u201d",
-        "image": "LightBoatInfantryCIcon.tga",
+        "image": "LightBoatInfantryCIcon.png",
         "vehicle hp": 1500,
         "disable": 50,
         "armour type": "Tier1Ship",
@@ -1102,7 +1102,7 @@
     {
         "codename": "LightBoatInfantryW",
         "name": "68A-4 Ronan Fathomer",
-        "image": "LightBoatInfantryWVehicleIcon.tga",
+        "image": "LightBoatInfantryWVehicleIcon.png",
         "vehicle hp": 1750,
         "disable": 30,
         "armour type": "Tier1Ship",
@@ -1113,7 +1113,7 @@
     {
         "codename": "LightTank2InfantryC",
         "name": "HC-2 \u201cScorpion\u201d",
-        "image": "LightTank2InfantryCVehicleIcon.tga",
+        "image": "LightTank2InfantryCVehicleIcon.png",
         "vehicle hp": 3300,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1124,7 +1124,7 @@
     {
         "codename": "LightTank3C",
         "name": "HA-1 \u201cSagaris\u201d",
-        "image": "LightTank3CVehicleIcon.tga",
+        "image": "LightTank3CVehicleIcon.png",
         "vehicle hp": 1950,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1135,7 +1135,7 @@
     {
         "codename": "LightTank3W",
         "name": "Sharkey-Devitt Birdeater Mk. I",
-        "image": "LightTank3WVehicleIcon.tga",
+        "image": "LightTank3WVehicleIcon.png",
         "vehicle hp": 1950,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1146,7 +1146,7 @@
     {
         "codename": "LightTankArtilleryW",
         "name": "Devitt-Caine Mk. IV MMR",
-        "image": "LightTankArtilleryWar.tga",
+        "image": "LightTankArtilleryWar.png",
         "vehicle hp": 1950,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1157,7 +1157,7 @@
     {
         "codename": "LightTankC",
         "name": "H-5 \u201cHatchet\u201d",
-        "image": "LightTankColVehicleIcon.tga",
+        "image": "LightTankColVehicleIcon.png",
         "vehicle hp": 1950,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1168,7 +1168,7 @@
     {
         "codename": "LightTankDefensiveW",
         "name": "Devitt Ironhide Mk. IV",
-        "image": "LightTankWarDefensiveVehicleIcon.tga",
+        "image": "LightTankWarDefensiveVehicleIcon.png",
         "vehicle hp": 1950,
         "disable": 20,
         "armour type": "Tier2Tank",
@@ -1179,7 +1179,7 @@
     {
         "codename": "LightTankFlameC",
         "name": "H-19 \u201cVulcan\u201d",
-        "image": "LightTankFlameCIcon.tga",
+        "image": "LightTankFlameCIcon.png",
         "vehicle hp": 1950,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1190,7 +1190,7 @@
     {
         "codename": "LightTankMobilityC",
         "name": "H-8 \u201cKranesca\u201d",
-        "image": "LightTankColMobilityVehicleIcon.tga",
+        "image": "LightTankColMobilityVehicleIcon.png",
         "vehicle hp": 2250,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1201,7 +1201,7 @@
     {
         "codename": "LightTankOffensiveC",
         "name": "H-10 \u201cPelekys\u201d",
-        "image": "LightTankOffensiveCVehicleIcon.tga",
+        "image": "LightTankOffensiveCVehicleIcon.png",
         "vehicle hp": 1750,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1212,7 +1212,7 @@
     {
         "codename": "LightTankW",
         "name": "Devitt Mk. III",
-        "image": "LightTankWarVehicleIcon.tga",
+        "image": "LightTankWarVehicleIcon.png",
         "vehicle hp": 1950,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1223,7 +1223,7 @@
     {
         "codename": "Mech",
         "name": "Centurion MV-2",
-        "image": "MechVehicleIcon.tga",
+        "image": "MechVehicleIcon.png",
         "vehicle hp": 9850,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1234,7 +1234,7 @@
     {
         "codename": "MechW",
         "name": "Herne QMW 1a Scourge Hunter",
-        "image": "MechWardenVehicleIcon.tga",
+        "image": "MechWardenVehicleIcon.png",
         "vehicle hp": 6850,
         "disable": 50,
         "armour type": "Tier2Tank",
@@ -1245,7 +1245,7 @@
     {
         "codename": "MediumBoatC",
         "name": "Strider",
-        "image": "MediumBoatCIcon.tga",
+        "image": "MediumBoatCIcon.png",
         "vehicle hp": 2300,
         "disable": 30,
         "armour type": "Tier1Ship",
@@ -1256,7 +1256,7 @@
     {
         "codename": "MediumBoatW",
         "name": "Rinnspeir Ornitier-Class Gunship",
-        "image": "MediumBoatWVehicleIcon.tga",
+        "image": "MediumBoatWVehicleIcon.png",
         "vehicle hp": 2050,
         "disable": 30,
         "armour type": "Tier1Ship",
@@ -1267,7 +1267,7 @@
     {
         "codename": "MediumTank2C",
         "name": "86K-a \u201cBardiche\u201d",
-        "image": "MediumTank2CIcon.tga",
+        "image": "MediumTank2CIcon.png",
         "vehicle hp": 4000,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1278,7 +1278,7 @@
     {
         "codename": "MediumTank2IndirectW",
         "name": "Gallagher Thornfall Mk. VI",
-        "image": "MediumTank2IndirectWIcon.tga",
+        "image": "MediumTank2IndirectWIcon.png",
         "vehicle hp": 2650,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1289,7 +1289,7 @@
     {
         "codename": "MediumTank2MultiW",
         "name": "Gallagher Highwayman Mk. III",
-        "image": "MediumTank2MultiWIcon.tga",
+        "image": "MediumTank2MultiWIcon.png",
         "vehicle hp": 2950,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1300,7 +1300,7 @@
     {
         "codename": "MediumTank2RangeW",
         "name": "Gallagher Outlaw Mk. II",
-        "image": "MediumTank2RangeWIcon.tga",
+        "image": "MediumTank2RangeWIcon.png",
         "vehicle hp": 2950,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1311,7 +1311,7 @@
     {
         "codename": "MediumTank2TwinC",
         "name": "86K-c \u201cRanseur\u201d",
-        "image": "MediumTank2TwinCVehicleIcon.tga",
+        "image": "MediumTank2TwinCVehicleIcon.png",
         "vehicle hp": 4000,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1322,7 +1322,7 @@
     {
         "codename": "MediumTank2W",
         "name": "Gallagher Brigand Mk. I",
-        "image": "MediumTank2WIcon.tga",
+        "image": "MediumTank2WIcon.png",
         "vehicle hp": 2950,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1333,7 +1333,7 @@
     {
         "codename": "MediumTank3C",
         "name": "90T-v \u201cNemesis\u201d",
-        "image": "MediumTank3CItemIcon.tga",
+        "image": "MediumTank3CItemIcon.png",
         "vehicle hp": 3650,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1344,7 +1344,7 @@
     {
         "codename": "MediumTankATW",
         "name": "Silverhand Lordscar - Mk. X",
-        "image": "MediumTankATWIcon.tga",
+        "image": "MediumTankATWIcon.png",
         "vehicle hp": 3100,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1355,7 +1355,7 @@
     {
         "codename": "MediumTankC",
         "name": "85K-b \u201cFalchion\u201d",
-        "image": "ColonialMediumTankIcon.tga",
+        "image": "ColonialMediumTankIcon.png",
         "vehicle hp": 3650,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1366,7 +1366,7 @@
     {
         "codename": "MediumTankLargeC",
         "name": "85V-g \u201cTalos\u201d",
-        "image": "MediumTankLargeCIcon.tga",
+        "image": "MediumTankLargeCIcon.png",
         "vehicle hp": 4000,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1377,7 +1377,7 @@
     {
         "codename": "MediumTankOffensiveC",
         "name": "85K-a \u201cSpatha\u201d",
-        "image": "ColonialMediumTankOffensive.tga",
+        "image": "ColonialMediumTankOffensive.png",
         "vehicle hp": 3650,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1388,7 +1388,7 @@
     {
         "codename": "MediumTankSiegeW",
         "name": "Silverhand Chieftain - Mk. VI",
-        "image": "MediumTankSiegeWVehicleIcon.tga",
+        "image": "MediumTankSiegeWVehicleIcon.png",
         "vehicle hp": 3100,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1399,7 +1399,7 @@
     {
         "codename": "MediumTankW",
         "name": "Silverhand - Mk. IV",
-        "image": "WardenMediumTankIcon.tga",
+        "image": "WardenMediumTankIcon.png",
         "vehicle hp": 3100,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1410,7 +1410,7 @@
     {
         "codename": "MineBoat",
         "name": "Bellweather by VAC",
-        "image": "MineboatIcon.tga",
+        "image": "MineboatIcon.png",
         "vehicle hp": 950,
         "disable": 50,
         "armour type": "Tier1Ship",
@@ -1421,7 +1421,7 @@
     {
         "codename": "MortarTankC",
         "name": "HC-7 \u201cBallista\u201d",
-        "image": "MortarTankVehicleIcon.tga",
+        "image": "MortarTankVehicleIcon.png",
         "vehicle hp": 3300,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1432,7 +1432,7 @@
     {
         "codename": "Motorboat",
         "name": "BMS - Grouper",
-        "image": "Motorboat.tga",
+        "image": "Motorboat.png",
         "vehicle hp": 200,
         "disable": 50,
         "armour type": "LightVehicle",
@@ -1443,7 +1443,7 @@
     {
         "codename": "MotorcycleC",
         "name": "03MM \u201cCaster\u201d",
-        "image": "MotorcycleVehicleIcon.tga",
+        "image": "MotorcycleVehicleIcon.png",
         "vehicle hp": 300,
         "disable": 50,
         "armour type": "LightVehicle",
@@ -1454,7 +1454,7 @@
     {
         "codename": "MotorcycleOffensiveC",
         "name": "00MS \u201cStinger\u201d",
-        "image": "MotorcycleOffensiveVehicleIcon.tga",
+        "image": "MotorcycleOffensiveVehicleIcon.png",
         "vehicle hp": 300,
         "disable": 50,
         "armour type": "LightVehicle",
@@ -1465,7 +1465,7 @@
     {
         "codename": "MotorcycleW",
         "name": "Kivela Power Wheel 80-1",
-        "image": "MotorcycleWIcon.tga",
+        "image": "MotorcycleWIcon.png",
         "vehicle hp": 300,
         "disable": 50,
         "armour type": "LightVehicle",
@@ -1476,7 +1476,7 @@
     {
         "codename": "RelicAPC",
         "name": "Heavy Infantry Carrier",
-        "image": "RelicApc.tga",
+        "image": "RelicApc.png",
         "vehicle hp": 40000,
         "disable": 15,
         "armour type": null,
@@ -1487,7 +1487,7 @@
     {
         "codename": "RelicArmouredCar",
         "name": "Armoured Fighting Tractor",
-        "image": "RelicArmouredCarVehicleIcon.tga",
+        "image": "RelicArmouredCarVehicleIcon.png",
         "vehicle hp": 1500,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1498,7 +1498,7 @@
     {
         "codename": "RelicLightTank",
         "name": "Storm Tank",
-        "image": "RelicLightTankVehicleIcon.tga",
+        "image": "RelicLightTankVehicleIcon.png",
         "vehicle hp": 2500,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1509,7 +1509,7 @@
     {
         "codename": "RelicMediumTank",
         "name": "PL-1 \u201cPhalanx\u201d",
-        "image": "ColonialRelicMediumTankVehicleIcon.tga",
+        "image": "ColonialRelicMediumTankVehicleIcon.png",
         "vehicle hp": 4850,
         "disable": 20,
         "armour type": "Tier2Tank",
@@ -1520,7 +1520,7 @@
     {
         "codename": "RelicScoutVehicle",
         "name": "Staff Car",
-        "image": "RelicCarVehicleIcon.tga",
+        "image": "RelicCarVehicleIcon.png",
         "vehicle hp": 900,
         "disable": 40,
         "armour type": "LightVehicle",
@@ -1531,7 +1531,7 @@
     {
         "codename": "RelicTruck",
         "name": "Repurposed Truck",
-        "image": "RelicTruckVehicleIcon.tga",
+        "image": "RelicTruckVehicleIcon.png",
         "vehicle hp": 800,
         "disable": 81.25,
         "armour type": "LightVehicle",
@@ -1542,7 +1542,7 @@
     {
         "codename": "ScoutTankMultiW",
         "name": "King Jester Mk. I-1",
-        "image": "ScoutTankMultiWIcon.tga",
+        "image": "ScoutTankMultiWIcon.png",
         "vehicle hp": 1350,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1553,7 +1553,7 @@
     {
         "codename": "ScoutTankOffensiveW",
         "name": "King Gallant Mk. II",
-        "image": "ScoutTankOffensiveWIcon.tga",
+        "image": "ScoutTankOffensiveWIcon.png",
         "vehicle hp": 1350,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1564,7 +1564,7 @@
     {
         "codename": "ScoutTankW",
         "name": "King Spire Mk. I",
-        "image": "ScoutTankWIcon.tga",
+        "image": "ScoutTankWIcon.png",
         "vehicle hp": 1350,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1575,7 +1575,7 @@
     {
         "codename": "ScoutVehicleMobilityC",
         "name": "UV-05a \u201cArgonaut\u201d",
-        "image": "ScoutVehicleMobilityVehicleIcon.tga",
+        "image": "ScoutVehicleMobilityVehicleIcon.png",
         "vehicle hp": 900,
         "disable": 40,
         "armour type": "LightVehicle",
@@ -1586,7 +1586,7 @@
     {
         "codename": "ScoutVehicleOffensiveC",
         "name": "UV-24 \u201cIcarus\u201d",
-        "image": "ScoutVehicleOffensiveVehicleIcon.tga",
+        "image": "ScoutVehicleOffensiveVehicleIcon.png",
         "vehicle hp": 1300,
         "disable": 40,
         "armour type": "LightVehicle",
@@ -1597,7 +1597,7 @@
     {
         "codename": "ScoutVehicleOffensiveW",
         "name": "Drummond Spitfire 100d",
-        "image": "ScoutVehicleOffensiveWarVehicleIcon.tga",
+        "image": "ScoutVehicleOffensiveWarVehicleIcon.png",
         "vehicle hp": 1150,
         "disable": 40,
         "armour type": "LightVehicle",
@@ -1608,7 +1608,7 @@
     {
         "codename": "ScoutVehicleUtilityC",
         "name": "UV-5c \u201cOdyssey\u201d",
-        "image": "ScoutVehicleUtilityCVehicleIcon.tga",
+        "image": "ScoutVehicleUtilityCVehicleIcon.png",
         "vehicle hp": 1250,
         "disable": 40,
         "armour type": "LightVehicle",
@@ -1619,7 +1619,7 @@
     {
         "codename": "ScoutVehicleUtilityW",
         "name": "Drummond Loscann 55c",
-        "image": "ScoutVehicleAmphibiousWarVehicleIcon.tga",
+        "image": "ScoutVehicleAmphibiousWarVehicleIcon.png",
         "vehicle hp": 900,
         "disable": 40,
         "armour type": "LightVehicle",
@@ -1630,7 +1630,7 @@
     {
         "codename": "ScoutVehicleW",
         "name": "Drummond 100a",
-        "image": "ScoutVehicleWarVehicleIcon.tga",
+        "image": "ScoutVehicleWarVehicleIcon.png",
         "vehicle hp": 1150,
         "disable": 40,
         "armour type": "LightVehicle",
@@ -1641,7 +1641,7 @@
     {
         "codename": "SmallTrainEngine",
         "name": "BMS Mineseeker",
-        "image": "SmallGaugeEngineVehicleIcon.tga",
+        "image": "SmallGaugeEngineVehicleIcon.png",
         "vehicle hp": 1650,
         "disable": 50,
         "armour type": "Tier1Tank",
@@ -1652,7 +1652,7 @@
     {
         "codename": "SmallTrainLiquid",
         "name": "BMS Tinderbox",
-        "image": "SmallTrainFuelContainerIcon.tga",
+        "image": "SmallTrainFuelContainerIcon.png",
         "vehicle hp": 900,
         "disable": null,
         "armour type": "Tier1Tank",
@@ -1663,7 +1663,7 @@
     {
         "codename": "SmallTrainMaterial",
         "name": "BMS Linerunner",
-        "image": "SmallGaugeFlatbedCarVehicleIcon.tga",
+        "image": "SmallGaugeFlatbedCarVehicleIcon.png",
         "vehicle hp": 900,
         "disable": null,
         "armour type": "Tier1Tank",
@@ -1674,7 +1674,7 @@
     {
         "codename": "SmallTrainResource",
         "name": "BMS Railtruck",
-        "image": "SmallGaugeResourceCarVehicleIcon.tga",
+        "image": "SmallGaugeResourceCarVehicleIcon.png",
         "vehicle hp": 900,
         "disable": null,
         "armour type": "Tier1Tank",
@@ -1685,7 +1685,7 @@
     {
         "codename": "SmallTrainShipping",
         "name": "BMS Stowheel",
-        "image": "SmallTrainShippingContainerIcon.tga",
+        "image": "SmallTrainShippingContainerIcon.png",
         "vehicle hp": 900,
         "disable": null,
         "armour type": "Tier1Tank",
@@ -1696,7 +1696,7 @@
     {
         "codename": "SuperTankC",
         "name": "O-75b \u201cAres\u201d",
-        "image": "SuperTankCtemIcon.tga",
+        "image": "SuperTankCtemIcon.png",
         "vehicle hp": 9250,
         "disable": 50,
         "armour type": "Tier2Tank",
@@ -1707,7 +1707,7 @@
     {
         "codename": "SuperTankW",
         "name": "Cullen Predator Mk. III",
-        "image": "SuperTankWVehicleIcon.tga",
+        "image": "SuperTankWVehicleIcon.png",
         "vehicle hp": 12000,
         "disable": 50,
         "armour type": "Tier2Tank",
@@ -1718,7 +1718,7 @@
     {
         "codename": "TanketteC",
         "name": "T12 \u201cActaeon\u201d Tankette",
-        "image": "TanketteCVehicleIcon.tga",
+        "image": "TanketteCVehicleIcon.png",
         "vehicle hp": 1150,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1729,7 +1729,7 @@
     {
         "codename": "TanketteFlameC",
         "name": "T14 \u201cVesta\u201d Tankette",
-        "image": "TanketteFlameCIcon.tga",
+        "image": "TanketteFlameCIcon.png",
         "vehicle hp": 1350,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1740,7 +1740,7 @@
     {
         "codename": "TanketteMultiC",
         "name": "T13 \u201cDeioneus\u201d Rocket Battery",
-        "image": "TanketteMultiCIcon.tga",
+        "image": "TanketteMultiCIcon.png",
         "vehicle hp": 1350,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1751,7 +1751,7 @@
     {
         "codename": "TanketteOffensiveC",
         "name": "T20 \u201cIxion\u201d Tankette",
-        "image": "TanketteOffensiveCVehicleIcon.tga",
+        "image": "TanketteOffensiveCVehicleIcon.png",
         "vehicle hp": 1350,
         "disable": 30,
         "armour type": "Tier2Tank",
@@ -1762,7 +1762,7 @@
     {
         "codename": "TrailerLiquid",
         "name": "Rooster - Lamploader",
-        "image": "FuelTrailerIcon.tga",
+        "image": "FuelTrailerIcon.png",
         "vehicle hp": 900,
         "disable": null,
         "armour type": "LightVehicle",
@@ -1773,7 +1773,7 @@
     {
         "codename": "TrailerMaterial",
         "name": "Rooster - Tumblebox",
-        "image": "MaterialTrailerIcon.tga",
+        "image": "MaterialTrailerIcon.png",
         "vehicle hp": 900,
         "disable": null,
         "armour type": "LightVehicle",
@@ -1784,7 +1784,7 @@
     {
         "codename": "TrailerResource",
         "name": "Rooster - Junkwagon",
-        "image": "ResourceTrailerIcon.tga",
+        "image": "ResourceTrailerIcon.png",
         "vehicle hp": 900,
         "disable": null,
         "armour type": "LightVehicle",
@@ -1795,7 +1795,7 @@
     {
         "codename": "TrainCaboose",
         "name": "BMS Roadhouse",
-        "image": "TrainCabooseItemIcon.tga",
+        "image": "TrainCabooseItemIcon.png",
         "vehicle hp": 1500,
         "disable": null,
         "armour type": "Tier1Tank",
@@ -1806,7 +1806,7 @@
     {
         "codename": "TrainCoal",
         "name": "BMS Rockhold",
-        "image": "TrainCoalCarVehicleIcon.tga",
+        "image": "TrainCoalCarVehicleIcon.png",
         "vehicle hp": 1500,
         "disable": null,
         "armour type": "Tier1Tank",
@@ -1817,7 +1817,7 @@
     {
         "codename": "TrainCombatCarC",
         "name": "Aegis Steelbreaker K5a",
-        "image": "CombatCarCVehicleIcon.tga",
+        "image": "CombatCarCVehicleIcon.png",
         "vehicle hp": 4000,
         "disable": null,
         "armour type": "Tier2Tank",
@@ -1828,7 +1828,7 @@
     {
         "codename": "TrainCombatCarW",
         "name": "O&#039;Brien Warsmith v.215",
-        "image": "CombatCarWVehicleIcon.tga",
+        "image": "CombatCarWVehicleIcon.png",
         "vehicle hp": 3250,
         "disable": null,
         "armour type": "Tier2Tank",
@@ -1839,7 +1839,7 @@
     {
         "codename": "TrainEngine",
         "name": "BMS Black Bolt",
-        "image": "TrainEngineVehicleIcon.tga",
+        "image": "TrainEngineVehicleIcon.png",
         "vehicle hp": 3250,
         "disable": 50,
         "armour type": "Tier1Tank",
@@ -1850,7 +1850,7 @@
     {
         "codename": "TrainFlatbed",
         "name": "BMS Longrider",
-        "image": "TrainCarVehicleIcon.tga",
+        "image": "TrainCarVehicleIcon.png",
         "vehicle hp": 1500,
         "disable": null,
         "armour type": "Tier1Tank",
@@ -1861,7 +1861,7 @@
     {
         "codename": "TrainHospital",
         "name": "BMS Bloodtender",
-        "image": "TrainHospitalItemIcon.tga",
+        "image": "TrainHospitalItemIcon.png",
         "vehicle hp": 4250,
         "disable": null,
         "armour type": "Tier2Tank",
@@ -1872,7 +1872,7 @@
     {
         "codename": "TrainInfantry",
         "name": "BMS Holdout",
-        "image": "InfantryCarVehicleIcon.tga",
+        "image": "InfantryCarVehicleIcon.png",
         "vehicle hp": 3250,
         "disable": null,
         "armour type": "Tier1Tank",
@@ -1883,7 +1883,7 @@
     {
         "codename": "TrainLRArtillery",
         "name": "Tempest Cannon RA-2",
-        "image": "TrainLRArtilleryVehicleIcon.tga",
+        "image": "TrainLRArtilleryVehicleIcon.png",
         "vehicle hp": 4000,
         "disable": null,
         "armour type": "Tier2Tank",
@@ -1894,7 +1894,7 @@
     {
         "codename": "TruckC",
         "name": "R-1 Hauler",
-        "image": "TruckVehicleIcon.tga",
+        "image": "TruckVehicleIcon.png",
         "vehicle hp": 900,
         "disable": 81.25,
         "armour type": "LightVehicle",
@@ -1905,7 +1905,7 @@
     {
         "codename": "TruckDefensiveW",
         "name": "Dunne Leatherback 2a",
-        "image": "TruckDefensiveWIcon.tga",
+        "image": "TruckDefensiveWIcon.png",
         "vehicle hp": 1250,
         "disable": 50,
         "armour type": "LightVehicle",
@@ -1916,7 +1916,7 @@
     {
         "codename": "TruckLiquidC",
         "name": "RR-3 \u201cStolon\u201d Tanker",
-        "image": "OilTankerIcon.tga",
+        "image": "OilTankerIcon.png",
         "vehicle hp": 1125,
         "disable": 87.5,
         "armour type": "LightVehicle",
@@ -1927,7 +1927,7 @@
     {
         "codename": "TruckLiquidW",
         "name": "Dunne Fuelrunner 2d",
-        "image": "OilTankerWarIcon.tga",
+        "image": "OilTankerWarIcon.png",
         "vehicle hp": 1125,
         "disable": 87.5,
         "armour type": "LightVehicle",
@@ -1938,7 +1938,7 @@
     {
         "codename": "TruckMobilityC",
         "name": "R-5b \u201cSisyphus\u201d Hauler",
-        "image": "TruckMobilityCVehicleIcon.tga",
+        "image": "TruckMobilityCVehicleIcon.png",
         "vehicle hp": 900,
         "disable": 81.25,
         "armour type": "LightVehicle",
@@ -1949,7 +1949,7 @@
     {
         "codename": "TruckMobilityW",
         "name": "Dunne Landrunner 12c",
-        "image": "TruckMobilityWarVehicleIcon.tga",
+        "image": "TruckMobilityWarVehicleIcon.png",
         "vehicle hp": 900,
         "disable": 81.25,
         "armour type": "LightVehicle",
@@ -1960,7 +1960,7 @@
     {
         "codename": "TruckMultiC",
         "name": "R-17 \u201cRetiarius\u201d Skirmisher",
-        "image": "TruckMultiCIcon.tga",
+        "image": "TruckMultiCIcon.png",
         "vehicle hp": 900,
         "disable": 65,
         "armour type": "LightVehicle",
@@ -1971,7 +1971,7 @@
     {
         "codename": "TruckOffensiveC",
         "name": "R-9 \u201cSpeartip\u201d Escort",
-        "image": "TruckOffensiveVehicleIcon.tga",
+        "image": "TruckOffensiveVehicleIcon.png",
         "vehicle hp": 900,
         "disable": 81.25,
         "armour type": "LightVehicle",
@@ -1982,7 +1982,7 @@
     {
         "codename": "TruckResourceC",
         "name": "R-5 \u201cAtlas\u201d Hauler",
-        "image": "TruckUtilityVehicleIcon.tga",
+        "image": "TruckUtilityVehicleIcon.png",
         "vehicle hp": 1000,
         "disable": 81.25,
         "armour type": "LightVehicle",
@@ -1993,7 +1993,7 @@
     {
         "codename": "TruckResourceW",
         "name": "Dunne Loadlugger 3c",
-        "image": "TruckUtilityWarVehicleIcon.tga",
+        "image": "TruckUtilityWarVehicleIcon.png",
         "vehicle hp": 1000,
         "disable": 81.25,
         "armour type": "LightVehicle",
@@ -2004,7 +2004,7 @@
     {
         "codename": "TruckW",
         "name": "Dunne Transport",
-        "image": "TruckWarVehicleIcon.tga",
+        "image": "TruckWarVehicleIcon.png",
         "vehicle hp": 900,
         "disable": 81.25,
         "armour type": "LightVehicle",
