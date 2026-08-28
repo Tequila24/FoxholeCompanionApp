@@ -23,6 +23,7 @@ var target_entity: GameEntity:
 		updated.emit()
 
 var _vic_on_vic_calc: VicOnVicCalc = VicOnVicCalc.new()
+var _attack_simulator: AttackSimulator = AttackSimulator.new()
 
 var current_result: DamageCalculationResult = DamageCalculationResult.new()
 
@@ -70,13 +71,10 @@ func recalculate():
 		recalculated.emit(DamageCalculationResult.new())
 		print(current_result.is_valid)
 		return
-
-	# print(("%s has gun component: " % _attacker_entity.name) + str(_attacker_entity.has_component_type(ComponentGun)))
-	# print(("%s has vitals component: "  % target_entity.name) + str(target_entity.has_component_type(ComponentVitals)))
 	
 	if ((_attacker_entity.has_component_type(ComponentGun) && _target_entity.has_component_type(ComponentVitals))):
-		current_result = _vic_on_vic_calc.simulate_attack(attacker_entity, target_entity)
-		recalculated.emit(current_result)
+		var result = _attack_simulator.simulate_attack(attacker_entity, target_entity)
+		recalculated.emit(result)
 		return
 
 	# empty result

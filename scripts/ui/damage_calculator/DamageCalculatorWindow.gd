@@ -91,14 +91,14 @@ func _on_new_calculation(result: DamageCalculationResult) -> void:
 			view.visible = false
 
 		var idx: int = 0
-		for gun_counter in result.guns_counters:
+		for gun_counter in result.counters:
 			_invalid_icon.visible = false
 			_counters_views.get(idx).visible = true
-			_counters_views.get(idx).counter_label.text = str(gun_counter.shot_count)
+			_counters_views.get(idx).counter_label.text = str(gun_counter.shots_count)
 			if (DamageCalcWrapper.attacker_entity is ItemEntity):
 				_counters_views.get(idx).icon_holder.visible = false
 			else:
-				var ammo_entity: ItemEntity = DataMaster.get_item_entity(gun_counter.ammo_type)
+				var ammo_entity: ItemEntity = DataMaster.get_item_entity(gun_counter.ammo_type_id)
 				_counters_views.get(idx).icon_holder.visible = true
 				_counters_views.get(idx).icon_view.texture = load(Globals.ICONS_PATH + ammo_entity.image_name)
 

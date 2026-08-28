@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://j11s4n60lvgn" path="res://assets/textures/ui_icons/change.png" id="6_ok5o1"]
 [ext_resource type="Texture2D" uid="uid://bp4rxtvi0qqii" path="res://assets/textures/game_icons/ItemIcons/LoreSkull.png" id="8_7o62a"]
 [ext_resource type="Script" uid="uid://dey5g7ajp07b" path="res://scripts/ui/damage_calculator/StatsLinesHolder.gd" id="8_iej7h"]
+[ext_resource type="Theme" uid="uid://banvl88e6fu0f" path="res://scenes/ui/themes/ButtonFilter.tres" id="8_iur0y"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jcnjc"]
 bg_color = Color(0.2, 0.20784314, 0.21568628, 1)
@@ -72,7 +73,7 @@ theme_override_constants/margin_bottom = 8
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/Entities/MarginContainer" unique_id=1705641293]
 layout_mode = 2
-theme_override_constants/separation = 8
+theme_override_constants/separation = 24
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer" unique_id=1814462140]
 layout_mode = 2
@@ -209,6 +210,22 @@ expand_mode = 3
 [node name="Button" type="Button" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/MarginContainer/Target/EntityView" unique_id=2071884490]
 layout_mode = 2
 flat = true
+
+[node name="OptionsContainer" type="MarginContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer" unique_id=802704867]
+layout_mode = 2
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_right = 64
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/OptionsContainer" unique_id=40495387]
+layout_mode = 2
+
+[node name="ToggleMainGunOnly" type="Button" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer/OptionsContainer/VBoxContainer" unique_id=855688239]
+layout_mode = 2
+theme = ExtResource("8_iur0y")
+toggle_mode = true
+button_pressed = true
+text = "Main gun only"
+icon_alignment = 1
 
 [node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer2/Entities/MarginContainer/VBoxContainer" unique_id=464752867]
 layout_mode = 2

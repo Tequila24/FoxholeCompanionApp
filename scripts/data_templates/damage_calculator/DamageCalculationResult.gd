@@ -3,13 +3,9 @@ extends Resource
 
 
 
-class GunCalculationResult:
-	func _init(_ammo_type: String, _shot_count: int):
-		ammo_type = _ammo_type
-		shot_count = _shot_count
-
-	var ammo_type: String = ""
-	var shot_count: int = 0
+class Counter:
+	var ammo_type_id: String = ""
+	var shots_count: int = 0
 
 
 class StatStringPair:
@@ -22,7 +18,7 @@ class StatStringPair:
 
 
 var is_valid: bool = false
-var guns_counters: Array[GunCalculationResult]
+var counters: Array[Counter]
 var stats: Array[StatStringPair]
 
 
