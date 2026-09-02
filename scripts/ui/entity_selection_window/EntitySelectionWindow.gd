@@ -11,14 +11,17 @@ extends MarginContainer
 @export var _close_button: Button
 
 
+var current_filters: EntityFilter = EntityFilter.new()
+@export var _filter_wardens: Button
+@export var _filter_colonials: Button
+@export var _filter_tanks: Button
+@export var _filter_pushguns: Button
+@export var _filter_cars: Button
+@export var _filter_boats: Button
+@export var _filter_aircraft: Button
+@export var _filter_guns: Button
+@export var _filter_structures: Button
 
-# var _types_visible: GameEntity.COMPONENT_FILTER = GameEntity.COMPONENT_FILTER.ANY
-# @export var _filter_warden: Button
-# @export var _filter_colonial: Button
-# @export var _filter_tanks: Button
-# @export var _filter_pushguns: Button
-# @export var _filter_cars: Button
-# @export var _filter_structures: Button
 
 
 signal entity_selected(new_entity: GameEntity)
@@ -36,17 +39,82 @@ func _ready() -> void:
 	_close_button.pressed.connect(hide_window)
 	_fill_entities()
 	
-# 	_filter_warden.toggled.connect(func(_toggled): _update_filters())
-# 	_filter_colonial.toggled.connect(func(_toggled): _update_filters())
-# 	_filter_tanks.toggled.connect(func(_toggled): _update_filters())
-# 	_filter_pushguns.toggled.connect(func(_toggled): _update_filters())
-# 	_filter_cars.toggled.connect(func(_toggled): _update_filters())
-# 	_filter_structures.toggled.connect(func(_toggled): _update_filters())
+	_filter_wardens.toggled.connect(_on_filter_button_toggled)
+	_filter_colonials.toggled.connect(_on_filter_button_toggled)
+	_filter_tanks.toggled.connect(_on_filter_button_toggled)
+	_filter_pushguns.toggled.connect(_on_filter_button_toggled)
+	_filter_cars.toggled.connect(_on_filter_button_toggled)
+	_filter_boats.toggled.connect(_on_filter_button_toggled)
+	_filter_aircraft.toggled.connect(_on_filter_button_toggled)
+	_filter_guns.toggled.connect(_on_filter_button_toggled)
+	_filter_structures.toggled.connect(_on_filter_button_toggled)
+	_update_filters()
+
+	call_deferred("_filter_visible_entities")
 
 
-# func set_visible_entity_type(type: GameEntity.COMPONENT_FILTER):
-# 	_types_visible = type
-# 	_update_filters()
+func set_component_filter(_components_types: Array[Variant]):
+	current_filters.component_type_filter.append(_components_types)
+	# _filter_visible_entities()
+
+
+func _on_filter_button_toggled(_is_toggled: bool):
+	_update_filters()
+	_filter_visible_entities()
+
+
+func _update_filters() -> void:
+	current_filters.allowed_factions = \
+		((current_filters.allowed_factions | Enums.Faction.WARDEN) \
+			if _filter_wardens.button_pressed else \
+		(current_filters.allowed_factions & ~Enums.Faction.WARDEN)) as Enums.Faction
+
+	current_filters.allowed_factions = \
+		(current_filters.allowed_factions | Enums.Faction.COLONIAL) \
+			if _filter_colonials.button_pressed else \
+		(current_filters.allowed_factions & ~Enums.Faction.COLONIAL) as Enums.Faction
+
+	current_filters.allowed_vehicle_types = \
+		(current_filters.allowed_vehicle_types | Enums.VehicleType.TANK) \
+		if _filter_tanks.button_pressed \
+		else (current_filters.allowed_vehicle_types & ~Enums.VehicleType.TANK) as Enums.VehicleType
+
+	current_filters.allowed_vehicle_types = \
+		(current_filters.allowed_vehicle_types |Enums.VehicleType.PUSHGUN) \
+		if _filter_pushguns.button_pressed \
+		else (current_filters.allowed_vehicle_types & ~Enums.VehicleType.PUSHGUN) as Enums.VehicleType
+
+	current_filters.allowed_vehicle_types = \
+		(current_filters.allowed_vehicle_types | Enums.VehicleType.CAR) \
+		if _filter_cars.button_pressed \
+		else (current_filters.allowed_vehicle_types & ~Enums.VehicleType.CAR) as Enums.VehicleType
+
+	current_filters.allowed_vehicle_types = \
+		(current_filters.allowed_vehicle_types | Enums.VehicleType.BOAT) \
+		if _filter_boats.button_pressed \
+		else (current_filters.allowed_vehicle_types & ~Enums.VehicleType.BOAT) as Enums.VehicleType
+
+	current_filters.allowed_vehicle_types = \
+		(current_filters.allowed_vehicle_types | Enums.VehicleType.AIRCRAFT) \
+		if _filter_aircraft.button_pressed \
+		else (current_filters.allowed_vehicle_types & ~Enums.VehicleType.AIRCRAFT) as Enums.VehicleType
+
+	current_filters.allowed_entity_types = \
+		(current_filters.allowed_entity_types | Enums.EntityType.GUN) \
+		if _filter_guns.button_pressed \
+		else (current_filters.allowed_entity_types & ~Enums.EntityType.GUN) as Enums.EntityType
+
+	current_filters.allowed_entity_types = \
+		(current_filters.allowed_entity_types |Enums.EntityType.STRUCTURE) \
+		if _filter_structures.button_pressed \
+		else (current_filters.allowed_entity_types & ~Enums.EntityType.STRUCTURE) as Enums.EntityType
+
+
+func _filter_visible_entities():
+	for entity_view in _views_holder.get_children() as Array[EntityView]:
+		entity_view.visible = current_filters.check(entity_view.attached_entity)
+		if (entity_view.visible):
+			print("Entity %s type %s" % [entity_view.attached_entity.name, str(entity_view.attached_entity.type)])
 
 
 func _fill_entities():

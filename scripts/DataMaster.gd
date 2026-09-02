@@ -10,7 +10,93 @@ const _ARMAMENT_DATA_PATH: String = "res://data/Foxhole Armament.json"
 const _RESISTANCES_DATA_PATH: String = "res://data/DamageResistances.json"
 
 
-
+const _vehicle_types: Dictionary[String, Enums.VehicleType] = {
+	"Gunboat" = Enums.VehicleType.BOAT,
+	"Landing Ship" = Enums.VehicleType.BOAT,
+	"Fighter Aircraft" = Enums.VehicleType.AIRCRAFT,
+	"Battle Tank" = Enums.VehicleType.TANK,
+	"Landing APC" = Enums.VehicleType.CAR,
+	"Light Utility Vehicle" = Enums.VehicleType.CAR,
+	"Heavy Bomber Aircraft" = Enums.VehicleType.AIRCRAFT,
+	"Dive Bomber Aircraft" = Enums.VehicleType.AIRCRAFT,
+	"Transport Aircraft" = Enums.VehicleType.AIRCRAFT,
+	"Scout Aircraft" = Enums.VehicleType.AIRCRAFT,
+	"Amphibious Scout Aircraft" = Enums.VehicleType.AIRCRAFT,
+	"Torpedo Bomber Aircraft" = Enums.VehicleType.AIRCRAFT,
+	"Amphibious Fighter Aircraft" = Enums.VehicleType.AIRCRAFT,
+	"Ambulance" = Enums.VehicleType.CAR,
+	"Fire Engine" = Enums.VehicleType.CAR,
+	"Armoured Car" = Enums.VehicleType.CAR,
+	"Armoured Rocket Platform" = Enums.VehicleType.CAR,
+	"Barge" = Enums.VehicleType.BOAT,
+	"Bicycle" = Enums.VehicleType.CAR,
+	"Transport Bus" = Enums.VehicleType.CAR,
+	"Construction Vehicle" = Enums.VehicleType.CAR,
+	"Advanced Construction Vehicle" = Enums.VehicleType.CAR,
+	"Crane" = Enums.VehicleType.CAR,
+	"Destroyer Tank" = Enums.VehicleType.TANK,
+	"Field AT Rifle" = Enums.VehicleType.PUSHGUN,
+	"Field AT Gun" = Enums.VehicleType.PUSHGUN,
+	"Heavy Field Cannon" = Enums.VehicleType.PUSHGUN,
+	"Heavy Field Gun" = Enums.VehicleType.PUSHGUN,
+	"Field Cannon" = Enums.VehicleType.PUSHGUN,
+	"Field Machine Gun" = Enums.VehicleType.PUSHGUN,
+	"Field Mortar" = Enums.VehicleType.PUSHGUN,
+	"Flatbed Truck" = Enums.VehicleType.CAR,
+	"Freighter" = Enums.VehicleType.BOAT,
+	"Light Freighter" = Enums.VehicleType.BOAT,
+	"Siege Boat" = Enums.VehicleType.BOAT,
+	"Half-Track" = Enums.VehicleType.CAR,
+	"Harvester" = Enums.VehicleType.CAR,
+	"Heavy-Duty Truck" = Enums.VehicleType.CAR,
+	"Large Crane" = Enums.VehicleType.CAR,
+	"Large Field Gun" = Enums.VehicleType.PUSHGUN,
+	"Field Artillery" = Enums.VehicleType.PUSHGUN,
+	"Large Field Mortar" = Enums.VehicleType.PUSHGUN,
+	"Field Launcher" = Enums.VehicleType.PUSHGUN,
+	"Aircraft Carrier" = Enums.VehicleType.BOAT,
+	"Base Ship" = Enums.VehicleType.BOAT,
+	"Battleship" = Enums.VehicleType.BOAT,
+	"Destroyer" = Enums.VehicleType.BOAT,
+	"Light Frigate" = Enums.VehicleType.BOAT,
+	"Resource Ship" = Enums.VehicleType.BOAT,
+	"Storage Ship" = Enums.VehicleType.BOAT,
+	"Submarine" = Enums.VehicleType.BOAT,
+	"Infantry Boat" = Enums.VehicleType.BOAT,
+	"Light Infantry Tank" = Enums.VehicleType.TANK,
+	"Light Tank" = Enums.VehicleType.TANK,
+	"Mech" = Enums.VehicleType.NONE,
+	"Gunship" = Enums.VehicleType.BOAT,
+	"Assault Tank" = Enums.VehicleType.TANK,
+	"Cruiser Tank" = Enums.VehicleType.TANK,
+	"Mine Boat" = Enums.VehicleType.BOAT,
+	"Siege Tank" = Enums.VehicleType.TANK,
+	"Motorboat" = Enums.VehicleType.BOAT,
+	"Motorcycle" = Enums.VehicleType.CAR,
+	"Relic Vehicles" = Enums.VehicleType.NONE,
+	"Relic Armoured Car" = Enums.VehicleType.NONE,
+	"Relic Light Tank" = Enums.VehicleType.NONE,
+	"Relic Truck" = Enums.VehicleType.NONE,
+	"Scout Tank" = Enums.VehicleType.TANK,
+	"Small Train Locomotive" = Enums.VehicleType.TRAIN,
+	"Small Liquid Container Car" = Enums.VehicleType.TRAIN,
+	"Small Flatbed Car" = Enums.VehicleType.TRAIN,
+	"Small Container Car" = Enums.VehicleType.TRAIN,
+	"Small Box Car" = Enums.VehicleType.TRAIN,
+	"Super Tank" = Enums.VehicleType.TANK,
+	"Tankette" = Enums.VehicleType.TANK,
+	"Trailer" = Enums.VehicleType.CAR,
+	"Caboose" = Enums.VehicleType.TRAIN,
+	"Container Car" = Enums.VehicleType.TRAIN,
+	"Combat Car" = Enums.VehicleType.TRAIN,
+	"Locomotive" = Enums.VehicleType.TRAIN,
+	"Flatbed Car" = Enums.VehicleType.CAR,
+	"First Aid Car" = Enums.VehicleType.CAR,
+	"Infantry Car" = Enums.VehicleType.TRAIN,
+	"Long-Range Artillery Car" = Enums.VehicleType.TRAIN,
+	"Truck" = Enums.VehicleType.CAR,
+	"Fuel Tanker" = Enums.VehicleType.CAR
+}
 # var _vehicles_data: Array[Variant]
 # var _items_data: Array[Variant]
 # var _armament_data: Array[Variant]
@@ -19,6 +105,7 @@ const _RESISTANCES_DATA_PATH: String = "res://data/DamageResistances.json"
 var _all_vehicles: Dictionary[String, VehicleEntity] = {}
 var _all_items: Dictionary[String, ItemEntity] = {}
 var _damage_type_resistances: Dictionary[String, Dictionary] = {}
+
 
 
 
@@ -50,7 +137,8 @@ func _load_vehicles():
 			new_vehicle.faction = Enums.Faction.COLONIAL
 		else:
 			new_vehicle.faction = Enums.Faction.NEUTRAL
-
+		new_vehicle.type = _vehicle_types.get(vehicle_entry["type"], Enums.VehicleType.CAR)
+			
 
 		# Vitals
 		var vitals: ComponentVitals = ComponentVitals.new()

@@ -3,11 +3,12 @@
 [ext_resource type="Script" uid="uid://b48lkv6p1t23a" path="res://scripts/ui/entity_selection_window/EntitySelectionWindow.gd" id="1_penve"]
 [ext_resource type="PackedScene" uid="uid://chgllbe8hpmwg" path="res://scenes/ui/entity_selection_window/EntityView.tscn" id="2_p5cyp"]
 [ext_resource type="Theme" uid="uid://banvl88e6fu0f" path="res://scenes/ui/themes/ButtonFilter.tres" id="3_6u6da"]
+[ext_resource type="PackedScene" uid="uid://c43i10d8krnof" path="res://scenes/ui/entity_selection_window/FilterButton.tscn" id="3_rl4bl"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qv3ln"]
-bg_color = Color(0.40518206, 0.41796267, 0.43074968, 1)
+bg_color = Color(0.08694223, 0.09650501, 0.07646016, 1)
 
-[node name="EntitySelectionWindow" type="MarginContainer" unique_id=60665683 node_paths=PackedStringArray("_views_holder", "_close_button")]
+[node name="EntitySelectionWindow" type="MarginContainer" unique_id=60665683 node_paths=PackedStringArray("_views_holder", "_close_button", "_filter_wardens", "_filter_colonials", "_filter_tanks", "_filter_pushguns", "_filter_cars", "_filter_boats", "_filter_aircraft", "_filter_guns", "_filter_structures")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -19,6 +20,15 @@ script = ExtResource("1_penve")
 _entity_view_prefab = ExtResource("2_p5cyp")
 _views_holder = NodePath("MarginContainer/VBoxContainer/ScrollContainer/Grid")
 _close_button = NodePath("MarginContainer/VBoxContainer/Close/CloseButton")
+_filter_wardens = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer2/FilterWardens")
+_filter_colonials = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer2/FilterColonials")
+_filter_tanks = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer/FilterTanks")
+_filter_pushguns = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer/FilterPushguns")
+_filter_cars = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer/FilterCars")
+_filter_boats = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBox/FilterBoats")
+_filter_aircraft = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBox/FilterAircraft")
+_filter_guns = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3/FilterGuns")
+_filter_structures = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3/FilterStructures")
 
 [node name="Panel" type="Panel" parent="." unique_id=1147524253]
 layout_mode = 2
@@ -30,6 +40,85 @@ layout_mode = 2
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=659004240]
 layout_mode = 2
 
+[node name="Filters" type="MarginContainer" parent="MarginContainer/VBoxContainer" unique_id=1408535249]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/Filters" unique_id=293668420]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer" unique_id=1159130653]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="FilterWardens" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer2" unique_id=965816259 instance=ExtResource("3_rl4bl")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Wardens"
+
+[node name="FilterColonials" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer2" unique_id=1169552847 instance=ExtResource("3_rl4bl")]
+layout_mode = 2
+size_flags_horizontal = 3
+button_pressed = true
+text = "Colonials"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer" unique_id=1967107412]
+layout_mode = 2
+
+[node name="FilterGuns" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3" unique_id=1745069566 instance=ExtResource("3_rl4bl")]
+layout_mode = 2
+size_flags_horizontal = 3
+button_pressed = true
+text = "    Guns    "
+
+[node name="FilterStructures" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3" unique_id=1001934657 instance=ExtResource("3_rl4bl")]
+layout_mode = 2
+size_flags_horizontal = 3
+button_pressed = true
+text = "    Structures    "
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer" unique_id=933055075]
+layout_mode = 2
+alignment = 1
+
+[node name="FilterTanks" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer" unique_id=1929294019 instance=ExtResource("3_rl4bl")]
+layout_mode = 2
+size_flags_horizontal = 3
+button_pressed = true
+text = "   Tanks    "
+
+[node name="FilterPushguns" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer" unique_id=92232580 instance=ExtResource("3_rl4bl")]
+layout_mode = 2
+size_flags_horizontal = 3
+button_pressed = true
+text = "    Pushguns    "
+
+[node name="FilterCars" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer" unique_id=1620429503 instance=ExtResource("3_rl4bl")]
+layout_mode = 2
+size_flags_horizontal = 3
+button_pressed = true
+text = "    Cars    "
+
+[node name="HBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer" unique_id=1086999723]
+layout_mode = 2
+alignment = 1
+
+[node name="FilterBoats" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBox" unique_id=775708424 instance=ExtResource("3_rl4bl")]
+layout_mode = 2
+size_flags_horizontal = 3
+button_pressed = true
+text = "    Boats    "
+
+[node name="FilterAircraft" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBox" unique_id=68578517 instance=ExtResource("3_rl4bl")]
+layout_mode = 2
+size_flags_horizontal = 3
+button_pressed = true
+text = "    Aircraft    "
+
 [node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer" unique_id=1886772268]
 layout_mode = 2
 size_flags_vertical = 3
@@ -37,6 +126,7 @@ size_flags_vertical = 3
 [node name="Grid" type="VBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer" unique_id=93618842]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="Close" type="MarginContainer" parent="MarginContainer/VBoxContainer" unique_id=1347434934]
 layout_mode = 2

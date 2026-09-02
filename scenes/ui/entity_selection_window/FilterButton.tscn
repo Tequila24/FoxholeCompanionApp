@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c43i10d8krnof"]
+
+[ext_resource type="Theme" uid="uid://banvl88e6fu0f" path="res://scenes/ui/themes/ButtonFilter.tres" id="1_wsq5a"]
+
+[node name="FilterButton" type="Button" unique_id=965816259]
+offset_right = 95.0
+offset_bottom = 37.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("1_wsq5a")
+toggle_mode = true
+text = "Filter name"
