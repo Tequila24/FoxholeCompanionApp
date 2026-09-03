@@ -14,24 +14,22 @@ extends MarginContainer
 var current_filters: EntityFilter = EntityFilter.new()
 @export var _filter_wardens: Button
 @export var _filter_colonials: Button
+
+@export var _filter_vehicles: Button
+@export var _filter_guns: Button
+@export var _filter_structures: Button
+
 @export var _filter_tanks: Button
 @export var _filter_pushguns: Button
 @export var _filter_cars: Button
 @export var _filter_boats: Button
 @export var _filter_aircraft: Button
-@export var _filter_guns: Button
-@export var _filter_structures: Button
+@export var _filter_trains: Button
 
 
 
 signal entity_selected(new_entity: GameEntity)
 
-
-
-# # static func open_window() -> EntitySelectionWindow:
-# # 	var new_window = SELF_PREFAB.instantiate() as EntitySelectionWindow
-# # 	UI.add_child(new_window)
-# # 	return new_window
 
 
 func _ready() -> void:
@@ -41,13 +39,17 @@ func _ready() -> void:
 	
 	_filter_wardens.toggled.connect(_on_filter_button_toggled)
 	_filter_colonials.toggled.connect(_on_filter_button_toggled)
+
+	_filter_vehicles.toggled.connect(_on_filter_button_toggled)
+	_filter_guns.toggled.connect(_on_filter_button_toggled)
+	_filter_structures.toggled.connect(_on_filter_button_toggled)
+
 	_filter_tanks.toggled.connect(_on_filter_button_toggled)
 	_filter_pushguns.toggled.connect(_on_filter_button_toggled)
 	_filter_cars.toggled.connect(_on_filter_button_toggled)
 	_filter_boats.toggled.connect(_on_filter_button_toggled)
 	_filter_aircraft.toggled.connect(_on_filter_button_toggled)
-	_filter_guns.toggled.connect(_on_filter_button_toggled)
-	_filter_structures.toggled.connect(_on_filter_button_toggled)
+	_filter_trains.toggled.connect(_on_filter_button_toggled)
 	_update_filters()
 
 	call_deferred("_filter_visible_entities")
@@ -74,6 +76,21 @@ func _update_filters() -> void:
 			if _filter_colonials.button_pressed else \
 		(current_filters.allowed_factions & ~Enums.Faction.COLONIAL) as Enums.Faction
 
+	current_filters.allowed_entity_types = \
+		(current_filters.allowed_entity_types | Enums.EntityType.VEHICLE) \
+		if _filter_vehicles.button_pressed \
+		else (current_filters.allowed_entity_types & ~Enums.EntityType.VEHICLE) as Enums.EntityType
+	
+	current_filters.allowed_entity_types = \
+		(current_filters.allowed_entity_types | Enums.EntityType.GUN) \
+		if _filter_guns.button_pressed \
+		else (current_filters.allowed_entity_types & ~Enums.EntityType.GUN) as Enums.EntityType
+
+	current_filters.allowed_entity_types = \
+		(current_filters.allowed_entity_types |Enums.EntityType.STRUCTURE) \
+		if _filter_structures.button_pressed \
+		else (current_filters.allowed_entity_types & ~Enums.EntityType.STRUCTURE) as Enums.EntityType
+	
 	current_filters.allowed_vehicle_types = \
 		(current_filters.allowed_vehicle_types | Enums.VehicleType.TANK) \
 		if _filter_tanks.button_pressed \
@@ -99,22 +116,17 @@ func _update_filters() -> void:
 		if _filter_aircraft.button_pressed \
 		else (current_filters.allowed_vehicle_types & ~Enums.VehicleType.AIRCRAFT) as Enums.VehicleType
 
-	current_filters.allowed_entity_types = \
-		(current_filters.allowed_entity_types | Enums.EntityType.GUN) \
-		if _filter_guns.button_pressed \
-		else (current_filters.allowed_entity_types & ~Enums.EntityType.GUN) as Enums.EntityType
-
-	current_filters.allowed_entity_types = \
-		(current_filters.allowed_entity_types |Enums.EntityType.STRUCTURE) \
-		if _filter_structures.button_pressed \
-		else (current_filters.allowed_entity_types & ~Enums.EntityType.STRUCTURE) as Enums.EntityType
+	current_filters.allowed_vehicle_types = \
+		(current_filters.allowed_vehicle_types | Enums.VehicleType.TRAIN) \
+		if _filter_trains.button_pressed \
+		else (current_filters.allowed_vehicle_types & ~Enums.VehicleType.TRAIN) as Enums.VehicleType
 
 
 func _filter_visible_entities():
 	for entity_view in _views_holder.get_children() as Array[EntityView]:
 		entity_view.visible = current_filters.check(entity_view.attached_entity)
-		if (entity_view.visible):
-			print("Entity %s type %s" % [entity_view.attached_entity.name, str(entity_view.attached_entity.type)])
+		# if (entity_view.visible):
+		# 	print("Entity %s type %s" % [entity_view.attached_entity.name, str(entity_view.attached_entity.type)])
 
 
 func _fill_entities():

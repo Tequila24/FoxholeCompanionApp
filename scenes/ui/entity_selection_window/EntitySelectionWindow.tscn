@@ -8,7 +8,7 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qv3ln"]
 bg_color = Color(0.08694223, 0.09650501, 0.07646016, 1)
 
-[node name="EntitySelectionWindow" type="MarginContainer" unique_id=60665683 node_paths=PackedStringArray("_views_holder", "_close_button", "_filter_wardens", "_filter_colonials", "_filter_tanks", "_filter_pushguns", "_filter_cars", "_filter_boats", "_filter_aircraft", "_filter_guns", "_filter_structures")]
+[node name="EntitySelectionWindow" type="MarginContainer" unique_id=60665683 node_paths=PackedStringArray("_views_holder", "_close_button", "_filter_wardens", "_filter_colonials", "_filter_vehicles", "_filter_guns", "_filter_structures", "_filter_tanks", "_filter_pushguns", "_filter_cars", "_filter_boats", "_filter_aircraft", "_filter_trains")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -22,13 +22,15 @@ _views_holder = NodePath("MarginContainer/VBoxContainer/ScrollContainer/Grid")
 _close_button = NodePath("MarginContainer/VBoxContainer/Close/CloseButton")
 _filter_wardens = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer2/FilterWardens")
 _filter_colonials = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer2/FilterColonials")
+_filter_vehicles = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3/FilterVehicles")
+_filter_guns = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3/FilterGuns")
+_filter_structures = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3/FilterStructures")
 _filter_tanks = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer/FilterTanks")
 _filter_pushguns = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer/FilterPushguns")
 _filter_cars = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer/FilterCars")
 _filter_boats = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBox/FilterBoats")
 _filter_aircraft = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBox/FilterAircraft")
-_filter_guns = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3/FilterGuns")
-_filter_structures = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3/FilterStructures")
+_filter_trains = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBox/FilterTrain")
 
 [node name="Panel" type="Panel" parent="." unique_id=1147524253]
 layout_mode = 2
@@ -58,6 +60,7 @@ theme_override_constants/separation = 8
 [node name="FilterWardens" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer2" unique_id=965816259 instance=ExtResource("3_rl4bl")]
 layout_mode = 2
 size_flags_horizontal = 3
+button_pressed = true
 text = "Wardens"
 
 [node name="FilterColonials" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer2" unique_id=1169552847 instance=ExtResource("3_rl4bl")]
@@ -68,6 +71,12 @@ text = "Colonials"
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer" unique_id=1967107412]
 layout_mode = 2
+
+[node name="FilterVehicles" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3" unique_id=1598806077 instance=ExtResource("3_rl4bl")]
+layout_mode = 2
+size_flags_horizontal = 3
+button_pressed = true
+text = "    Vehicles    "
 
 [node name="FilterGuns" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBoxContainer3" unique_id=1745069566 instance=ExtResource("3_rl4bl")]
 layout_mode = 2
@@ -118,6 +127,12 @@ layout_mode = 2
 size_flags_horizontal = 3
 button_pressed = true
 text = "    Aircraft    "
+
+[node name="FilterTrain" parent="MarginContainer/VBoxContainer/Filters/VBoxContainer/HBox" unique_id=238918971 instance=ExtResource("3_rl4bl")]
+layout_mode = 2
+size_flags_horizontal = 3
+button_pressed = true
+text = "    Trains    "
 
 [node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer" unique_id=1886772268]
 layout_mode = 2

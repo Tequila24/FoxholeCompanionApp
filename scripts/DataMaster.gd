@@ -137,7 +137,7 @@ func _load_vehicles():
 			new_vehicle.faction = Enums.Faction.COLONIAL
 		else:
 			new_vehicle.faction = Enums.Faction.NEUTRAL
-		new_vehicle.type = _vehicle_types.get(vehicle_entry["type"], Enums.VehicleType.CAR)
+		new_vehicle.vehicle_type = _vehicle_types.get(vehicle_entry["type"], Enums.VehicleType.CAR)
 			
 
 		# Vitals

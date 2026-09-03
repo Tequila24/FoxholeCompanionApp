@@ -6,7 +6,7 @@ var id: String
 var name: String
 var image_name: String
 var faction: Enums.Faction = Enums.Faction.NEUTRAL
-var type: Enums.EntityType = Enums.EntityType.NONE
+var entity_type: Enums.EntityType = Enums.EntityType.ANY
 var _components: Array[GameEntityComponent]
 
 

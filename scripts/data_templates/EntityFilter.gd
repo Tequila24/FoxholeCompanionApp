@@ -13,6 +13,7 @@ var allowed_vehicle_types: Enums.VehicleType = Enums.VehicleType.ANY
 
 func check(entity: GameEntity) -> bool:
 	if DEBUG: print("Cheking entity: %s" % entity.name)
+	# if DEBUG: print("Entity %s type: %s - %s" % [entity.name, entity.entity_type, Enums.EntityType.find_key(entity.entity_type)])
 
 	if (not _check_faction(entity)):
 		if DEBUG: print("Filtered by allowed_factions filter")
@@ -60,4 +61,4 @@ func _check_vehicle_type(vehicle_entity: VehicleEntity) -> bool:
 
 
 func _check_entity_type(entity: GameEntity) -> bool:
-	return (entity.type & allowed_entity_types)
+	return (entity.entity_type & allowed_entity_types)
