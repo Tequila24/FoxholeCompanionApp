@@ -5,7 +5,7 @@ extends Object
 const DEBUG: bool = false
 
 var allowed_factions: Enums.Faction = Enums.Faction.ANY
-var component_type_filter: Array[Variant.Type] = []
+var component_type_filter: Array[Variant] = [] # OR based, passes if any found
 var allowed_entity_types: Enums.EntityType = Enums.EntityType.ANY
 var allowed_vehicle_types: Enums.VehicleType = Enums.VehicleType.ANY
 
@@ -43,9 +43,9 @@ func _check_faction(entity: GameEntity) -> bool:
 
 func _check_components(entity: GameEntity) -> bool:
 	for component_type in component_type_filter:
-		if (not entity.has_component_type(component_type)):
-			return false
-	return true
+		if (entity.has_component_type(component_type)):
+			return true
+	return false
 
 
 func _check_vehicle_type(vehicle_entity: VehicleEntity) -> bool:

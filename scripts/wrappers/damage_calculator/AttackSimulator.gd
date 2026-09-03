@@ -55,6 +55,8 @@ func simulate_attack(attacker: GameEntity, target: GameEntity, options: Simulati
 		
 		new_gun_state.actual_damage = int(float((new_gun_state.ammo_damage_data.raw_damage) * new_gun_state.gun_data.damage_modifier) \
 		* (1.0 - DataMaster.get_damage_resistance(simulation_state.target_vitals.resistance_id, new_gun_state.ammo_damage_data.damage_type_id)))
+		if (new_gun_state.actual_damage == 0):
+			continue
 		
 		simulation_state.attacker_guns.append(new_gun_state)
 

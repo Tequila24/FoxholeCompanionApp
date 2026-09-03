@@ -165,12 +165,18 @@ func _load_vehicles():
 				print("No ammo used, skipping")
 				continue
 
+			if (used_ammo_ids.count("Water") > 0):
+				print("Using only water, skipping as a gun")
+				continue
+
 			var new_gun: ComponentGun = ComponentGun.new()
 			new_gun.ammo_used_ids.assign(used_ammo_ids)
 			new_gun.magazine_size = (arm_entry["MagazineSize"]) if (arm_entry["MagazineSize"] != null) else (1)
 			new_gun.cooldown_duration_s = (arm_entry["FiringTime"]) if (arm_entry["FiringTime"] != null) else (0)
 			new_gun.reload_duration_s = (arm_entry["ReloadTime"]) if (arm_entry["ReloadTime"] != null) else (0)
 			new_gun.fire_rate = (arm_entry["FireRate"]) if (arm_entry["FireRate"] != null) else (0)
+			if (new_gun.cooldown_duration_s == 0 && new_gun.magazine_size > 1):
+				new_gun.cooldown_duration_s = 60 / new_gun.fire_rate
 			new_gun.damage_modifier = 1.0 + float(((arm_entry["VelocityMod"]) if (arm_entry["VelocityMod"] != null) else (0)) * 0.01)
 
 			# print("%s adding gun component" % new_vehicle.name)

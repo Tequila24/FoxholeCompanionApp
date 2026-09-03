@@ -56,8 +56,7 @@ func _ready() -> void:
 
 
 func set_component_filter(_components_types: Array[Variant]):
-	current_filters.component_type_filter.append(_components_types)
-	# _filter_visible_entities()
+	current_filters.component_type_filter.assign(_components_types)
 
 
 func _on_filter_button_toggled(_is_toggled: bool):
@@ -217,6 +216,7 @@ func _on_entity_view_tap(view: EntityView):
 
 func show_window() -> void:
 	self.visible = true
+	call_deferred("_filter_visible_entities")
 
 
 func hide_window() -> void:
