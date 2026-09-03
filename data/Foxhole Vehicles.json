@@ -265,7 +265,7 @@
     },
     {
         "codename": "ArmoredCar2LargeW",
-        "name": "O&#039;Brien V.101 Freeman",
+        "name": "O'Brien V.101 Freeman",
         "image": "ArmoredCarOffensiveWVehicleIcon.png",
         "vehicle hp": 1500,
         "disable": 30,
@@ -276,7 +276,7 @@
     },
     {
         "codename": "ArmoredCar2MultiW",
-        "name": "O&#039;Brien V.200 Squire",
+        "name": "O'Brien V.200 Squire",
         "image": "ArmoredCar2MultiWIcon.png",
         "vehicle hp": 1500,
         "disable": 30,
@@ -287,7 +287,7 @@
     },
     {
         "codename": "ArmoredCar2TwinW",
-        "name": "O&#039;Brien V.190 Knave",
+        "name": "O'Brien V.190 Knave",
         "image": "ArmoredCarTwinWIcon.png",
         "vehicle hp": 1500,
         "disable": 30,
@@ -298,7 +298,7 @@
     },
     {
         "codename": "ArmoredCarATW",
-        "name": "O&#039;Brien V.113 Gravekeeper",
+        "name": "O'Brien V.113 Gravekeeper",
         "image": "ArmoredCarATWVehicleIcon.png",
         "vehicle hp": 1250,
         "disable": 30,
@@ -320,7 +320,7 @@
     },
     {
         "codename": "ArmoredCarFlameW",
-        "name": "O&#039;Brien V.130 Wild Jack",
+        "name": "O'Brien V.130 Wild Jack",
         "image": "ArmoredCarFlameWarVehicleIcon.png",
         "vehicle hp": 1250,
         "disable": 30,
@@ -331,7 +331,7 @@
     },
     {
         "codename": "ArmoredCarMobilityW",
-        "name": "O&#039;Brien V.121 Highlander",
+        "name": "O'Brien V.121 Highlander",
         "image": "ArmoredCarMobilityWarVehicleIcon.png",
         "vehicle hp": 1250,
         "disable": 30,
@@ -364,7 +364,7 @@
     },
     {
         "codename": "ArmoredCarW",
-        "name": "O&#039;Brien V.110",
+        "name": "O'Brien V.110",
         "image": "ArmoredCarWarVehicleIcon.png",
         "vehicle hp": 1150,
         "disable": 30,
@@ -551,7 +551,7 @@
     },
     {
         "codename": "FieldAT2W",
-        "name": "Duncan&#039;s Coin 14.5mm",
+        "name": "Duncan's Coin 14.5mm",
         "image": "FieldAT2WIcon.png",
         "vehicle hp": 1600,
         "disable": 30,
@@ -1827,7 +1827,7 @@
     },
     {
         "codename": "TrainCombatCarW",
-        "name": "O&#039;Brien Warsmith v.215",
+        "name": "O'Brien Warsmith v.215",
         "image": "CombatCarWVehicleIcon.png",
         "vehicle hp": 3250,
         "disable": null,
