@@ -41,7 +41,7 @@ layout_mode = 2
 
 [node name="ColorRect" type="ColorRect" parent="MarginContainer" unique_id=30039180]
 layout_mode = 2
-color = Color(0.101960786, 0.10980392, 0.11764706, 1)
+color = Color(0.08, 0.07584, 0.0488, 1)
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1557844218]
 layout_mode = 2

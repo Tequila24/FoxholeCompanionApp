@@ -1,0 +1,20 @@
+[gd_resource type="Theme" format=3 uid="uid://d2lddbvdlb2uj"]
+
+[ext_resource type="FontVariation" uid="uid://bvm4qqvuxyy30" path="res://scenes/ui/fonts_variatios/LilBoldGrotesk.tres" id="1_irtw7"]
+[ext_resource type="StyleBox" uid="uid://d3vm35gmu1tef" path="res://scenes/ui/styles/ButtonNormal.tres" id="2_oc0l7"]
+[ext_resource type="StyleBox" uid="uid://cqmge5aqccg8p" path="res://scenes/ui/styles/ButtonActiveColonial.tres" id="3_7vb4w"]
+
+[resource]
+Button/colors/font_color = Color(0.74509805, 0.7921569, 0.7254902, 1)
+Button/colors/font_pressed_color = Color(0, 0.22352941, 0.039215688, 1)
+Button/colors/icon_pressed_color = Color(2.0455569e-07, 0.22065371, 0.038251095, 1)
+Button/fonts/font = ExtResource("1_irtw7")
+Button/styles/hover = ExtResource("2_oc0l7")
+Button/styles/hover_pressed = ExtResource("3_7vb4w")
+Button/styles/normal = ExtResource("2_oc0l7")
+Button/styles/pressed = ExtResource("3_7vb4w")
+Label/colors/font_color = Color(1, 1, 0.9411765, 1)
+Label/fonts/font = ExtResource("1_irtw7")
+RichTextLabel/colors/default_color = Color(1, 1, 0.9411765, 1)
+RichTextLabel/fonts/bold_font = ExtResource("1_irtw7")
+RichTextLabel/fonts/normal_font = ExtResource("1_irtw7")

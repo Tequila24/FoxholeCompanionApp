@@ -838,7 +838,7 @@
     {
         "codename": "HeavyTruckW",
         "name": "Cnute Cliffwrest",
-        "image": "HeavyTruckWItemIcon copy.png",
+        "image": "HeavyTruckWItemIcon_copy.png",
         "vehicle hp": 1150,
         "disable": 50,
         "armour type": "Tier1Tank",

@@ -4,6 +4,7 @@ extends RefCounted
 
 
 const TTK_SIMULATION_TIME_STEP: float = 0.05
+const TTK_TRANSFORM_TO_MINUTES_THRESHOLD: float = 60
 const DEBUG = true
 
 class SimulationOptions:
@@ -87,7 +88,12 @@ func simulate_attack(attacker: GameEntity, target: GameEntity, options: Simulati
 	
 	simulation_result.is_valid = true
 	
-	simulation_result.add_stats_line("Time to kill", ("%.2f seconds" % simulation_state.accumulated_ttk))
+	if (simulation_state.accumulated_ttk < TTK_TRANSFORM_TO_MINUTES_THRESHOLD):
+		simulation_result.add_stats_line("Time to kill", ("%.0f seconds" % simulation_state.accumulated_ttk))
+	else:
+		var minutes: int = floor(simulation_state.accumulated_ttk / 60)
+		var seconds: int = simulation_state.accumulated_ttk - (minutes * 60)
+		simulation_result.add_stats_line("Time to kill", ("%dm %ds" % [minutes, seconds]))
 
 	for gun in simulation_state.attacker_guns:
 		simulation_result.counters.append(DamageCalculationResult.Counter.new())

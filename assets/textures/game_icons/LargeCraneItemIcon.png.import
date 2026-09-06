@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duk2v5q5q8vxj"
-path="res://.godot/imported/DiveBomberAmmoIcon.png-3926f8f5593e009b8d93dd807f6fdee5.ctex"
+uid="uid://oar1xoj6g3wh"
+path="res://.godot/imported/LargeCraneItemIcon.png-64affc85f6aaf5f141190bbeb706b50f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/game_icons/DiveBomberAmmoIcon.png"
-dest_files=["res://.godot/imported/DiveBomberAmmoIcon.png-3926f8f5593e009b8d93dd807f6fdee5.ctex"]
+source_file="res://assets/textures/game_icons/LargeCraneItemIcon.png"
+dest_files=["res://.godot/imported/LargeCraneItemIcon.png-64affc85f6aaf5f141190bbeb706b50f.ctex"]
 
 [params]
 

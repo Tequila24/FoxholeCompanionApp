@@ -5,9 +5,6 @@
 [ext_resource type="Theme" uid="uid://banvl88e6fu0f" path="res://scenes/ui/themes/ButtonFilter.tres" id="3_6u6da"]
 [ext_resource type="PackedScene" uid="uid://c43i10d8krnof" path="res://scenes/ui/entity_selection_window/FilterButton.tscn" id="3_rl4bl"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qv3ln"]
-bg_color = Color(0.08694223, 0.09650501, 0.07646016, 1)
-
 [node name="EntitySelectionWindow" type="MarginContainer" unique_id=60665683 node_paths=PackedStringArray("_views_holder", "_close_button", "_filter_wardens", "_filter_colonials", "_filter_vehicles", "_filter_guns", "_filter_structures", "_filter_tanks", "_filter_pushguns", "_filter_cars", "_filter_boats", "_filter_aircraft", "_filter_trains")]
 anchors_preset = 15
 anchor_right = 1.0
@@ -32,9 +29,9 @@ _filter_boats = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HB
 _filter_aircraft = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBox/FilterAircraft")
 _filter_trains = NodePath("MarginContainer/VBoxContainer/Filters/VBoxContainer/HBox/FilterTrain")
 
-[node name="Panel" type="Panel" parent="." unique_id=1147524253]
+[node name="Panel" type="ColorRect" parent="." unique_id=884960253]
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_qv3ln")
+color = Color(0.078431375, 0.07450981, 0.047058824, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=158725938]
 layout_mode = 2

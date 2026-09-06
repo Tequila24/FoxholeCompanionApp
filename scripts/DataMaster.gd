@@ -91,15 +91,12 @@ const _vehicle_types: Dictionary[String, Enums.VehicleType] = {
 	"Combat Car" = Enums.VehicleType.TRAIN,
 	"Locomotive" = Enums.VehicleType.TRAIN,
 	"Flatbed Car" = Enums.VehicleType.CAR,
-	"First Aid Car" = Enums.VehicleType.CAR,
+	"First Aid Car" = Enums.VehicleType.TRAIN,
 	"Infantry Car" = Enums.VehicleType.TRAIN,
 	"Long-Range Artillery Car" = Enums.VehicleType.TRAIN,
 	"Truck" = Enums.VehicleType.CAR,
 	"Fuel Tanker" = Enums.VehicleType.CAR
 }
-# var _vehicles_data: Array[Variant]
-# var _items_data: Array[Variant]
-# var _armament_data: Array[Variant]
 
 
 var _all_vehicles: Dictionary[String, VehicleEntity] = {}
